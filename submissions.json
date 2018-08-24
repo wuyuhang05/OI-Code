@@ -3959,6 +3959,23 @@
     ],
     "timestamp": "Feb/24/2018 18:32"
   },
+  "CF42034097": {
+    "contest_id": 1029,
+    "language": "GNU C++",
+    "path": "codeforces/1029/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Many Equal Substrings",
+    "problem_url": "https://codeforces.com/contest/1029/problem/A",
+    "submission_id": "CF42034097",
+    "submission_url": "https://codeforces.com/contest/1029/submission/42034097",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1300"
+    ],
+    "timestamp": "Aug/24/2018 23:10"
+  },
   "CF42037652": {
     "contest_id": 1029,
     "language": "GNU C++",
