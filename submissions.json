@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF42707548": {
+    "contest_id": 334,
+    "language": "GNU C++11",
+    "path": "codeforces/334/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Eight Point Sets",
+    "problem_url": "https://codeforces.com/contest/334/problem/B",
+    "submission_id": "CF42707548",
+    "submission_url": "https://codeforces.com/contest/334/submission/42707548",
+    "tags": [
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Sep/09/2018 22:06"
+  },
   "CF42707908": {
     "contest_id": 333,
     "language": "GNU C++11",
