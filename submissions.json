@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF42799746": {
+    "contest_id": 336,
+    "language": "GNU C++11",
+    "path": "codeforces/336/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Vasily the Bear and Beautiful Strings",
+    "problem_url": "https://codeforces.com/contest/336/problem/D",
+    "submission_id": "CF42799746",
+    "submission_url": "https://codeforces.com/contest/336/submission/42799746",
+    "tags": [
+      "combinatorics",
+      "math",
+      "number theory",
+      "*2100"
+    ],
+    "timestamp": "Sep/12/2018 21:39"
+  },
   "CF42831328": {
     "contest_id": 337,
     "language": "GNU C++11",
