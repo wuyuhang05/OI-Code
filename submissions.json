@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF43003076": {
+    "contest_id": 1041,
+    "language": "GNU C++11",
+    "path": "codeforces/1041/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Glider",
+    "problem_url": "https://codeforces.com/contest/1041/problem/D",
+    "submission_id": "CF43003076",
+    "submission_url": "https://codeforces.com/contest/1041/submission/43003076",
+    "tags": [
+      "binary search",
+      "data structures",
+      "two pointers",
+      "*1700"
+    ],
+    "timestamp": "Sep/17/2018 22:37"
+  },
   "CF43003814": {
     "contest_id": 344,
     "language": "GNU C++11",
