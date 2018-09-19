@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF43081258": {
+    "contest_id": 347,
+    "language": "GNU C++11",
+    "path": "codeforces/347/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Fixed Points",
+    "problem_url": "https://codeforces.com/contest/347/problem/B",
+    "submission_id": "CF43081258",
+    "submission_url": "https://codeforces.com/contest/347/submission/43081258",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Sep/19/2018 21:58"
+  },
   "CF43081634": {
     "contest_id": 346,
     "language": "GNU C++11",
