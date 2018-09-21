@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF43193806": {
+    "contest_id": 1047,
+    "language": "GNU C++11",
+    "path": "codeforces/1047/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Cover Points",
+    "problem_url": "https://codeforces.com/contest/1047/problem/B",
+    "submission_id": "CF43193806",
+    "submission_url": "https://codeforces.com/contest/1047/submission/43193806",
+    "tags": [
+      "geometry",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Sep/21/2018 22:56"
+  },
   "CF43295915": {
     "contest_id": 1058,
     "language": "GNU C++11",
