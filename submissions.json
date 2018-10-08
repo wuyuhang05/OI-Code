@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF43981038": {
+    "contest_id": 264,
+    "language": "GNU C++11",
+    "path": "codeforces/264/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Roadside Trees",
+    "problem_url": "https://codeforces.com/contest/264/problem/E",
+    "submission_id": "CF43981038",
+    "submission_url": "https://codeforces.com/contest/264/submission/43981038",
+    "tags": [
+      "data structures",
+      "dp",
+      "*3000"
+    ],
+    "timestamp": "Oct/08/2018 11:01"
+  },
   "CF44020153": {
     "contest_id": 1037,
     "language": "GNU C++11",
