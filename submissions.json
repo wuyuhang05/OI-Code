@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF44036326": {
+    "contest_id": 353,
+    "language": "GNU C++11",
+    "path": "codeforces/353/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Queue",
+    "problem_url": "https://codeforces.com/contest/353/problem/D",
+    "submission_id": "CF44036326",
+    "submission_url": "https://codeforces.com/contest/353/submission/44036326",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Oct/09/2018 20:59"
+  },
   "CF44055783": {
     "contest_id": 358,
     "language": "GNU C++11",
