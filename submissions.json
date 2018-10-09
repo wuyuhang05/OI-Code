@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF44055794": {
+    "contest_id": 358,
+    "language": "GNU C++11",
+    "path": "codeforces/358/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Dima and Text Messages",
+    "problem_url": "https://codeforces.com/contest/358/problem/B",
+    "submission_id": "CF44055794",
+    "submission_url": "https://codeforces.com/contest/358/submission/44055794",
+    "tags": [
+      "brute force",
+      "strings",
+      "*1500"
+    ],
+    "timestamp": "Oct/10/2018 07:57"
+  },
   "CF44286538": {
     "contest_id": 786,
     "language": "GNU C++11",
