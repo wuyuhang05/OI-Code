@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF44032949": {
+    "contest_id": 358,
+    "language": "GNU C++11",
+    "path": "codeforces/358/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Dima and Containers",
+    "problem_url": "https://codeforces.com/contest/358/problem/C",
+    "submission_id": "CF44032949",
+    "submission_url": "https://codeforces.com/contest/358/submission/44032949",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*2000"
+    ],
+    "timestamp": "Oct/09/2018 19:44"
+  },
   "CF44033562": {
     "contest_id": 357,
     "language": "GNU C++11",
