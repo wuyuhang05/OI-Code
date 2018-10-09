@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF44034422": {
+    "contest_id": 350,
+    "language": "GNU C++11",
+    "path": "codeforces/350/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Wrong Floyd",
+    "problem_url": "https://codeforces.com/contest/350/problem/E",
+    "submission_id": "CF44034422",
+    "submission_url": "https://codeforces.com/contest/350/submission/44034422",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "*2200"
+    ],
+    "timestamp": "Oct/09/2018 20:20"
+  },
   "CF44034453": {
     "contest_id": 350,
     "language": "GNU C++11",
