@@ -1,10 +1,3 @@
-/*
-线段树优化建图模板题
-注意数组多开点 & long long 
-写 SPFA 的都死了qwq 
-16:21: 等我卡卡空间 
-16:44: 原来数据出锅了啊qaq 
-*/ 
 #include <algorithm>
 #include <iostream>
 #include <cstring>
@@ -25,8 +18,6 @@
 #define ROF(i,a,b) for(Re int i = a;i >= b;--i)
 #define SFOR(i,a,b,c) for(Re int i = a;i <= b;i+=c)
 #define SROF(i,a,b,c) for(Re int i = a;i >= b;i-=c)
-#define P std::pair<int,int>
-#define MP std::make_pair
 #define CLR(i,a) memset(i,a,sizeof(i))
 #define BR printf("--------------------\n")
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
@@ -66,10 +57,11 @@ namespace fastIO{
 };
 using namespace fastIO;
 
+#define int LL
+
 const int MAXN = 500000 + 5;
-#define int long long
-int head[MAXN],lc[MAXN],rc[MAXN];
-LL dist[MAXN];
+
+int head[MAXN],lc[MAXN],rc[MAXN],dist[MAXN];
 bool used[MAXN];
 int segt1,segt2;
 int cnt,tot;
@@ -122,7 +114,17 @@ void update(int pos,int l,int r,int L,int R,int u,int w,int opt){
 		update(lc[pos],l,mid,L,mid,u,w,opt);
 		update(rc[pos],mid+1,r,mid+1,R,u,w,opt);
 	}
+//	if(L <= l && r <= R){
+//		(opt & 1) ? add(pos,u,w) : add(u,pos,w);
+//		return;
+//	}
+//	int mid = (l + r) >> 1;
+//	if(L <= mid) update(lc[pos],l,mid,L,R,u,w,opt);
+//	if(mid < R) update(rc[pos],mid+1,r,L,R,u,w,opt);
 }
+
+#define P std::pair<int,int>
+#define MP std::make_pair
 
 inline void Dijkstra(int S){
 	FOR(i,1,MAXN-1) dist[i] = LLONG_MAX;
@@ -150,7 +152,7 @@ signed main(){
 	//freopen("legacy.in","r",stdin);
 	//freopen("legacy.out","w",stdout);
 	read(N);read(M);read(S);
-	cnt = N+1;
+	cnt = N;
 	build1(segt1,1,N);build2(segt2,1,N);
 	FOR(i,1,M){
 		int opt,u,v,w,l,r;
@@ -165,7 +167,7 @@ signed main(){
 		}
 	}
 	Dijkstra(S);
-	FOR(i,1,N) printf("%I64d\n",dist[i] == LLONG_MAX ? -1 : dist[i]);
+	FOR(i,1,N) printf("%I64d ",dist[i] == LLONG_MAX ? -1 : dist[i]);
 	return 0;
 }
 /*
@@ -176,3 +178,4 @@ signed main(){
 3 3 1 1 12
 1 3 3 17
 */
+
