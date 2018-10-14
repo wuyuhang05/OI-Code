@@ -103,24 +103,24 @@ void build2(int &pos,int l,int r){
 }
 
 void update(int pos,int l,int r,int L,int R,int u,int w,int opt){
-	if(L == l && R == r){
-		(opt&1) ? add(pos,u,w) : add(u,pos,w);
-		return;
-	}
-	int mid = (l + r) >> 1;
-	if(R <= mid) update(lc[pos],l,mid,L,R,u,w,opt);
-	else if(L > mid) update(rc[pos],mid+1,r,L,R,u,w,opt);
-	else{
-		update(lc[pos],l,mid,L,mid,u,w,opt);
-		update(rc[pos],mid+1,r,mid+1,R,u,w,opt);
-	}
-//	if(L <= l && r <= R){
-//		(opt & 1) ? add(pos,u,w) : add(u,pos,w);
+//	if(L == l && R == r){
+//		(opt&1) ? add(pos,u,w) : add(u,pos,w);
 //		return;
 //	}
 //	int mid = (l + r) >> 1;
-//	if(L <= mid) update(lc[pos],l,mid,L,R,u,w,opt);
-//	if(mid < R) update(rc[pos],mid+1,r,L,R,u,w,opt);
+//	if(R <= mid) update(lc[pos],l,mid,L,R,u,w,opt);
+//	else if(L > mid) update(rc[pos],mid+1,r,L,R,u,w,opt);
+//	else{
+//		update(lc[pos],l,mid,L,mid,u,w,opt);
+//		update(rc[pos],mid+1,r,mid+1,R,u,w,opt);
+//	}
+	if(L <= l && r <= R){
+		(opt & 1) ? add(pos,u,w) : add(u,pos,w);
+		return;
+	}
+	int mid = (l + r) >> 1;
+	if(L <= mid) update(lc[pos],l,mid,L,R,u,w,opt);
+	if(mid < R) update(rc[pos],mid+1,r,L,R,u,w,opt);
 }
 
 #define P std::pair<int,int>
@@ -149,8 +149,6 @@ inline void Dijkstra(int S){
 int N,M,S;
 // #define read(x) std::cin >> x
 signed main(){
-	//freopen("legacy.in","r",stdin);
-	//freopen("legacy.out","w",stdout);
 	read(N);read(M);read(S);
 	cnt = N;
 	build1(segt1,1,N);build2(segt2,1,N);
