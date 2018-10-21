@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF44646696": {
+    "contest_id": 1072,
+    "language": "GNU C++11",
+    "path": "codeforces/1072/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Cram Time",
+    "problem_url": "https://codeforces.com/contest/1072/problem/C",
+    "submission_id": "CF44646696",
+    "submission_url": "https://codeforces.com/contest/1072/submission/44646696",
+    "tags": [
+      "greedy",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Oct/21/2018 18:03"
+  },
   "CF44722676": {
     "contest_id": 1072,
     "language": "GNU C++11",
