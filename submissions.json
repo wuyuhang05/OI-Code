@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF46113504": {
+    "contest_id": 868,
+    "language": "GNU C++11",
+    "path": "codeforces/868/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Yet Another Minimization Problem",
+    "problem_url": "https://codeforces.com/contest/868/problem/F",
+    "submission_id": "CF46113504",
+    "submission_url": "https://codeforces.com/contest/868/submission/46113504",
+    "tags": [
+      "divide and conquer",
+      "dp",
+      "*2500"
+    ],
+    "timestamp": "Nov/23/2018 20:54"
+  },
   "CF46146478": {
     "contest_id": 1080,
     "language": "GNU C++11",
