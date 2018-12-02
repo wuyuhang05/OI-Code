@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF46472001": {
+    "contest_id": 1089,
+    "language": "GNU C++11",
+    "path": "codeforces/1089/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Guest Student",
+    "problem_url": "https://codeforces.com/contest/1089/problem/G",
+    "submission_id": "CF46472001",
+    "submission_url": "https://codeforces.com/contest/1089/submission/46472001",
+    "tags": [
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Dec/02/2018 15:38"
+  },
   "CF46474110": {
     "contest_id": 1089,
     "language": "GNU C++11",
