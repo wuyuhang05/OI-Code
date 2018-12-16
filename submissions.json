@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF47103410": {
+    "contest_id": 1080,
+    "language": "GNU C++11",
+    "path": "codeforces/1080/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Margarite and the best present",
+    "problem_url": "https://codeforces.com/contest/1080/problem/B",
+    "submission_id": "CF47103410",
+    "submission_url": "https://codeforces.com/contest/1080/submission/47103410",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Dec/16/2018 19:49"
+  },
   "CF47103444": {
     "contest_id": 1080,
     "language": "GNU C++11",
