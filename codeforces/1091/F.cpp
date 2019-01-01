@@ -52,8 +52,10 @@ int main(){
             ans += l[i]*5;
             grass += (l[i]<<1);
         }
+        //DEBUG(power);
         grass = std::min(grass,power);
     }
+    //DEBUG(ans);DEBUG(power);
     if(power > 0){
         ans -= 4*grass/2;
         ans -= 2*(power-grass)/2;
