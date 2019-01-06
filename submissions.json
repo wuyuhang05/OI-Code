@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF48019496": {
+    "contest_id": 468,
+    "language": "GNU C++11",
+    "path": "codeforces/468/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Tree",
+    "problem_url": "https://codeforces.com/contest/468/problem/D",
+    "submission_id": "CF48019496",
+    "submission_url": "https://codeforces.com/contest/468/submission/48019496",
+    "tags": [
+      "graph matchings",
+      "*3100"
+    ],
+    "timestamp": "Jan/06/2019 12:08"
+  },
   "CF48071574": {
     "contest_id": 1097,
     "language": "GNU C++11",
