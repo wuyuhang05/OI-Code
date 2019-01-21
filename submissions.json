@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF48668007": {
+    "contest_id": 487,
+    "language": "GNU C++11",
+    "path": "codeforces/487/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Tourists",
+    "problem_url": "https://codeforces.com/contest/487/problem/E",
+    "submission_id": "CF48668007",
+    "submission_url": "https://codeforces.com/contest/487/submission/48668007",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "graphs",
+      "trees",
+      "*3200"
+    ],
+    "timestamp": "Jan/21/2019 17:05"
+  },
   "CF48678658": {
     "contest_id": 864,
     "language": "GNU C++14",
