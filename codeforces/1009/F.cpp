@@ -1,4 +1,3 @@
-// ss
 #include <algorithm>
 #include <iostream>
 #include <cstring>
