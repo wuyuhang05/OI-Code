@@ -49,7 +49,7 @@ inline void getroot(int v,int fa){
         getroot(to,v);size[v] += size[to];
         max[v] = std::max(max[v],size[to]);
     }
-    max[v] = std::max(max[v],sum-size[v]);
+    max[v] = std::max(max[v],sum-max[v]);
     root = max[root] > max[v] ? v : root;
 }
 
@@ -69,6 +69,7 @@ inline int calc(int v,int val){
         p[st[i]] = 0;
         if(K >= st[i]) p[K-st[i]] = 0;
     }
+
     return res;
 }
 
