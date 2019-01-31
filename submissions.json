@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF49258704": {
+    "contest_id": 1106,
+    "language": "GNU C++11",
+    "path": "codeforces/1106/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Lunar New Year and a Wander",
+    "problem_url": "https://codeforces.com/contest/1106/problem/D",
+    "submission_id": "CF49258704",
+    "submission_url": "https://codeforces.com/contest/1106/submission/49258704",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "shortest paths",
+      "*1500"
+    ],
+    "timestamp": "Jan/31/2019 21:05"
+  },
   "CF49267120": {
     "contest_id": 1106,
     "language": "GNU C++11",
