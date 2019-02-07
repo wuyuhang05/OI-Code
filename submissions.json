@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF49580692": {
+    "contest_id": 1110,
+    "language": "GNU C++11",
+    "path": "codeforces/1110/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Meaningless Operations",
+    "problem_url": "https://codeforces.com/contest/1110/problem/C",
+    "submission_id": "CF49580692",
+    "submission_url": "https://codeforces.com/contest/1110/submission/49580692",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*1500"
+    ],
+    "timestamp": "Feb/07/2019 22:23"
+  },
   "CF49586035": {
     "contest_id": 1110,
     "language": "GNU C++11",
