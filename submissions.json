@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF50374380": {
+    "contest_id": 1131,
+    "language": "GNU C++11",
+    "path": "codeforces/1131/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Gourmet choice",
+    "problem_url": "https://codeforces.com/contest/1131/problem/D",
+    "submission_id": "CF50374380",
+    "submission_url": "https://codeforces.com/contest/1131/submission/50374380",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "dsu",
+      "graphs",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Feb/23/2019 19:28"
+  },
   "CF50376393": {
     "contest_id": 1131,
     "language": "GNU C++11",
