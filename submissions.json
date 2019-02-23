@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF50376393": {
+    "contest_id": 1131,
+    "language": "GNU C++11",
+    "path": "codeforces/1131/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Asya And Kittens",
+    "problem_url": "https://codeforces.com/contest/1131/problem/F",
+    "submission_id": "CF50376393",
+    "submission_url": "https://codeforces.com/contest/1131/submission/50376393",
+    "tags": [
+      "constructive algorithms",
+      "dsu",
+      "*1700"
+    ],
+    "timestamp": "Feb/23/2019 19:37"
+  },
   "CF50679566": {
     "contest_id": 226,
     "language": "GNU C++11",
