@@ -51,4 +51,4 @@ signed main(){
     printf("%d\n",tot-p[t].second);
     FOR(j,p[t].second+1,tot) printf("%d ",j);puts("");
     return 0;
-}//
+}
