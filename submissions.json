@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF54876274": {
+    "contest_id": 1132,
+    "language": "GNU C++11",
+    "path": "codeforces/1132/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Knapsack",
+    "problem_url": "https://codeforces.com/contest/1132/problem/E",
+    "submission_id": "CF54876274",
+    "submission_url": "https://codeforces.com/contest/1132/submission/54876274",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "greedy",
+      "*2300"
+    ],
+    "timestamp": "May/31/2019 19:58"
+  },
   "CF54877737": {
     "contest_id": 294,
     "language": "GNU C++11",
