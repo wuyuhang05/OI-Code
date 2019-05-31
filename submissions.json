@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF54879698": {
+    "contest_id": 1151,
+    "language": "GNU C++11",
+    "path": "codeforces/1151/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Sonya and Informatics",
+    "problem_url": "https://codeforces.com/contest/1151/problem/F",
+    "submission_id": "CF54879698",
+    "submission_url": "https://codeforces.com/contest/1151/submission/54879698",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "matrices",
+      "probabilities",
+      "*2300"
+    ],
+    "timestamp": "May/31/2019 21:37"
+  },
   "CF54897162": {
     "contest_id": 980,
     "language": "GNU C++11",
