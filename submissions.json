@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF55242431": {
+    "contest_id": 452,
+    "language": "GNU C++11",
+    "path": "codeforces/452/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Permutation",
+    "problem_url": "https://codeforces.com/contest/452/problem/F",
+    "submission_id": "CF55242431",
+    "submission_url": "https://codeforces.com/contest/452/submission/55242431",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "hashing",
+      "*2700"
+    ],
+    "timestamp": "Jun/07/2019 19:48"
+  },
   "CF55246990": {
     "contest_id": 1175,
     "language": "GNU C++11",
