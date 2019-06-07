@@ -1616,6 +1616,27 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF55247296": {
+    "contest_id": 1175,
+    "language": "GNU C++11",
+    "path": "codeforces/1175/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Minimal Segment Cover",
+    "problem_url": "https://codeforces.com/contest/1175/problem/E",
+    "submission_id": "CF55247296",
+    "submission_url": "https://codeforces.com/contest/1175/submission/55247296",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "divide and conquer",
+      "dp",
+      "greedy",
+      "implementation",
+      "trees",
+      "*2200"
+    ],
+    "timestamp": "Jun/07/2019 20:14"
+  },
   "CF55672177": {
     "contest_id": 888,
     "language": "GNU C++11",
