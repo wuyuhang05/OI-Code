@@ -29,18 +29,18 @@
 
 const int MAXN = 1000;
 std::vector<int> v;
-int n,k,m;
+int n,k;
 bool vis[MAXN+5];
 int dis[MAXN*2+5];
 
 inline void bfs(){
     std::queue<int> q;
-    FOR(i,0,m){
+    FOR(i,0,MAXN){
         if(vis[i]){
             v.pb(i-n);
-            dis[i-n+m] = 1;
-            if(i-n+m == m) return;
-            q.push(i-n+m);
+            dis[i-n+MAXN] = 1;
+            if(i-n+MAXN == MAXN) return;
+            q.push(i-n+MAXN);
         }
     }
     while(!q.empty()){
@@ -48,7 +48,7 @@ inline void bfs(){
             int x = q.front()+delta;
             if(x < 0 || x > 2000 || dis[x] <= dis[q.front()]+1) continue;
             dis[x] = dis[q.front()]+1;
-            if(x == m) return;
+            if(x == MAXN) return;
             q.push(x);
         }
         q.pop();
@@ -56,14 +56,12 @@ inline void bfs(){
 }
 
 int main(){
-    m = 1000;
     scanf("%d%d",&n,&k);CLR(dis,0x3f);
     FOR(i,1,k){
         int x;scanf("%d",&x);
         vis[x] = true;
     }
     bfs();
-    printf("%d\n",dis[m] == 0x3f3f3f3f ? -1 : dis[m]);
+    printf("%d\n",dis[MAXN] == 0x3f3f3f3f ? -1 : dis[MAXN]);
     return 0;
 }
-
