@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF55912222": {
+    "contest_id": 416,
+    "language": "GNU C++11",
+    "path": "codeforces/416/E.cpp",
+    "problem_index": "E",
+    "problem_name": "President's Path",
+    "problem_url": "https://codeforces.com/contest/416/problem/E",
+    "submission_id": "CF55912222",
+    "submission_url": "https://codeforces.com/contest/416/submission/55912222",
+    "tags": [
+      "dp",
+      "graphs",
+      "shortest paths",
+      "*2500"
+    ],
+    "timestamp": "Jun/22/2019 11:06"
+  },
   "CF55923249": {
     "contest_id": 813,
     "language": "GNU C++11",
