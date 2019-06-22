@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF55910957": {
+    "contest_id": 274,
+    "language": "GNU C++11",
+    "path": "codeforces/274/C.cpp",
+    "problem_index": "C",
+    "problem_name": "The Last Hole!",
+    "problem_url": "https://codeforces.com/contest/274/problem/C",
+    "submission_id": "CF55910957",
+    "submission_url": "https://codeforces.com/contest/274/submission/55910957",
+    "tags": [
+      "brute force",
+      "geometry",
+      "*2600"
+    ],
+    "timestamp": "Jun/22/2019 09:57"
+  },
   "CF55911315": {
     "contest_id": 274,
     "language": "GNU C++11",
