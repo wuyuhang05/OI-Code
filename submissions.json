@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF55911315": {
+    "contest_id": 274,
+    "language": "GNU C++11",
+    "path": "codeforces/274/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Lovely Matrix",
+    "problem_url": "https://codeforces.com/contest/274/problem/D",
+    "submission_id": "CF55911315",
+    "submission_url": "https://codeforces.com/contest/274/submission/55911315",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "sortings",
+      "*2200"
+    ],
+    "timestamp": "Jun/22/2019 10:16"
+  },
   "CF55911919": {
     "contest_id": 1167,
     "language": "GNU C++11",
