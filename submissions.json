@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56374408": {
+    "contest_id": 197,
+    "language": "GNU C++11",
+    "path": "codeforces/197/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Paint Tree",
+    "problem_url": "https://codeforces.com/contest/197/problem/E",
+    "submission_id": "CF56374408",
+    "submission_url": "https://codeforces.com/contest/197/submission/56374408",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "geometry",
+      "trees",
+      "*2200"
+    ],
+    "timestamp": "Jul/01/2019 13:51"
+  },
   "CF56416603": {
     "contest_id": 715,
     "language": "GNU C++11",
