@@ -26,30 +26,6 @@
 #define FOR(i,a,b) for(Re int i = a;i <= b;++i)
 #define ROF(i,a,b) for(Re int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
-
-inline char nc(){
-    #define SIZE 1000000
-    static char buf[SIZE],*p1 = buf+SIZE,*p2 = buf+SIZE;
-    if(p1 == p2){
-        p1 = buf;p2 = buf+fread(buf,1,SIZE,stdin);
-        if(p1 == p2) return -1;
-    }
-    return *p1++;
-}
-
-inline void read(LL &x){
-    x = 0;int flag = 0;char ch = nc();
-    while(!isdigit(ch)){
-        if(ch == '-') flag = 1;
-        ch = nc();
-    }
-    while(isdigit(ch)){
-        x = (x<<1) + (x<<3) + (ch^'0');
-        ch = nc();
-    }
-    if(flag) x = -x;
-}
-
 #define int LL
 const int MAXN = 1000+5;
 const int MAXM = 10000+5;
@@ -91,9 +67,9 @@ inline void dij(int type,LL dis[],int s){
 }
 
 signed main(){
-    read(n);read(m);read(l);read(s);read(t);++s;++t;
+    scanf("%lld%lld%lld%lld%lld",&n,&m,&l,&s,&t);s++;t++;
     FOR(i,1,m){
-        int u,v,w;read(u);read(v);read(w);++u,++v;
+        int u,v,w;scanf("%lld%lld%lld",&u,&v,&w);u++;v++;
         eu[i] = u;ev[i] = v;ew[i] = w;emp[i] = !w;if(!w) w = ew[i] = 1;
         add(i,u,v,w);add(i,v,u,w);
     }
