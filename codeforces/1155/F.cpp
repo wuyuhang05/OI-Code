@@ -16,7 +16,7 @@
 #define fi first
 #define se second
 #define U unsigned
-#define P std::pair
+#define P std::pair<int,int>
 #define Re register
 #define LL long long
 #define pb push_back
@@ -27,92 +27,138 @@
 #define ROF(i,a,b) for(Re int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 20000+5;
+const int MAXN = 16;
+const int MAXM = MAXN*MAXN;
+const int times = 500000;
 
-std::vector<int> G[20];
+P edge[MAXM*2];
+int n,m;
+int fa[MAXN];
 
-struct Node{
-    int x,y,S;
-    Node() {}
-    Node(int x,int y,int S) : x(x),y(y),S(S) {}
-}pre3[MAXN];
+struct Edge{
+    int to,nxt;
+}e[MAXN*MAXN*MAXN];
+int cnt,head[MAXN],dfn[MAXN],low[MAXN];
 
-int n,m,f[MAXN],link1[20][20][MAXN],link2[20][MAXN],pre1[20][20][MAXN],pre2[20][MAXN],pre22[20][MAXN];
-int pw[MAXN],cnt[MAXN];
-#define lowbit(x) ((x)&(-x))
-
-inline void out(int x,int y,int S){
-    if(cnt[S] == 1) return;
-    printf("%d %d\n",y+1,pre1[x][y][S]+1);
-    out(x,pre1[x][y][S],S^(1<<y));
+void add(int u,int v){
+    e[++cnt]=(Edge){v,head[u]};
+	head[u]=cnt;
 }
 
-inline void out3(int S){
-    if(cnt[S] == 1) return;
-    int x = pre3[S].x,y = pre3[S].y,z = pre3[S].S;
-    out(x,y,z);printf("%d %d\n",x+1,pre2[x][S^z]+1);
-    if(x != y) printf("%d %d\n",y+1,pre2[y][S^z]+1);
-    else printf("%d %d\n",x+1,pre22[x][S^z]+1);
-    out3(S^z);
+int find(int x){
+    return x==fa[x]?x:fa[x]=find(fa[x]);
+}
+
+void Union(int u,int v){
+	fa[find(u)]=find(v);
+}
+
+int ts;
+
+void init(int x){
+	CLR(head,0);CLR(dfn,0);CLR(low,0);
+    FOR(i,1,n) fa[i]=i;
+    cnt = ts = 0;
+    FOR(i,1,x){
+        int u = edge[i].fi,v = edge[i].se;
+        Union(u,v);
+		add(u,v);add(v,u);
+    }
+}
+
+bool flag;
+
+void dfs(int v,int fa){
+	if(!flag)return;
+    dfn[v]=low[v]=++ts;//DEBUG(v);
+    for(int i=head[v];i;i=e[i].nxt){
+        if((i+1)/2==fa) continue;
+        if(dfn[e[i].to]) low[v] = std::min(low[v],dfn[e[i].to]);
+        else{
+			dfs(e[i].to,(i+1)/2);
+			low[v] = std::min(low[v],low[e[i].to]);
+		}
+    }
+    if(dfn[v]==low[v] && v!=1){
+        flag=false;
+    }
+}
+
+std::vector<P> ans;
+
+bool check(int k){
+	srand(time(NULL));
+    int tss=1;
+    while(tss<=times){
+        std::random_shuffle(edge+1,edge+m+1);
+		flag=true;init(k);
+        FOR(i,1,n) if(find(i)!=find(1))flag=false;
+        if(!flag){	
+			++tss;
+			continue;
+		}
+        dfs(1,0);
+		if(flag){
+            ans.clear();
+            FOR(i,1,k) ans.push_back(edge[i]);
+            return true;
+        }
+        tss++;
+    }
+    return false;
+}
+
+bool g[MAXN][MAXN];
+int A[MAXN];
+bool vis[MAXN];
+
+void dfs(int k){
+	if(k > n){
+		if(g[A[n]][1]){
+			printf("%d\n",n);
+			FOR(i,1,n-1)
+				printf("%d %d\n",A[i],A[i+1]);
+			printf("%d %d\n",A[n],A[1]);
+			exit(0);
+		}
+		return;
+	}
+	FOR(i,1,n){
+		if(g[i][A[k-1]] && !vis[i]){
+			A[k]=i;vis[i]=true;
+			dfs(k+1);vis[i]=false;A[k]=0;
+		}
+	}
 }
 
 int main(){
     scanf("%d%d",&n,&m);
     FOR(i,1,m){
-        int u,v;scanf("%d%d",&u,&v);u--;v--;
-        G[u].pb(v);G[v].pb(u);
+        int u,v;
+        scanf("%d%d",&u,&v);
+        g[u][v]=g[v][u]=true;
+        edge[i] = MP(u,v);
     }
-    int lim = (1 << n) - 1;
-    pw[1] = 0;FOR(i,2,MAXN-1) pw[i] = pw[i>>1] + 1;
-    FOR(i,1,MAXN-1) cnt[i] = cnt[i^lowbit(i)] + 1;
-    FOR(i,0,n-1){
-        FOR(S,1,lim){
-            if((1<<i)&S) continue;
-            for(auto x:G[i]){
-                if(!((1<<x)&S)) continue;
-                link2[i][S] = 1;
-                if(!pre2[i][S]) pre2[i][S] = x;
-                else{
-                    pre22[i][S] = x;
-                    break;
-                }
-            }
-        }
+    A[1]=1;
+	vis[1]=true;
+	dfs(2);
+    int l=n,r=m,as=-1;
+    while(l<=r){
+        int mid= (l+r) >> 1;
+        if(check(mid)){
+			as=mid;
+			r=mid-1;
+		}
+        else l=mid+1;
     }
-    FOR(i,0,n-1) link1[i][i][1<<i] = 1;
-    FOR(S,1,lim-1){
-        for(int t1 = S,i;t1;t1 ^= (1<<i)){
-            i = pw[lowbit(t1)];
-            for(int t2 = S,x;t2;t2 ^= (1<<x)){
-                x = pw[lowbit(t2)];
-                if(!link1[i][x][S]) continue;
-                for(auto j:G[x]){
-                    if(!((1<<j)&S)){
-                        link1[i][j][S|(1<<j)] = 1;
-                        pre1[i][j][S|(1<<j)] = x;
-                    }
-                }
-            }
-        }
+    if(as==-1){
+        as=m;
+		for(int i=1;i<=m;i++)ans.push_back(edge[i]);
     }
-    CLR(f,0x3f);f[1] = 0;
-    FOR(S,2,lim){
-        for(int t = S&(S-1);t;t = S&(t-1)){//DEBUG(t);
-            for(int t1 = t,x;t1;t1 ^= (1<<x)){
-                x = pw[lowbit(t1)];
-                for(int t2 = t,y;t2;t2 ^= (1<<y)){
-                    y = pw[lowbit(t2)];
-                    if(link1[x][y][t] && link2[x][S^t] && link2[y][S^t] && (x != y || pre22[x][S^t])){
-                        if(f[S] > f[S^t]+cnt[t]+1){
-                            f[S] = f[S^t]+cnt[t]+1;
-                            pre3[S] = Node(x,y,t);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    printf("%d\n",f[lim]);
-    out3(lim);
+	printf("%d\n",as);
+    for(auto x:ans){
+    	printf("%d %d\n",x.fi,x.se);
+	}
     return 0;
 }
+
