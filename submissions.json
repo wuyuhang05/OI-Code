@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56461783": {
+    "contest_id": 1155,
+    "language": "GNU C++11",
+    "path": "codeforces/1155/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Delivery Oligopoly",
+    "problem_url": "https://codeforces.com/contest/1155/problem/F",
+    "submission_id": "CF56461783",
+    "submission_url": "https://codeforces.com/contest/1155/submission/56461783",
+    "tags": [
+      "brute force",
+      "dp",
+      "graphs",
+      "*2800"
+    ],
+    "timestamp": "Jul/03/2019 15:08"
+  },
   "CF56513119": {
     "contest_id": 196,
     "language": "GNU C++11",
