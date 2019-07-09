@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56741237": {
+    "contest_id": 28,
+    "language": "GNU C++11",
+    "path": "codeforces/28/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Bath Queue",
+    "problem_url": "https://codeforces.com/contest/28/problem/C",
+    "submission_id": "CF56741237",
+    "submission_url": "https://codeforces.com/contest/28/submission/56741237",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "probabilities",
+      "*2200"
+    ],
+    "timestamp": "Jul/09/2019 15:48"
+  },
   "CF56742649": {
     "contest_id": 295,
     "language": "GNU C++11",
