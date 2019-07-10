@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56781506": {
+    "contest_id": 126,
+    "language": "GNU C++11",
+    "path": "codeforces/126/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Fibonacci Sums",
+    "problem_url": "https://codeforces.com/contest/126/problem/D",
+    "submission_id": "CF56781506",
+    "submission_url": "https://codeforces.com/contest/126/submission/56781506",
+    "tags": [
+      "dp",
+      "math",
+      "*2300"
+    ],
+    "timestamp": "Jul/10/2019 14:28"
+  },
   "CF56809661": {
     "contest_id": 309,
     "language": "GNU C++11",
