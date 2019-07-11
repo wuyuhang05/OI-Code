@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56851503": {
+    "contest_id": 950,
+    "language": "GNU C++11",
+    "path": "codeforces/950/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Intercepted Message",
+    "problem_url": "https://codeforces.com/contest/950/problem/B",
+    "submission_id": "CF56851503",
+    "submission_url": "https://codeforces.com/contest/950/submission/56851503",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jul/11/2019 23:58"
+  },
   "CF56862282": {
     "contest_id": 1009,
     "language": "GNU C++11",
