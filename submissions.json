@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF56828346": {
+    "contest_id": 950,
+    "language": "GNU C++11",
+    "path": "codeforces/950/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Data Center Maintenance",
+    "problem_url": "https://codeforces.com/contest/950/problem/E",
+    "submission_id": "CF56828346",
+    "submission_url": "https://codeforces.com/contest/950/submission/56828346",
+    "tags": [
+      "2-sat",
+      "graphs",
+      "*1900"
+    ],
+    "timestamp": "Jul/11/2019 13:47"
+  },
   "CF56835035": {
     "contest_id": 1140,
     "language": "GNU C++11",
