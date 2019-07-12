@@ -52,7 +52,7 @@ inline void topsort(){
     }
     f[0] = 1;
     for(auto x:wp){
-       // assert(x >= 0);
+        assert(x >= 0);
         FOR(j,x,t){
             (f[j] += f[j-x]) %= ha;
         }
