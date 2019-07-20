@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF57401366": {
+    "contest_id": 1178,
+    "language": "GNU C++11",
+    "path": "codeforces/1178/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Prime Graph",
+    "problem_url": "https://codeforces.com/contest/1178/problem/D",
+    "submission_id": "CF57401366",
+    "submission_url": "https://codeforces.com/contest/1178/submission/57401366",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "number theory",
+      "*1500"
+    ],
+    "timestamp": "Jul/21/2019 00:21"
+  },
   "CF57409786": {
     "contest_id": 1178,
     "language": "GNU C++11",
