@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF57634951": {
+    "contest_id": 527,
+    "language": "GNU C++11",
+    "path": "codeforces/527/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Clique Problem",
+    "problem_url": "https://codeforces.com/contest/527/problem/D",
+    "submission_id": "CF57634951",
+    "submission_url": "https://codeforces.com/contest/527/submission/57634951",
+    "tags": [
+      "data structures",
+      "dp",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Jul/24/2019 18:21"
+  },
   "CF58172124": {
     "contest_id": 1101,
     "language": "GNU C++11",
