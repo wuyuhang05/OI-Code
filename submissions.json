@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF58175359": {
+    "contest_id": 1039,
+    "language": "GNU C++11",
+    "path": "codeforces/1039/D.cpp",
+    "problem_index": "D",
+    "problem_name": "You Are Given a Tree",
+    "problem_url": "https://codeforces.com/contest/1039/problem/D",
+    "submission_id": "CF58175359",
+    "submission_url": "https://codeforces.com/contest/1039/submission/58175359",
+    "tags": [
+      "data structures",
+      "dp",
+      "trees",
+      "*2800"
+    ],
+    "timestamp": "Aug/02/2019 20:51"
+  },
   "CF58220620": {
     "contest_id": 1097,
     "language": "GNU C++11",
