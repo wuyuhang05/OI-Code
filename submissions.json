@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF58220620": {
+    "contest_id": 1097,
+    "language": "GNU C++11",
+    "path": "codeforces/1097/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Vladislav and a Great Legend",
+    "problem_url": "https://codeforces.com/contest/1097/problem/G",
+    "submission_id": "CF58220620",
+    "submission_url": "https://codeforces.com/contest/1097/submission/58220620",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "trees",
+      "*3000"
+    ],
+    "timestamp": "Aug/03/2019 20:26"
+  },
   "CF58415106": {
     "contest_id": 311,
     "language": "GNU C++11",
