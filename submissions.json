@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF59333827": {
+    "contest_id": 85,
+    "language": "GNU C++11",
+    "path": "codeforces/85/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Sum of Medians",
+    "problem_url": "https://codeforces.com/contest/85/problem/D",
+    "submission_id": "CF59333827",
+    "submission_url": "https://codeforces.com/contest/85/submission/59333827",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "implementation",
+      "*2300"
+    ],
+    "timestamp": "Aug/23/2019 11:12"
+  },
   "CF59339293": {
     "contest_id": 482,
     "language": "GNU C++11",
