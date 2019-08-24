@@ -1,94 +1,87 @@
-/*
- * Author: RainAir
- * Time: 2019-08-24 08:57:53
- */
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <cstdlib>
-#include <cstdio>
-#include <bitset>
-#include <vector>
-#include <cmath>
-#include <ctime>
-#include <queue>
-#include <stack>
-#include <map>
-#include <set>
-
-#define fi first
-#define se second
-#define U unsigned
-#define P std::pair
-#define Re register
-#define LL long long
-#define pb push_back
-#define MP std::make_pair
-#define all(x) x.begin(),x.end()
-#define CLR(i,a) memset(i,a,sizeof(i))
-#define FOR(i,a,b) for(Re int i = a;i <= b;++i)
-#define ROF(i,a,b) for(Re int i = a;i >= b;--i)
-#define DEBUG(x) std::cerr << #x << '=' << x << std::endl
-#define int LL
-const int MAXN = 3e5 + 5;
-#define lc ((x)<<1)
-#define rc ((x)<<1|1)
-int pre[MAXN<<2],suf[MAXN<<2],ans[MAXN<<2];
-int val[MAXN];
-
-inline int sgn(int x){
-    return !x ? 0 : (x > 0 ? 1 : -1);
+#include <bits/stdc++.h>
+#define inf 0x3f3f3f3f
+#define Inf 0x3f3f3f3f3f3f3f3f
+#define debug(...) fprintf(stderr, __VA_ARGS__)
+#define REP(i, s, t) for (int i = (s); i <= (t); i ++)
+using namespace std;
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double ld;
+template <typename T> void chkmax(T &x, T y) { x = x > y ? x : y; }
+template <typename T> void chkmin(T &x, T y) { x = x < y ? x : y; }
+template <typename T> void read(T &x) {
+    x = 0; bool w = 0; char ch = 0;
+    for (; !isdigit(ch); ch = getchar()) w |= ch == '-';
+    for (; isdigit(ch); ch = getchar()) x = (x << 1) + (x << 3) + (ch ^ 48);
+    x *= w ? -1 : 1;
 }
-
-inline void pushup(int x,int l,int r){
-    int mid = (l + r) >> 1;
-    pre[x] = pre[lc];suf[x] = suf[rc];
-    ans[x] = std::max(ans[lc],ans[rc]);
-    if(val[mid] && val[mid+1] && sgn(val[mid]) >= sgn(val[mid+1])){
-        ans[x] = std::max(ans[x],suf[lc]+pre[rc]);
-        if(pre[lc] == mid-l+1) pre[x] = pre[lc]+pre[rc];
-        if(suf[rc] == r-mid) suf[x] = suf[rc]+suf[lc];
+template <typename T> void write(T x) {
+    if (x < 0) putchar('-'), x = -x;
+    if (x > 9) write(x / 10);
+    putchar(x % 10 + '0');
+}
+template <typename T> void write(T x, char ch) {
+    write(x); putchar(ch);
+}
+const int N = 3e5 + 5;
+int n, m;
+ll a[N], dif[N];
+namespace segMentTree {
+    #define lc (nod << 1)
+    #define rc (nod << 1 | 1)
+    struct node {
+        ll mx, L, R;
+    } tr[N << 2];
+    ll chk(ll x) {
+        return x == 0 ? 0 : (x > 0 ? 1 : -1);
+    }
+    void pushUp(int nod, int l, int r) {
+        tr[nod].mx = max(tr[lc].mx, tr[rc].mx);
+        tr[nod].L = tr[lc].L; 
+        tr[nod].R = tr[rc].R;
+        int mid = (l + r) >> 1;
+        if (dif[mid] && dif[mid + 1] && chk(dif[mid]) >= chk(dif[mid + 1])) {
+            chkmax(tr[nod].mx, tr[lc].R + tr[rc].L);
+            if (tr[lc].L == mid - l + 1) tr[nod].L = tr[lc].L + tr[rc].L;
+            if (tr[rc].R == r - mid) tr[nod].R = tr[lc].R + tr[rc].R; 
+        }
+    }
+    void build(int nod, int l, int r) {
+        if (l == r) {
+            tr[nod].mx = tr[nod].L = tr[nod].R = (dif[l] != 0);
+            return;
+        }
+        int mid = (l + r) >> 1;
+        build(lc, l, mid);
+        build(rc, mid + 1, r);
+        pushUp(nod, l, r);
+    }
+    void modify(int nod, int l, int r, int pos) {
+        if (l == r) {
+            tr[nod].mx = tr[nod].L = tr[nod].R = (dif[pos] != 0);
+            return;
+        }
+        int mid = (l + r) >> 1;
+        if (pos <= mid) modify(lc, l, mid, pos);
+        else modify(rc, mid + 1, r, pos);
+        pushUp(nod, l, r);
     }
 }
-
-inline void build(int x,int l,int r){
-    if(l == r){
-        pre[x] = suf[x] = ans[x] = val[l] != 0;
-        return;
+int main() {
+    read(n); 
+    for (int i = 1; i <= n; i ++) read(a[i]);
+    for (int i = 1; i < n; i ++) dif[i] = a[i + 1] - a[i];
+    read(m);
+    if (n == 1) {
+        while (m --) printf("1\n");
+        return 0;
     }
-    int mid = (l + r) >> 1;
-    build(lc,l,mid);build(rc,mid+1,r);
-    pushup(x,l,r);
-}
-
-inline void update(int x,int l,int r,int p){
-    if(l == r){
-        pre[x] = suf[x] = ans[x] = val[l] != 0;
-        return;
-    }
-    int mid = (l + r) >> 1;
-    if(p <= mid) update(lc,l,mid,p);
-    else update(rc,mid+1,r,p);
-    pushup(x,l,r);
-}
-
-int n,m,a[MAXN];
-
-signed main(){
-    scanf("%lld",&n);
-    FOR(i,1,n) scanf("%lld",a+i);n--;
-    if(!n){
-        scanf("%lld",&m);
-        while(m--) scanf("%*d%*d%*d"),puts("1");return 0;
-    }
-    FOR(i,1,n) val[i] = a[i+1]-a[i];
-    build(1,1,n);scanf("%lld",&m);
-    FOR(i,1,m){
-        int l,r,d;scanf("%lld%lld%lld",&l,&r,&d);
-        if(l != 1) val[l-1] += d,update(1,1,n,l-1);
-        if(r != n+1) val[r] -= d,update(1,1,n,r);
-        printf("%lld\n",ans[1]+1);
+    segMentTree::build(1, 1, n - 1);
+    while (m --) {
+        int l, r; ll x; read(l); read(r); read(x);
+        if (l != 1) dif[l - 1] += x, segMentTree::modify(1, 1, n - 1, l - 1);
+        if (r != n) dif[r] -= x, segMentTree::modify(1, 1, n - 1, r);
+        write(segMentTree::tr[1].mx + 1, '\n');
     }
     return 0;
 }
