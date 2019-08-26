@@ -8125,6 +8125,27 @@
     ],
     "timestamp": "Aug/24/2019 16:36"
   },
+  "CF59499589": {
+    "contest_id": 455,
+    "language": "GNU C++11",
+    "path": "codeforces/455/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "A Lot of Games",
+    "problem_url": "https://codeforces.com/contest/455/problem/B",
+    "submission_id": "CF59499589",
+    "submission_url": "https://codeforces.com/contest/455/submission/59499589",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "games",
+      "implementation",
+      "strings",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Aug/26/2019 09:49"
+  },
   "CF59565534": {
     "contest_id": 451,
     "language": "GNU C++11",
