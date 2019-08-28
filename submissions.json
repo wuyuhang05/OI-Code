@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF59607238": {
+    "contest_id": 76,
+    "language": "GNU C++11",
+    "path": "codeforces/76/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Mutation",
+    "problem_url": "https://codeforces.com/contest/76/problem/C",
+    "submission_id": "CF59607238",
+    "submission_url": "https://codeforces.com/contest/76/submission/59607238",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "math",
+      "*2700"
+    ],
+    "timestamp": "Aug/28/2019 17:23"
+  },
   "CF59707061": {
     "contest_id": 835,
     "language": "GNU C++11",
