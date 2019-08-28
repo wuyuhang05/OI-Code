@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF59595470": {
+    "contest_id": 840,
+    "language": "GNU C++11",
+    "path": "codeforces/840/C.cpp",
+    "problem_index": "C",
+    "problem_name": "On the Bench",
+    "problem_url": "https://codeforces.com/contest/840/problem/C",
+    "submission_id": "CF59595470",
+    "submission_url": "https://codeforces.com/contest/840/submission/59595470",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*2500"
+    ],
+    "timestamp": "Aug/28/2019 09:12"
+  },
   "CF59596881": {
     "contest_id": 449,
     "language": "GNU C++11",
