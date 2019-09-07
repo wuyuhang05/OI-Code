@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF60226227": {
+    "contest_id": 1211,
+    "language": "Kotlin",
+    "path": "codeforces/1211/A.kt",
+    "problem_index": "A",
+    "problem_name": "Three Problems",
+    "problem_url": "https://codeforces.com/contest/1211/problem/A",
+    "submission_id": "CF60226227",
+    "submission_url": "https://codeforces.com/contest/1211/submission/60226227",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Sep/07/2019 23:11"
+  },
   "CF60226966": {
     "contest_id": 1211,
     "language": "Kotlin",
