@@ -8243,6 +8243,23 @@
     ],
     "timestamp": "Aug/30/2019 21:07"
   },
+  "CF60194547": {
+    "contest_id": 1212,
+    "language": "Kotlin",
+    "path": "codeforces/1212/A.kt",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Wrong Subtraction",
+    "problem_url": "https://codeforces.com/contest/1212/problem/A",
+    "submission_id": "CF60194547",
+    "submission_url": "https://codeforces.com/contest/1212/submission/60194547",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Sep/07/2019 08:27"
+  },
   "CF60198923": {
     "contest_id": 1212,
     "language": "Kotlin",
