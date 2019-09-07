@@ -8243,6 +8243,23 @@
     ],
     "timestamp": "Aug/30/2019 21:07"
   },
+  "CF60198923": {
+    "contest_id": 1212,
+    "language": "Kotlin",
+    "path": "codeforces/1212/B.kt",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Two-gram",
+    "problem_url": "https://codeforces.com/contest/1212/problem/B",
+    "submission_id": "CF60198923",
+    "submission_url": "https://codeforces.com/contest/1212/submission/60198923",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Sep/07/2019 11:57"
+  },
   "CF60205126": {
     "contest_id": 1212,
     "language": "Kotlin",
