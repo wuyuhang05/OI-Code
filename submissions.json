@@ -8243,6 +8243,23 @@
     ],
     "timestamp": "Aug/30/2019 21:07"
   },
+  "CF60205126": {
+    "contest_id": 1212,
+    "language": "Kotlin",
+    "path": "codeforces/1212/C.kt",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Less or Equal",
+    "problem_url": "https://codeforces.com/contest/1212/problem/C",
+    "submission_id": "CF60205126",
+    "submission_url": "https://codeforces.com/contest/1212/submission/60205126",
+    "tags": [
+      "*special problem",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Sep/07/2019 15:48"
+  },
   "CF60209472": {
     "contest_id": 1212,
     "language": "Kotlin",
