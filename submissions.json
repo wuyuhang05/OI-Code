@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF60227688": {
+    "contest_id": 1211,
+    "language": "Kotlin",
+    "path": "codeforces/1211/C.kt",
+    "problem_index": "C",
+    "problem_name": "Ice Cream",
+    "problem_url": "https://codeforces.com/contest/1211/problem/C",
+    "submission_id": "CF60227688",
+    "submission_url": "https://codeforces.com/contest/1211/submission/60227688",
+    "tags": [
+      "*special problem",
+      "greedy",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Sep/07/2019 23:33"
+  },
   "CF60246266": {
     "contest_id": 1213,
     "language": "GNU C++11",
