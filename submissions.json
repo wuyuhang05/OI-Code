@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62031078": {
+    "contest_id": 1240,
+    "language": "GNU C++11",
+    "path": "codeforces/1240/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Stack Exterminable Arrays",
+    "problem_url": "https://codeforces.com/contest/1240/problem/D",
+    "submission_id": "CF62031078",
+    "submission_url": "https://codeforces.com/contest/1240/submission/62031078",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "dp",
+      "hashing",
+      "*2600"
+    ],
+    "timestamp": "Oct/07/2019 08:42"
+  },
   "CF62032653": {
     "contest_id": 892,
     "language": "GNU C++11",
