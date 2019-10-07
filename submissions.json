@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62035755": {
+    "contest_id": 125,
+    "language": "GNU C++11",
+    "path": "codeforces/125/E.cpp",
+    "problem_index": "E",
+    "problem_name": "MST Company",
+    "problem_url": "https://codeforces.com/contest/125/problem/E",
+    "submission_id": "CF62035755",
+    "submission_url": "https://codeforces.com/contest/125/submission/62035755",
+    "tags": [
+      "binary search",
+      "graphs",
+      "*2400"
+    ],
+    "timestamp": "Oct/07/2019 11:42"
+  },
   "CF62061674": {
     "contest_id": 449,
     "language": "GNU C++11",
