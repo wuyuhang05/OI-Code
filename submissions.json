@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62106281": {
+    "contest_id": 743,
+    "language": "GNU C++11",
+    "path": "codeforces/743/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Vladik and cards",
+    "problem_url": "https://codeforces.com/contest/743/problem/E",
+    "submission_id": "CF62106281",
+    "submission_url": "https://codeforces.com/contest/743/submission/62106281",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "brute force",
+      "dp",
+      "*2200"
+    ],
+    "timestamp": "Oct/08/2019 18:52"
+  },
   "CF62106769": {
     "contest_id": 743,
     "language": "GNU C++11",
