@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62187375": {
+    "contest_id": 1139,
+    "language": "GNU C++11",
+    "path": "codeforces/1139/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Edgy Trees",
+    "problem_url": "https://codeforces.com/contest/1139/problem/C",
+    "submission_id": "CF62187375",
+    "submission_url": "https://codeforces.com/contest/1139/submission/62187375",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "math",
+      "trees",
+      "*1500"
+    ],
+    "timestamp": "Oct/09/2019 16:40"
+  },
   "CF62205449": {
     "contest_id": 860,
     "language": "GNU C++11",
