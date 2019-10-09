@@ -54,7 +54,7 @@ inline void Solve1(int xx){
     std::vector<int> opt;
     for(auto x:edge[xx]){
         int fx = find(x.fi),fy = find(x.se);
-        f[fy] = fx;opt.pb(x.fi);opt.pb(x.se); //  Wrong Answer
+        f[fy] = fx;opt.pb(fy);
     }
     int sz = S[xx].size();
     FOR(i,0,sz-1){
