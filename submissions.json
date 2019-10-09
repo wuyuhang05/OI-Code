@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62205449": {
+    "contest_id": 860,
+    "language": "GNU C++11",
+    "path": "codeforces/860/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Arkady and a Nobody-men",
+    "problem_url": "https://codeforces.com/contest/860/problem/E",
+    "submission_id": "CF62205449",
+    "submission_url": "https://codeforces.com/contest/860/submission/62205449",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "trees",
+      "*2700"
+    ],
+    "timestamp": "Oct/09/2019 21:06"
+  },
   "CF62258882": {
     "contest_id": 893,
     "language": "GNU C++11",
