@@ -56,14 +56,12 @@ inline void Solve1(int xx){
         int fx = find(x.fi),fy = find(x.se);
         f[fy] = fx;opt.pb(x.fi);opt.pb(x.se); //  Wrong Answer
     }
-    std::sort(all(opt));
-    opt.erase(std::unique(all(opt)),opt.end());
-    int sz = opt.size();
+    int sz = S[xx].size();
     FOR(i,0,sz-1){
-        int fx = find(opt[i]);
+        int fx = find(S[xx][i]);
         FOR(j,i+1,sz-1){
-            int fy = find(opt[j]);
-            if(fx == fy) cnt[mp[MP(opt[i],opt[j])]]++;//,DEBUG(opt[i]),DEBUG(opt[j]);
+            int fy = find(S[xx][j]);
+            if(fx == fy) cnt[mp[MP(S[xx][i],S[xx][j])]]++;//,DEBUG(opt[i]),DEBUG(opt[j]);
         }
     }
     for(auto x:opt) f[x] = x;
