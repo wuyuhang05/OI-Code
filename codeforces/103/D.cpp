@@ -63,4 +63,3 @@ signed main(){
     FOR(i,1,m) printf("%lld\n",ans[i]);puts("");
     return 0;
 }
-// newer

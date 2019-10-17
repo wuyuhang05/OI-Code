@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62767133": {
+    "contest_id": 103,
+    "language": "GNU C++11",
+    "path": "codeforces/103/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Time to Raid Cowavans",
+    "problem_url": "https://codeforces.com/contest/103/problem/D",
+    "submission_id": "CF62767133",
+    "submission_url": "https://codeforces.com/contest/103/submission/62767133",
+    "tags": [
+      "brute force",
+      "data structures",
+      "sortings",
+      "*2100"
+    ],
+    "timestamp": "Oct/17/2019 17:01"
+  },
   "CF62767362": {
     "contest_id": 103,
     "language": "GNU C++11",
