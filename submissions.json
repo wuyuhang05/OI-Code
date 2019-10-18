@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62851967": {
+    "contest_id": 556,
+    "language": "GNU C++11",
+    "path": "codeforces/556/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Case of Fugitive",
+    "problem_url": "https://codeforces.com/contest/556/problem/D",
+    "submission_id": "CF62851967",
+    "submission_url": "https://codeforces.com/contest/556/submission/62851967",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Oct/18/2019 15:44"
+  },
   "CF62852159": {
     "contest_id": 556,
     "language": "GNU C++11",
