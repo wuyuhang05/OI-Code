@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62854230": {
+    "contest_id": 551,
+    "language": "GNU C++11",
+    "path": "codeforces/551/C.cpp",
+    "problem_index": "C",
+    "problem_name": "GukiZ hates Boxes",
+    "problem_url": "https://codeforces.com/contest/551/problem/C",
+    "submission_id": "CF62854230",
+    "submission_url": "https://codeforces.com/contest/551/submission/62854230",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*2200"
+    ],
+    "timestamp": "Oct/18/2019 16:38"
+  },
   "CF62861863": {
     "contest_id": 551,
     "language": "GNU C++11",
