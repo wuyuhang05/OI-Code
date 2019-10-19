@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF62912599": {
+    "contest_id": 538,
+    "language": "GNU C++11",
+    "path": "codeforces/538/F.cpp",
+    "problem_index": "F",
+    "problem_name": "A Heap of Heaps",
+    "problem_url": "https://codeforces.com/contest/538/problem/F",
+    "submission_id": "CF62912599",
+    "submission_url": "https://codeforces.com/contest/538/submission/62912599",
+    "tags": [
+      "brute force",
+      "data structures",
+      "math",
+      "sortings",
+      "*2200"
+    ],
+    "timestamp": "Oct/19/2019 15:46"
+  },
   "CF62917140": {
     "contest_id": 519,
     "language": "GNU C++11",
