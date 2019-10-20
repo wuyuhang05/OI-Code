@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF63007424": {
+    "contest_id": 1239,
+    "language": "GNU C++11",
+    "path": "codeforces/1239/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Catowice City",
+    "problem_url": "https://codeforces.com/contest/1239/problem/D",
+    "submission_id": "CF63007424",
+    "submission_url": "https://codeforces.com/contest/1239/submission/63007424",
+    "tags": [
+      "2-sat",
+      "dfs and similar",
+      "graph matchings",
+      "graphs",
+      "*2400"
+    ],
+    "timestamp": "Oct/20/2019 19:00"
+  },
   "CF63016862": {
     "contest_id": 512,
     "language": "GNU C++11",
