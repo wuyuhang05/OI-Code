@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF63016862": {
+    "contest_id": 512,
+    "language": "GNU C++11",
+    "path": "codeforces/512/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Fox And Jumping",
+    "problem_url": "https://codeforces.com/contest/512/problem/B",
+    "submission_id": "CF63016862",
+    "submission_url": "https://codeforces.com/contest/512/submission/63016862",
+    "tags": [
+      "data structures",
+      "dp",
+      "math",
+      "number theory",
+      "shortest paths",
+      "*1900"
+    ],
+    "timestamp": "Oct/20/2019 21:10"
+  },
   "CF63041126": {
     "contest_id": 500,
     "language": "GNU C++11",
