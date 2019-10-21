@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF63051378": {
+    "contest_id": 500,
+    "language": "GNU C++11",
+    "path": "codeforces/500/E.cpp",
+    "problem_index": "E",
+    "problem_name": "New Year Domino",
+    "problem_url": "https://codeforces.com/contest/500/problem/E",
+    "submission_id": "CF63051378",
+    "submission_url": "https://codeforces.com/contest/500/submission/63051378",
+    "tags": [
+      "data structures",
+      "dp",
+      "dsu",
+      "*2300"
+    ],
+    "timestamp": "Oct/21/2019 10:46"
+  },
   "CF63052036": {
     "contest_id": 1248,
     "language": "GNU C++11",
