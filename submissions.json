@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF63041126": {
+    "contest_id": 500,
+    "language": "GNU C++11",
+    "path": "codeforces/500/D.cpp",
+    "problem_index": "D",
+    "problem_name": "New Year Santa Network",
+    "problem_url": "https://codeforces.com/contest/500/problem/D",
+    "submission_id": "CF63041126",
+    "submission_url": "https://codeforces.com/contest/500/submission/63041126",
+    "tags": [
+      "combinatorics",
+      "dfs and similar",
+      "graphs",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Oct/21/2019 08:51"
+  },
   "CF63051378": {
     "contest_id": 500,
     "language": "GNU C++11",
