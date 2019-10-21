@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF63060334": {
+    "contest_id": 379,
+    "language": "GNU C++11",
+    "path": "codeforces/379/D.cpp",
+    "problem_index": "D",
+    "problem_name": "New Year Letter",
+    "problem_url": "https://codeforces.com/contest/379/problem/D",
+    "submission_id": "CF63060334",
+    "submission_url": "https://codeforces.com/contest/379/submission/63060334",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Oct/21/2019 16:24"
+  },
   "CF63069475": {
     "contest_id": 196,
     "language": "GNU C++11",
