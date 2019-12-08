@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF66495768": {
+    "contest_id": 323,
+    "language": "GNU C++11",
+    "path": "codeforces/323/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Two permutations",
+    "problem_url": "https://codeforces.com/contest/323/problem/C",
+    "submission_id": "CF66495768",
+    "submission_url": "https://codeforces.com/contest/323/submission/66495768",
+    "tags": [
+      "data structures",
+      "*2400"
+    ],
+    "timestamp": "Dec/08/2019 18:26"
+  },
   "CF66496826": {
     "contest_id": 240,
     "language": "GNU C++11",
