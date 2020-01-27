@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF69600388": {
+    "contest_id": 585,
+    "language": "GNU C++11",
+    "path": "codeforces/585/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Digits of Number Pi",
+    "problem_url": "https://codeforces.com/contest/585/problem/F",
+    "submission_id": "CF69600388",
+    "submission_url": "https://codeforces.com/contest/585/submission/69600388",
+    "tags": [
+      "dp",
+      "implementation",
+      "strings",
+      "*3200"
+    ],
+    "timestamp": "Jan/27/2020 15:14"
+  },
   "CF69606155": {
     "contest_id": 1110,
     "language": "GNU C++11",
