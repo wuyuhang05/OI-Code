@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF70367942": {
+    "contest_id": 1290,
+    "language": "GNU C++11",
+    "path": "codeforces/1290/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Coffee Varieties (hard version)",
+    "problem_url": "https://codeforces.com/contest/1290/problem/D",
+    "submission_id": "CF70367942",
+    "submission_url": "https://codeforces.com/contest/1290/submission/70367942",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "interactive",
+      "*3000"
+    ],
+    "timestamp": "Feb/05/2020 22:34"
+  },
   "CF70554476": {
     "contest_id": 1292,
     "language": "GNU C++11",
