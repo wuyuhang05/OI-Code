@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF70565188": {
+    "contest_id": 1292,
+    "language": "GNU C++11",
+    "path": "codeforces/1292/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Chaotic V.",
+    "problem_url": "https://codeforces.com/contest/1292/problem/D",
+    "submission_id": "CF70565188",
+    "submission_url": "https://codeforces.com/contest/1292/submission/70565188",
+    "tags": [
+      "dp",
+      "graphs",
+      "greedy",
+      "math",
+      "number theory",
+      "trees",
+      "*2700"
+    ],
+    "timestamp": "Feb/08/2020 21:00"
+  },
   "CF70574654": {
     "contest_id": 1286,
     "language": "GNU C++11",
