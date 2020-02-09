@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF70696312": {
+    "contest_id": 1299,
+    "language": "GNU C++14",
+    "path": "codeforces/1299/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Anu Has a Function",
+    "problem_url": "https://codeforces.com/contest/1299/problem/A",
+    "submission_id": "CF70696312",
+    "submission_url": "https://codeforces.com/contest/1299/submission/70696312",
+    "tags": [
+      "brute force",
+      "greedy",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Feb/10/2020 06:57"
+  },
   "CF70710271": {
     "contest_id": 848,
     "language": "GNU C++14",
