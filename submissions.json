@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF70710271": {
+    "contest_id": 848,
+    "language": "GNU C++14",
+    "path": "codeforces/848/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Goodbye Souvenir",
+    "problem_url": "https://codeforces.com/contest/848/problem/C",
+    "submission_id": "CF70710271",
+    "submission_url": "https://codeforces.com/contest/848/submission/70710271",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "*2600"
+    ],
+    "timestamp": "Feb/10/2020 14:41"
+  },
   "CF70729078": {
     "contest_id": 1299,
     "language": "GNU C++11",
