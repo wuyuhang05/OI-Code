@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF70873918": {
+    "contest_id": 1303,
+    "language": "GNU C++11",
+    "path": "codeforces/1303/B.cpp",
+    "problem_index": "B",
+    "problem_name": "National Project",
+    "problem_url": "https://codeforces.com/contest/1303/problem/B",
+    "submission_id": "CF70873918",
+    "submission_url": "https://codeforces.com/contest/1303/submission/70873918",
+    "tags": [
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Feb/12/2020 23:20"
+  },
   "CF70888584": {
     "contest_id": 1303,
     "language": "GNU C++11",
