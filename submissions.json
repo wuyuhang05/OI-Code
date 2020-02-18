@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71353732": {
+    "contest_id": 850,
+    "language": "GNU C++11",
+    "path": "codeforces/850/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Random Elections",
+    "problem_url": "https://codeforces.com/contest/850/problem/E",
+    "submission_id": "CF71353732",
+    "submission_url": "https://codeforces.com/contest/850/submission/71353732",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "divide and conquer",
+      "fft",
+      "math",
+      "*2800"
+    ],
+    "timestamp": "Feb/18/2020 13:10"
+  },
   "CF71358179": {
     "contest_id": 662,
     "language": "GNU C++11",
