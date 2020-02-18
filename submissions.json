@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71358179": {
+    "contest_id": 662,
+    "language": "GNU C++11",
+    "path": "codeforces/662/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Binary Table",
+    "problem_url": "https://codeforces.com/contest/662/problem/C",
+    "submission_id": "CF71358179",
+    "submission_url": "https://codeforces.com/contest/662/submission/71358179",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "divide and conquer",
+      "dp",
+      "fft",
+      "math",
+      "*2600"
+    ],
+    "timestamp": "Feb/18/2020 14:45"
+  },
   "CF71657254": {
     "contest_id": 1313,
     "language": "GNU C++11",
