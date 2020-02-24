@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71739477": {
+    "contest_id": 1313,
+    "language": "GNU C++11",
+    "path": "codeforces/1313/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Concatenation with intersection",
+    "problem_url": "https://codeforces.com/contest/1313/problem/E",
+    "submission_id": "CF71739477",
+    "submission_url": "https://codeforces.com/contest/1313/submission/71739477",
+    "tags": [
+      "data structures",
+      "hashing",
+      "strings",
+      "two pointers",
+      "*2700"
+    ],
+    "timestamp": "Feb/24/2020 10:19"
+  },
   "CF71945842": {
     "contest_id": 1298,
     "language": "Kotlin",
