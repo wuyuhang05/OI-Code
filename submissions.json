@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71945842": {
+    "contest_id": 1298,
+    "language": "Kotlin",
+    "path": "codeforces/1298/A.kt",
+    "problem_index": "A",
+    "problem_name": "Restoring Three Numbers",
+    "problem_url": "https://codeforces.com/contest/1298/problem/A",
+    "submission_id": "CF71945842",
+    "submission_url": "https://codeforces.com/contest/1298/submission/71945842",
+    "tags": [
+      "*special problem",
+      "math"
+    ],
+    "timestamp": "Feb/27/2020 09:48"
+  },
   "CF71946156": {
     "contest_id": 1298,
     "language": "Kotlin",
