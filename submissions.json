@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71946533": {
+    "contest_id": 1298,
+    "language": "Kotlin",
+    "path": "codeforces/1298/D.kt",
+    "problem_index": "D",
+    "problem_name": "Bus Video System",
+    "problem_url": "https://codeforces.com/contest/1298/problem/D",
+    "submission_id": "CF71946533",
+    "submission_url": "https://codeforces.com/contest/1298/submission/71946533",
+    "tags": [
+      "*special problem",
+      "combinatorics",
+      "math"
+    ],
+    "timestamp": "Feb/27/2020 10:19"
+  },
   "CF71949046": {
     "contest_id": 1298,
     "language": "Kotlin",
