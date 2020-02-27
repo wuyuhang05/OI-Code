@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71952085": {
+    "contest_id": 1298,
+    "language": "Kotlin",
+    "path": "codeforces/1298/F2.kt",
+    "problem_index": "F2",
+    "problem_name": "Median on Segments (General Case Edition)",
+    "problem_url": "https://codeforces.com/contest/1298/problem/F2",
+    "submission_id": "CF71952085",
+    "submission_url": "https://codeforces.com/contest/1298/submission/71952085",
+    "tags": [
+      "*special problem",
+      "sortings"
+    ],
+    "timestamp": "Feb/27/2020 13:35"
+  },
   "CF71976877": {
     "contest_id": 1297,
     "language": "Kotlin",
