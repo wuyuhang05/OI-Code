@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71978545": {
+    "contest_id": 1297,
+    "language": "Kotlin",
+    "path": "codeforces/1297/C.kt",
+    "problem_index": "C",
+    "problem_name": "Dream Team",
+    "problem_url": "https://codeforces.com/contest/1297/problem/C",
+    "submission_id": "CF71978545",
+    "submission_url": "https://codeforces.com/contest/1297/submission/71978545",
+    "tags": [
+      "*special problem",
+      "greedy"
+    ],
+    "timestamp": "Feb/27/2020 22:03"
+  },
   "CF71981998": {
     "contest_id": 1297,
     "language": "Kotlin",
