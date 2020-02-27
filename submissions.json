@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71976877": {
+    "contest_id": 1297,
+    "language": "Kotlin",
+    "path": "codeforces/1297/A.kt",
+    "problem_index": "A",
+    "problem_name": "Likes Display",
+    "problem_url": "https://codeforces.com/contest/1297/problem/A",
+    "submission_id": "CF71976877",
+    "submission_url": "https://codeforces.com/contest/1297/submission/71976877",
+    "tags": [
+      "*special problem",
+      "implementation"
+    ],
+    "timestamp": "Feb/27/2020 21:48"
+  },
   "CF71978545": {
     "contest_id": 1297,
     "language": "Kotlin",
