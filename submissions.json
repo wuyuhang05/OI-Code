@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71946353": {
+    "contest_id": 1298,
+    "language": "Kotlin",
+    "path": "codeforces/1298/C.kt",
+    "problem_index": "C",
+    "problem_name": "File Name",
+    "problem_url": "https://codeforces.com/contest/1298/problem/C",
+    "submission_id": "CF71946353",
+    "submission_url": "https://codeforces.com/contest/1298/submission/71946353",
+    "tags": [
+      "*special problem",
+      "strings"
+    ],
+    "timestamp": "Feb/27/2020 10:12"
+  },
   "CF71946533": {
     "contest_id": 1298,
     "language": "Kotlin",
