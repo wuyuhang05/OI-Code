@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF71981998": {
+    "contest_id": 1297,
+    "language": "Kotlin",
+    "path": "codeforces/1297/D.kt",
+    "problem_index": "D",
+    "problem_name": "Bonus Distribution ",
+    "problem_url": "https://codeforces.com/contest/1297/problem/D",
+    "submission_id": "CF71981998",
+    "submission_url": "https://codeforces.com/contest/1297/submission/71981998",
+    "tags": [
+      "*special problem",
+      "binary search",
+      "greedy",
+      "sortings"
+    ],
+    "timestamp": "Feb/27/2020 22:42"
+  },
   "CF72163444": {
     "contest_id": 1314,
     "language": "GNU C++11",
