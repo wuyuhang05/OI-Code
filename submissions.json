@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF72258408": {
+    "contest_id": 710,
+    "language": "GNU C++11",
+    "path": "codeforces/710/F.cpp",
+    "problem_index": "F",
+    "problem_name": "String Set Queries",
+    "problem_url": "https://codeforces.com/contest/710/problem/F",
+    "submission_id": "CF72258408",
+    "submission_url": "https://codeforces.com/contest/710/submission/72258408",
+    "tags": [
+      "brute force",
+      "data structures",
+      "hashing",
+      "interactive",
+      "string suffix structures",
+      "strings",
+      "*2400"
+    ],
+    "timestamp": "Mar/02/2020 23:58"
+  },
   "CF72280358": {
     "contest_id": 1304,
     "language": "GNU C++11",
