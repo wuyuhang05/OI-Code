@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF72281564": {
+    "contest_id": 1304,
+    "language": "GNU C++11",
+    "path": "codeforces/1304/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Shortest and Longest LIS",
+    "problem_url": "https://codeforces.com/contest/1304/problem/D",
+    "submission_id": "CF72281564",
+    "submission_url": "https://codeforces.com/contest/1304/submission/72281564",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "greedy",
+      "two pointers",
+      "*1800"
+    ],
+    "timestamp": "Mar/03/2020 10:58"
+  },
   "CF72282072": {
     "contest_id": 1304,
     "language": "GNU C++11",
