@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF72282666": {
+    "contest_id": 1304,
+    "language": "GNU C++11",
+    "path": "codeforces/1304/F2.cpp",
+    "problem_index": "F2",
+    "problem_name": "Animal Observation (hard version)",
+    "problem_url": "https://codeforces.com/contest/1304/problem/F2",
+    "submission_id": "CF72282666",
+    "submission_url": "https://codeforces.com/contest/1304/submission/72282666",
+    "tags": [
+      "data structures",
+      "dp",
+      "greedy",
+      "*2400"
+    ],
+    "timestamp": "Mar/03/2020 11:51"
+  },
   "CF72312509": {
     "contest_id": 1305,
     "language": "GNU C++11",
