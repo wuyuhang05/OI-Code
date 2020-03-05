@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF72481762": {
+    "contest_id": 1295,
+    "language": "GNU C++11",
+    "path": "codeforces/1295/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Infinite Prefixes",
+    "problem_url": "https://codeforces.com/contest/1295/problem/B",
+    "submission_id": "CF72481762",
+    "submission_url": "https://codeforces.com/contest/1295/submission/72481762",
+    "tags": [
+      "math",
+      "strings",
+      "*1700"
+    ],
+    "timestamp": "Mar/05/2020 10:23"
+  },
   "CF72482055": {
     "contest_id": 1295,
     "language": "GNU C++11",
