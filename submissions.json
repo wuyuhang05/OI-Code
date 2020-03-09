@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF72790685": {
+    "contest_id": 908,
+    "language": "GNU C++11",
+    "path": "codeforces/908/G.cpp",
+    "problem_index": "G",
+    "problem_name": "New Year and Original Order",
+    "problem_url": "https://codeforces.com/contest/908/problem/G",
+    "submission_id": "CF72790685",
+    "submission_url": "https://codeforces.com/contest/908/submission/72790685",
+    "tags": [
+      "dp",
+      "math",
+      "*2800"
+    ],
+    "timestamp": "Mar/09/2020 22:10"
+  },
   "CF74274572": {
     "contest_id": 432,
     "language": "GNU C++11",
