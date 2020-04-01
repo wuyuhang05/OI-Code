@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF75157180": {
+    "contest_id": 1331,
+    "language": "GNU C++11",
+    "path": "codeforces/1331/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Elementary!",
+    "problem_url": "https://codeforces.com/contest/1331/problem/F",
+    "submission_id": "CF75157180",
+    "submission_url": "https://codeforces.com/contest/1331/submission/75157180",
+    "tags": [
+      "brute force",
+      "dp",
+      "strings"
+    ],
+    "timestamp": "Apr/02/2020 00:25"
+  },
   "CF76008126": {
     "contest_id": 414,
     "language": "GNU C++11",
