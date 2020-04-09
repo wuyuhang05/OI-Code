@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF76008126": {
+    "contest_id": 414,
+    "language": "GNU C++11",
+    "path": "codeforces/414/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Mashmokh's Designed Problem",
+    "problem_url": "https://codeforces.com/contest/414/problem/E",
+    "submission_id": "CF76008126",
+    "submission_url": "https://codeforces.com/contest/414/submission/76008126",
+    "tags": [
+      "data structures",
+      "*3200"
+    ],
+    "timestamp": "Apr/09/2020 23:32"
+  },
   "CF76707573": {
     "contest_id": 788,
     "language": "GNU C++14",
