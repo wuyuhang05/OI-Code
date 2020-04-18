@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF77150952": {
+    "contest_id": 103,
+    "language": "GNU C++14",
+    "path": "codeforces/103/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Buying Sets",
+    "problem_url": "https://codeforces.com/contest/103/problem/E",
+    "submission_id": "CF77150952",
+    "submission_url": "https://codeforces.com/contest/103/submission/77150952",
+    "tags": [
+      "flows",
+      "graph matchings",
+      "*2900"
+    ],
+    "timestamp": "Apr/18/2020 14:56"
+  },
   "CF77358885": {
     "contest_id": 600,
     "language": "GNU C++14",
