@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF77358885": {
+    "contest_id": 600,
+    "language": "GNU C++14",
+    "path": "codeforces/600/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Edge coloring of bipartite graph",
+    "problem_url": "https://codeforces.com/contest/600/problem/F",
+    "submission_id": "CF77358885",
+    "submission_url": "https://codeforces.com/contest/600/submission/77358885",
+    "tags": [
+      "graphs",
+      "*2800"
+    ],
+    "timestamp": "Apr/20/2020 20:22"
+  },
   "CF77748377": {
     "contest_id": 321,
     "language": "GNU C++14",
