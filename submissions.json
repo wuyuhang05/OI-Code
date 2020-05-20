@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF80776173": {
+    "contest_id": 283,
+    "language": "GNU C++11",
+    "path": "codeforces/283/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Cow Tennis Tournament",
+    "problem_url": "https://codeforces.com/contest/283/problem/E",
+    "submission_id": "CF80776173",
+    "submission_url": "https://codeforces.com/contest/283/submission/80776173",
+    "tags": [
+      "combinatorics",
+      "data structures",
+      "math",
+      "*2800"
+    ],
+    "timestamp": "May/20/2020 21:25"
+  },
   "CF80983595": {
     "contest_id": 407,
     "language": "GNU C++11",
