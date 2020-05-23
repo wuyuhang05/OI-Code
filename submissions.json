@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF80983595": {
+    "contest_id": 407,
+    "language": "GNU C++11",
+    "path": "codeforces/407/E.cpp",
+    "problem_index": "E",
+    "problem_name": "k-d-sequence",
+    "problem_url": "https://codeforces.com/contest/407/problem/E",
+    "submission_id": "CF80983595",
+    "submission_url": "https://codeforces.com/contest/407/submission/80983595",
+    "tags": [
+      "data structures",
+      "*3100"
+    ],
+    "timestamp": "May/23/2020 12:49"
+  },
   "CF81344063": {
     "contest_id": 949,
     "language": "GNU C++11",
