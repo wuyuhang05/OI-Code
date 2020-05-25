@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF81344063": {
+    "contest_id": 949,
+    "language": "GNU C++11",
+    "path": "codeforces/949/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Binary Cards",
+    "problem_url": "https://codeforces.com/contest/949/problem/E",
+    "submission_id": "CF81344063",
+    "submission_url": "https://codeforces.com/contest/949/submission/81344063",
+    "tags": [
+      "brute force",
+      "*2700"
+    ],
+    "timestamp": "May/25/2020 11:30"
+  },
   "CF81428242": {
     "contest_id": 1299,
     "language": "GNU C++11",
