@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF81572807": {
+    "contest_id": 1358,
+    "language": "GNU C++11",
+    "path": "codeforces/1358/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Tasty Cookie",
+    "problem_url": "https://codeforces.com/contest/1358/problem/F",
+    "submission_id": "CF81572807",
+    "submission_url": "https://codeforces.com/contest/1358/submission/81572807",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*2700"
+    ],
+    "timestamp": "May/27/2020 09:52"
+  },
   "CF81576592": {
     "contest_id": 1354,
     "language": "GNU C++11",
