@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF81782252": {
+    "contest_id": 1359,
+    "language": "GNU C++11",
+    "path": "codeforces/1359/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Modular Stability",
+    "problem_url": "https://codeforces.com/contest/1359/problem/E",
+    "submission_id": "CF81782252",
+    "submission_url": "https://codeforces.com/contest/1359/submission/81782252",
+    "tags": [
+      "combinatorics",
+      "math",
+      "number theory",
+      "*2000"
+    ],
+    "timestamp": "May/29/2020 00:06"
+  },
   "CF82037977": {
     "contest_id": 1359,
     "language": "GNU C++11",
