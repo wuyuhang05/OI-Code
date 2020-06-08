@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF83134396": {
+    "contest_id": 1365,
+    "language": "GNU C++11",
+    "path": "codeforces/1365/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Secure Password",
+    "problem_url": "https://codeforces.com/contest/1365/problem/G",
+    "submission_id": "CF83134396",
+    "submission_url": "https://codeforces.com/contest/1365/submission/83134396",
+    "tags": [
+      "bitmasks",
+      "combinatorics",
+      "constructive algorithms",
+      "interactive",
+      "math",
+      "*2800"
+    ],
+    "timestamp": "Jun/08/2020 20:27"
+  },
   "CF83505992": {
     "contest_id": 1366,
     "language": "GNU C++11",
