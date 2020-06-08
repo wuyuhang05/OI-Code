@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF83107376": {
+    "contest_id": 1365,
+    "language": "GNU C++11",
+    "path": "codeforces/1365/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Trouble Sort",
+    "problem_url": "https://codeforces.com/contest/1365/problem/B",
+    "submission_id": "CF83107376",
+    "submission_url": "https://codeforces.com/contest/1365/submission/83107376",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jun/08/2020 14:52"
+  },
   "CF83107939": {
     "contest_id": 1365,
     "language": "GNU C++11",
