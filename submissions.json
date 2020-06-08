@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF83107939": {
+    "contest_id": 1365,
+    "language": "GNU C++11",
+    "path": "codeforces/1365/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Rotation Matching",
+    "problem_url": "https://codeforces.com/contest/1365/problem/C",
+    "submission_id": "CF83107939",
+    "submission_url": "https://codeforces.com/contest/1365/submission/83107939",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Jun/08/2020 15:00"
+  },
   "CF83108443": {
     "contest_id": 1365,
     "language": "GNU C++11",
