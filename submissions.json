@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF84951548": {
+    "contest_id": 1264,
+    "language": "GNU C++11",
+    "path": "codeforces/1264/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Beautiful Sequence",
+    "problem_url": "https://codeforces.com/contest/1264/problem/B",
+    "submission_id": "CF84951548",
+    "submission_url": "https://codeforces.com/contest/1264/submission/84951548",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Jun/25/2020 16:23"
+  },
   "CF84965289": {
     "contest_id": 1264,
     "language": "GNU C++11",
