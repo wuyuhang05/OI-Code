@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF85099556": {
+    "contest_id": 1373,
+    "language": "GNU C++11",
+    "path": "codeforces/1373/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Network Coverage",
+    "problem_url": "https://codeforces.com/contest/1373/problem/F",
+    "submission_id": "CF85099556",
+    "submission_url": "https://codeforces.com/contest/1373/submission/85099556",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "*2400"
+    ],
+    "timestamp": "Jun/26/2020 15:12"
+  },
   "CF85178787": {
     "contest_id": 1373,
     "language": "GNU C++11",
