@@ -89,7 +89,7 @@ int main(){
             SS.insert(t);
         }
         S[MP(x,y)] ^= 1;
-        printf("%d\n",query(1,1,2*n,1,*SS.rbegin()+1)-n);
+        printf("%d\n",std::max(0,query(1,1,2*n,1,*SS.rbegin()+1)-n));
     }
     return 0;
 }
