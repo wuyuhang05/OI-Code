@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF85653669": {
+    "contest_id": 1371,
+    "language": "GNU C++11",
+    "path": "codeforces/1371/C.cpp",
+    "problem_index": "C",
+    "problem_name": "A Cookie for You",
+    "problem_url": "https://codeforces.com/contest/1371/problem/C",
+    "submission_id": "CF85653669",
+    "submission_url": "https://codeforces.com/contest/1371/submission/85653669",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Jul/01/2020 22:13"
+  },
   "CF85661160": {
     "contest_id": 1371,
     "language": "GNU C++11",
