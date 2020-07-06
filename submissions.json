@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86098801": {
+    "contest_id": 1322,
+    "language": "GNU C++11",
+    "path": "codeforces/1322/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Present",
+    "problem_url": "https://codeforces.com/contest/1322/problem/B",
+    "submission_id": "CF86098801",
+    "submission_url": "https://codeforces.com/contest/1322/submission/86098801",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "constructive algorithms",
+      "data structures",
+      "math",
+      "sortings",
+      "*2100"
+    ],
+    "timestamp": "Jul/06/2020 14:20"
+  },
   "CF86103313": {
     "contest_id": 1322,
     "language": "GNU C++11",
