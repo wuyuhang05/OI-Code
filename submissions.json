@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86114947": {
+    "contest_id": 1322,
+    "language": "GNU C++11",
+    "path": "codeforces/1322/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Reality Show",
+    "problem_url": "https://codeforces.com/contest/1322/problem/D",
+    "submission_id": "CF86114947",
+    "submission_url": "https://codeforces.com/contest/1322/submission/86114947",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "*2800"
+    ],
+    "timestamp": "Jul/06/2020 18:17"
+  },
   "CF86162625": {
     "contest_id": 1237,
     "language": "GNU C++11",
