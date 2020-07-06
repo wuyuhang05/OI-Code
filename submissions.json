@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86096402": {
+    "contest_id": 1322,
+    "language": "GNU C++11",
+    "path": "codeforces/1322/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Unusual Competitions",
+    "problem_url": "https://codeforces.com/contest/1322/problem/A",
+    "submission_id": "CF86096402",
+    "submission_url": "https://codeforces.com/contest/1322/submission/86096402",
+    "tags": [
+      "greedy",
+      "*1300"
+    ],
+    "timestamp": "Jul/06/2020 13:43"
+  },
   "CF86098801": {
     "contest_id": 1322,
     "language": "GNU C++11",
