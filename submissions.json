@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86103313": {
+    "contest_id": 1322,
+    "language": "GNU C++11",
+    "path": "codeforces/1322/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Instant Noodles",
+    "problem_url": "https://codeforces.com/contest/1322/problem/C",
+    "submission_id": "CF86103313",
+    "submission_url": "https://codeforces.com/contest/1322/submission/86103313",
+    "tags": [
+      "graphs",
+      "hashing",
+      "math",
+      "number theory",
+      "*2300"
+    ],
+    "timestamp": "Jul/06/2020 15:22"
+  },
   "CF86114947": {
     "contest_id": 1322,
     "language": "GNU C++11",
