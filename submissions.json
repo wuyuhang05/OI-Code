@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86239296": {
+    "contest_id": 1326,
+    "language": "GNU C++11",
+    "path": "codeforces/1326/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Permutation Partitions",
+    "problem_url": "https://codeforces.com/contest/1326/problem/C",
+    "submission_id": "CF86239296",
+    "submission_url": "https://codeforces.com/contest/1326/submission/86239296",
+    "tags": [
+      "combinatorics",
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Jul/08/2020 10:39"
+  },
   "CF86241013": {
     "contest_id": 1326,
     "language": "GNU C++11",
