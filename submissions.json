@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86334111": {
+    "contest_id": 1340,
+    "language": "GNU C++11",
+    "path": "codeforces/1340/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Nastya and Time Machine",
+    "problem_url": "https://codeforces.com/contest/1340/problem/D",
+    "submission_id": "CF86334111",
+    "submission_url": "https://codeforces.com/contest/1340/submission/86334111",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "trees",
+      "*2600"
+    ],
+    "timestamp": "Jul/09/2020 16:53"
+  },
   "CF86388918": {
     "contest_id": 1254,
     "language": "GNU C++11",
