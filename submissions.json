@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86506097": {
+    "contest_id": 1314,
+    "language": "GNU C++11",
+    "path": "codeforces/1314/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Double Elimination",
+    "problem_url": "https://codeforces.com/contest/1314/problem/B",
+    "submission_id": "CF86506097",
+    "submission_url": "https://codeforces.com/contest/1314/submission/86506097",
+    "tags": [
+      "dp",
+      "implementation",
+      "*2500"
+    ],
+    "timestamp": "Jul/11/2020 21:22"
+  },
   "CF86518417": {
     "contest_id": 1372,
     "language": "GNU C++11",
