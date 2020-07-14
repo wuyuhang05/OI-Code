@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86815399": {
+    "contest_id": 1374,
+    "language": "GNU C++11",
+    "path": "codeforces/1374/E2.cpp",
+    "problem_index": "E2",
+    "problem_name": "Reading Books (hard version)",
+    "problem_url": "https://codeforces.com/contest/1374/problem/E2",
+    "submission_id": "CF86815399",
+    "submission_url": "https://codeforces.com/contest/1374/submission/86815399",
+    "tags": [
+      "data structures",
+      "greedy",
+      "implementation",
+      "sortings",
+      "ternary search",
+      "two pointers",
+      "*2500"
+    ],
+    "timestamp": "Jul/14/2020 17:18"
+  },
   "CF86949622": {
     "contest_id": 1168,
     "language": "GNU C++11",
