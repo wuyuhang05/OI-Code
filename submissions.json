@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF86808084": {
+    "contest_id": 1372,
+    "language": "GNU C++11",
+    "path": "codeforces/1372/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Omkar and Modes",
+    "problem_url": "https://codeforces.com/contest/1372/problem/F",
+    "submission_id": "CF86808084",
+    "submission_url": "https://codeforces.com/contest/1372/submission/86808084",
+    "tags": [
+      "binary search",
+      "divide and conquer",
+      "interactive",
+      "*2700"
+    ],
+    "timestamp": "Jul/14/2020 15:40"
+  },
   "CF86815231": {
     "contest_id": 1374,
     "language": "GNU C++11",
