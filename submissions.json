@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF87355423": {
+    "contest_id": 1379,
+    "language": "GNU C++11",
+    "path": "codeforces/1379/D.cpp",
+    "problem_index": "D",
+    "problem_name": "New Passenger Trams",
+    "problem_url": "https://codeforces.com/contest/1379/problem/D",
+    "submission_id": "CF87355423",
+    "submission_url": "https://codeforces.com/contest/1379/submission/87355423",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "sortings",
+      "two pointers",
+      "*2300"
+    ],
+    "timestamp": "Jul/19/2020 21:16"
+  },
   "CF87518874": {
     "contest_id": 1158,
     "language": "GNU C++11",
