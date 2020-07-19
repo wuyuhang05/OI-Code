@@ -70,7 +70,7 @@ signed main(){
     FOR(i,1,n){
         int l = b[i],r = (l+m/2)%m;
         work(l,r);
- //       work((l+k)%m,(r+k)%m);
+        work((l+k)%m,(r+k)%m);
     }
     std::vector<int> S;
     int l = ansl,r = ansr;
