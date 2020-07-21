@@ -1,4 +1,17 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
+#include <cstring>
+#include <climits>
+#include <cstdlib>
+#include <cstdio>
+#include <bitset>
+#include <vector>
+#include <cmath>
+#include <ctime>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
 
 #define fi first
 #define se second
@@ -14,28 +27,24 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 1e5 + 5;
-int a[MAXN],b[MAXN];
-int n,m;
+const int MAXN = 2e5 + 5;
+int n,m,a[MAXN],b[MAXN];
 
 int main(){
-	scanf("%d%d",&n,&m);
-	FOR(i,1,n) scanf("%d",a+i);std::sort(a+1,a+n+1);
-	FOR(i,1,m) scanf("%d",b+i);std::sort(b+1,b+m+1);
-	if(a[n] > b[1]){
-		puts("-1");return 0;
-	}
-	if(a[n] == b[1]){
-		LL ans = 0;
-		FOR(i,1,m) ans += b[i];
-		FOR(i,1,n-1) ans += 1ll*m*a[i];
-		printf("%lld\n",ans);
-		return 0;
-	}
-	LL ans = 0;
-	FOR(i,1,m) ans += b[i]; 
-	ans += a[n];ans -= a[n-1];
-	FOR(i,1,n-1) ans += 1ll*a[i]*m;
-	printf("%lld\n",ans);
-	return 0;
+    scanf("%d%d",&n,&m);int mn=1e9,mx=-1e9;
+    FOR(i,1,n) scanf("%d",a+i),mx = std::max(mx,a[i]);
+    FOR(i,1,m) scanf("%d",b+i),mn = std::min(mn,b[i]);
+    if(mx > mn){
+        puts("-1");return 0;
+    }
+    LL ans = 0;
+    FOR(i,1,n) ans += 1ll*m*a[i];
+    FOR(i,1,m) ans += b[i];
+    std::sort(a+1,a+n+1);
+    bool flag = 0;
+    FOR(i,1,m) if(b[i] == a[n]) flag = 1;
+    if(!flag) ans -= 1ll*a[n]*(m-1)+a[n-1];
+    else ans -= 1ll*a[n]*m;
+    printf("%lld\n",ans);
+    return 0;
 }
