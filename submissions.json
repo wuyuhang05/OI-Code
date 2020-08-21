@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF90507546": {
+    "contest_id": 1383,
+    "language": "GNU C++11",
+    "path": "codeforces/1383/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Strange Operation",
+    "problem_url": "https://codeforces.com/contest/1383/problem/E",
+    "submission_id": "CF90507546",
+    "submission_url": "https://codeforces.com/contest/1383/submission/90507546",
+    "tags": [
+      "combinatorics",
+      "data structures",
+      "dp",
+      "*2800"
+    ],
+    "timestamp": "Aug/21/2020 14:14"
+  },
   "CF90509672": {
     "contest_id": 1383,
     "language": "GNU C++11",
