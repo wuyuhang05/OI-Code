@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF90669935": {
+    "contest_id": 1392,
+    "language": "GNU C++11",
+    "path": "codeforces/1392/H.cpp",
+    "problem_index": "H",
+    "problem_name": "ZS Shuffles Cards",
+    "problem_url": "https://codeforces.com/contest/1392/problem/H",
+    "submission_id": "CF90669935",
+    "submission_url": "https://codeforces.com/contest/1392/submission/90669935",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math",
+      "probabilities",
+      "*3000"
+    ],
+    "timestamp": "Aug/22/2020 16:28"
+  },
   "CF90689596": {
     "contest_id": 1392,
     "language": "GNU C++11",
