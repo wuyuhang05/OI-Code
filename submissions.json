@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF90689596": {
+    "contest_id": 1392,
+    "language": "GNU C++11",
+    "path": "codeforces/1392/I.cpp",
+    "problem_index": "I",
+    "problem_name": "Kevin and Grid",
+    "problem_url": "https://codeforces.com/contest/1392/problem/I",
+    "submission_id": "CF90689596",
+    "submission_url": "https://codeforces.com/contest/1392/submission/90689596",
+    "tags": [
+      "fft",
+      "graphs",
+      "math",
+      "*3300"
+    ],
+    "timestamp": "Aug/22/2020 21:10"
+  },
   "CF90720472": {
     "contest_id": 1394,
     "language": "GNU C++11",
