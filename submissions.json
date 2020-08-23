@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF90721636": {
+    "contest_id": 1394,
+    "language": "GNU C++11",
+    "path": "codeforces/1394/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Boboniu and String",
+    "problem_url": "https://codeforces.com/contest/1394/problem/C",
+    "submission_id": "CF90721636",
+    "submission_url": "https://codeforces.com/contest/1394/submission/90721636",
+    "tags": [
+      "binary search",
+      "geometry",
+      "ternary search",
+      "*2600"
+    ],
+    "timestamp": "Aug/23/2020 09:20"
+  },
   "CF90734864": {
     "contest_id": 1394,
     "language": "GNU C++11",
