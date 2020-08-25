@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF90861543": {
+    "contest_id": 1375,
+    "language": "GNU C++11",
+    "path": "codeforces/1375/H.cpp",
+    "problem_index": "H",
+    "problem_name": "Set Merging",
+    "problem_url": "https://codeforces.com/contest/1375/problem/H",
+    "submission_id": "CF90861543",
+    "submission_url": "https://codeforces.com/contest/1375/submission/90861543",
+    "tags": [
+      "constructive algorithms",
+      "divide and conquer",
+      "*3300"
+    ],
+    "timestamp": "Aug/25/2020 09:38"
+  },
   "CF90891457": {
     "contest_id": 1375,
     "language": "GNU C++11",
