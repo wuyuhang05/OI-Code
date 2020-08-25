@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91007140": {
+    "contest_id": 1368,
+    "language": "GNU C++11",
+    "path": "codeforces/1368/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Even Picture",
+    "problem_url": "https://codeforces.com/contest/1368/problem/C",
+    "submission_id": "CF91007140",
+    "submission_url": "https://codeforces.com/contest/1368/submission/91007140",
+    "tags": [
+      "constructive algorithms",
+      "*1500"
+    ],
+    "timestamp": "Aug/26/2020 07:54"
+  },
   "CF91007691": {
     "contest_id": 1368,
     "language": "GNU C++11",
