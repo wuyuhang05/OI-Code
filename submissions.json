@@ -1616,6 +1616,20 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91027774": {
+    "contest_id": 1368,
+    "language": "GNU C++11",
+    "path": "codeforces/1368/H2.cpp",
+    "problem_index": "H2",
+    "problem_name": "Breadboard Capacity (hard version)",
+    "problem_url": "https://codeforces.com/contest/1368/problem/H2",
+    "submission_id": "CF91027774",
+    "submission_url": "https://codeforces.com/contest/1368/submission/91027774",
+    "tags": [
+      "*3500"
+    ],
+    "timestamp": "Aug/26/2020 15:21"
+  },
   "CF91034907": {
     "contest_id": 1368,
     "language": "GNU C++11",
