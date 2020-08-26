@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91009794": {
+    "contest_id": 1368,
+    "language": "GNU C++11",
+    "path": "codeforces/1368/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Ski Accidents",
+    "problem_url": "https://codeforces.com/contest/1368/problem/E",
+    "submission_id": "CF91009794",
+    "submission_url": "https://codeforces.com/contest/1368/submission/91009794",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "greedy",
+      "*2500"
+    ],
+    "timestamp": "Aug/26/2020 09:50"
+  },
   "CF91011794": {
     "contest_id": 1368,
     "language": "GNU C++11",
