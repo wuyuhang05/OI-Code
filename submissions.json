@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91056045": {
+    "contest_id": 1343,
+    "language": "GNU C++11",
+    "path": "codeforces/1343/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Restore the Permutation by Sorted Segments",
+    "problem_url": "https://codeforces.com/contest/1343/problem/F",
+    "submission_id": "CF91056045",
+    "submission_url": "https://codeforces.com/contest/1343/submission/91056045",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "implementation",
+      "*2400"
+    ],
+    "timestamp": "Aug/26/2020 21:25"
+  },
   "CF91095722": {
     "contest_id": 1361,
     "language": "GNU C++11",
