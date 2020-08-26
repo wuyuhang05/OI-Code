@@ -97,7 +97,7 @@ int main(){
     dfs(R);
     FOR(i,1,n){
         FOR(j,1,m){
-            if(vis[id(i,j)]) continue;// 必须将所有可能相同的区间放在同一维
+            if((i+j)&1) continue;
             vis[id(i,j)] = 1;int p = id(i,j),q;
             if(str[i][j] == 'U'){
                 vis[q = id(i+1,j)] = 1;
@@ -111,7 +111,6 @@ int main(){
             if(str[i][j] == 'R'){
                 vis[q = id(i,j-1)] = 1;
             }
-            if(dfn[p] > dfn[q]) std::swap(p,q);
             G[dfn[p]].pb(Node(dfn[q],dfn[q]+sz[q]-1,1));
             G[dfn[p]+sz[p]].pb(Node(dfn[q],dfn[q]+sz[q]-1,-1));
         }
