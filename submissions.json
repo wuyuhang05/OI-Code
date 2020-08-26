@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91011794": {
+    "contest_id": 1368,
+    "language": "GNU C++11",
+    "path": "codeforces/1368/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Lamps on a Circle",
+    "problem_url": "https://codeforces.com/contest/1368/problem/F",
+    "submission_id": "CF91011794",
+    "submission_url": "https://codeforces.com/contest/1368/submission/91011794",
+    "tags": [
+      "games",
+      "implementation",
+      "interactive",
+      "math",
+      "*2600"
+    ],
+    "timestamp": "Aug/26/2020 10:50"
+  },
   "CF91016917": {
     "contest_id": 1368,
     "language": "GNU C++11",
