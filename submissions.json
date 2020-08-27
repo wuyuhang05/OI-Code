@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91095722": {
+    "contest_id": 1361,
+    "language": "GNU C++11",
+    "path": "codeforces/1361/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Johnny and James",
+    "problem_url": "https://codeforces.com/contest/1361/problem/D",
+    "submission_id": "CF91095722",
+    "submission_url": "https://codeforces.com/contest/1361/submission/91095722",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "trees",
+      "*2900"
+    ],
+    "timestamp": "Aug/27/2020 08:34"
+  },
   "CF91098613": {
     "contest_id": 1361,
     "language": "GNU C++11",
