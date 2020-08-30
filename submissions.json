@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91343195": {
+    "contest_id": 1344,
+    "language": "GNU C++11",
+    "path": "codeforces/1344/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Piet's Palette",
+    "problem_url": "https://codeforces.com/contest/1344/problem/F",
+    "submission_id": "CF91343195",
+    "submission_url": "https://codeforces.com/contest/1344/submission/91343195",
+    "tags": [
+      "matrices",
+      "*3200"
+    ],
+    "timestamp": "Aug/30/2020 20:49"
+  },
   "CF91446592": {
     "contest_id": 1344,
     "language": "GNU C++11",
