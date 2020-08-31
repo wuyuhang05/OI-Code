@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91493637": {
+    "contest_id": 1282,
+    "language": "GNU C++11",
+    "path": "codeforces/1282/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Enchanted Artifact",
+    "problem_url": "https://codeforces.com/contest/1282/problem/D",
+    "submission_id": "CF91493637",
+    "submission_url": "https://codeforces.com/contest/1282/submission/91493637",
+    "tags": [
+      "constructive algorithms",
+      "interactive",
+      "strings",
+      "*2300"
+    ],
+    "timestamp": "Aug/31/2020 21:14"
+  },
   "CF91530681": {
     "contest_id": 1336,
     "language": "GNU C++11",
