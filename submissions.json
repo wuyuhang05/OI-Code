@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91531641": {
+    "contest_id": 1336,
+    "language": "GNU C++11",
+    "path": "codeforces/1336/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Xenia and Colorful Gems",
+    "problem_url": "https://codeforces.com/contest/1336/problem/B",
+    "submission_id": "CF91531641",
+    "submission_url": "https://codeforces.com/contest/1336/submission/91531641",
+    "tags": [
+      "binary search",
+      "greedy",
+      "math",
+      "sortings",
+      "two pointers",
+      "*1700"
+    ],
+    "timestamp": "Sep/01/2020 10:34"
+  },
   "CF91533219": {
     "contest_id": 1336,
     "language": "GNU C++11",
