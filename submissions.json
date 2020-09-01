@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91537533": {
+    "contest_id": 724,
+    "language": "GNU C++11",
+    "path": "codeforces/724/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Xor-matic Number of the Graph",
+    "problem_url": "https://codeforces.com/contest/724/problem/G",
+    "submission_id": "CF91537533",
+    "submission_url": "https://codeforces.com/contest/724/submission/91537533",
+    "tags": [
+      "bitmasks",
+      "graphs",
+      "math",
+      "number theory",
+      "trees",
+      "*2600"
+    ],
+    "timestamp": "Sep/01/2020 13:21"
+  },
   "CF91543760": {
     "contest_id": 1336,
     "language": "GNU C++11",
