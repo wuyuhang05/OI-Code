@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91533219": {
+    "contest_id": 1336,
+    "language": "GNU C++11",
+    "path": "codeforces/1336/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Kaavi and Magic Spell",
+    "problem_url": "https://codeforces.com/contest/1336/problem/C",
+    "submission_id": "CF91533219",
+    "submission_url": "https://codeforces.com/contest/1336/submission/91533219",
+    "tags": [
+      "dp",
+      "strings",
+      "*2200"
+    ],
+    "timestamp": "Sep/01/2020 11:27"
+  },
   "CF91537533": {
     "contest_id": 724,
     "language": "GNU C++11",
