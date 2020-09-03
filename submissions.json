@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91702859": {
+    "contest_id": 1396,
+    "language": "GNU C++11",
+    "path": "codeforces/1396/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Rainbow Rectangles",
+    "problem_url": "https://codeforces.com/contest/1396/problem/D",
+    "submission_id": "CF91702859",
+    "submission_url": "https://codeforces.com/contest/1396/submission/91702859",
+    "tags": [
+      "data structures",
+      "sortings",
+      "two pointers",
+      "*3300"
+    ],
+    "timestamp": "Sep/03/2020 17:07"
+  },
   "CF91721215": {
     "contest_id": 1400,
     "language": "GNU C++11",
