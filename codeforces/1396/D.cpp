@@ -4,6 +4,7 @@
 #define se second
 #define db double
 #define U unsigned
+#define P std::pair<int,int>
 #define LL long long
 #define pb push_back
 #define MP std::make_pair
@@ -15,27 +16,6 @@
 
 const int MAXN = 4000+5;
 const int ha = 1e9 + 7;
-#define ll long long
-namespace FASTIO{
-    const int S=(1<<23)+5;static char b[S],o[S],p[20],*H=b,*T=b,*O=o,*P;static int r,s,c;
-    inline char gc(){return H==T?T=(H=b)+fread(b,1,S,stdin):0,H!=T?*H++:-1;}
-    inline int rf(){s=0;for(;!isdigit(c=gc());s=c);
-                    for(r=c^48;isdigit(c=gc());(r*=10)+=c^48);
-                    return s^45?r:-r;}
-    inline ll rfl(){ll r;s=0;for(;!isdigit(c=gc());s=c);
-                    for(r=c^48;isdigit(c=gc());(r*=10)+=c^48);
-                    return s^45?r:-r;}
-    inline int ef(){return fwrite(o,1,O-o,stdout),O=o,0;}
-    inline int w(){return O-o>S-128?ef():0;}
-    inline void wf(int x,char e=10){for(x<0?*O++=45,x=-x:0,x?:*O++=48,P=p;x;*++P=x%10+48,x/=10);
-                                    for(;P!=p;*O++=*P--);e?*O++=e,w():0;}
-    inline void wfl(ll x,char e=10){for(x<0?*O++=45,x=-x:0,x?:*O++=48,P=p;x;*++P=x%10+48,x/=10);
-                                    for(;P!=p;*O++=*P--);e?*O++=e,w():0;}
-    inline void ws(const char *e){strcpy(O,e);O+=strlen(e);w();}
-    inline void wc(char e){*O++=e;w();}
-}
-using FASTIO::rf;using FASTIO::rfl;using FASTIO::ef;
-using FASTIO::wf;using FASTIO::wfl;using FASTIO::ws;using FASTIO::wc;
 
 int mn[MAXN<<2],cmn[MAXN<<2],coe[MAXN<<2],sm[MAXN<<2],cnt[MAXN<<2],mx[MAXN<<2];
 #define lc ((x)<<1)
@@ -105,7 +85,7 @@ inline void modify(int x,int l,int r,int L,int R,int d){
 int x[MAXN],y[MAXN],c[MAXN];
 int t[MAXN],cnt0;
 std::vector<int> R[MAXN],C[MAXN];
-std::set<std::pair<int,int> > G[MAXN];
+std::set<P> G[MAXN];
 
 inline void add(int o){
 	for(auto x:C[o]){
@@ -153,9 +133,9 @@ inline int query(int x,int l,int r,int p){
 
 int main(){
 //	freopen("A.in","r",stdin);
-	n = rf();k = rf();L = rf(); 
+	scanf("%d%d%d",&n,&k,&L);
 	FOR(i,1,n){
-		x[i] = rf();y[i] = rf();c[i] = rf();
+		scanf("%d%d%d",x+i,y+i,c+i);
 		row.pb(x[i]);col.pb(y[i]);
 	}
 	std::sort(all(row));row.erase(std::unique(all(row)),row.end());
@@ -194,7 +174,6 @@ int main(){
 			}
 		}
 	}
-	wf(ans);
-	ef();
+	printf("%d\n",ans);
 	return 0;
 }
