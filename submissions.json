@@ -15440,6 +15440,25 @@
     ],
     "timestamp": "Sep/04/2020 15:32"
   },
+  "CF91787350": {
+    "contest_id": 1398,
+    "language": "GNU C++11",
+    "path": "codeforces/1398/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Running Competition",
+    "problem_url": "https://codeforces.com/contest/1398/problem/G",
+    "submission_id": "CF91787350",
+    "submission_url": "https://codeforces.com/contest/1398/submission/91787350",
+    "tags": [
+      "bitmasks",
+      "fft",
+      "math",
+      "number theory",
+      "*2600"
+    ],
+    "timestamp": "Sep/04/2020 19:14"
+  },
   "CF92095295": {
     "contest_id": 1389,
     "language": "GNU C++11",
