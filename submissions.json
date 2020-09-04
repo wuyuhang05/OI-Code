@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF91769466": {
+    "contest_id": 1398,
+    "language": "GNU C++11",
+    "path": "codeforces/1398/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Two Types of Spells",
+    "problem_url": "https://codeforces.com/contest/1398/problem/E",
+    "submission_id": "CF91769466",
+    "submission_url": "https://codeforces.com/contest/1398/submission/91769466",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "implementation",
+      "math",
+      "sortings",
+      "*2200"
+    ],
+    "timestamp": "Sep/04/2020 14:27"
+  },
   "CF91773573": {
     "contest_id": 1398,
     "language": "GNU C++11",
