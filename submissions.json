@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92128791": {
+    "contest_id": 1342,
+    "language": "GNU C++11",
+    "path": "codeforces/1342/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Yet Another Counting Problem",
+    "problem_url": "https://codeforces.com/contest/1342/problem/C",
+    "submission_id": "CF92128791",
+    "submission_url": "https://codeforces.com/contest/1342/submission/92128791",
+    "tags": [
+      "math",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Sep/07/2020 19:26"
+  },
   "CF92172858": {
     "contest_id": 1342,
     "language": "GNU C++11",
