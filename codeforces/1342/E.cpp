@@ -46,7 +46,6 @@ inline int S2(int n,int m){
 		if(i&1) gx = ha-gx;
 		(res += gx) %= ha;
 	}
-	res = 1ll*res*inv[m]%ha;
 	return res;
 }
 
@@ -54,7 +53,7 @@ int main(){
 	int n;LL k;scanf("%d%lld",&n,&k);
 	if(k >= n) {puts("0");exit(0);}
 	prework();
-	printf("%lld\n",(k==0?1ll:2ll)*fac[n-k]%ha*C(n,n-k)%ha*S2(n,n-k)%ha);
+	printf("%lld\n",(k==0?1ll:2ll)*C(n,n-k)%ha*S2(n,n-k)%ha);
 	return 0;
 }
 /*
