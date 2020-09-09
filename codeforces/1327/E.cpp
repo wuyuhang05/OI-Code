@@ -26,7 +26,7 @@ int main(){
 		if(i == n) printf("%d\n",10);
 		else{
 			int res = 2ll*10*9%ha*pw[n-i-1]%ha;
-			(res += 1ll*(n-i+1-2)*10%ha*9%ha*9%ha*pw[std::max(0,n-i-2)]%ha) %= ha;
+			(res += 1ll*(n-i+1-2)*10%ha*9%ha*9%ha*pw[n-i-2]%ha) %= ha;
 			printf("%d ",res);
 		}
 	}
