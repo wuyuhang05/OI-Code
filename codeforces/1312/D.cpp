@@ -47,20 +47,15 @@ int main(){
 		// int gx = 1ll*C(j-1,n-2)*C(n-3,i-2)%ha*(n-2)%ha;
 		// (ans += gx) %= ha;
 	// }
-	// int sm = 0;
-	// FOR(j,1,m){// =C(m,n-1)
-		// int gx = 1ll*C(j-1,n-2);
-		// (sm += gx) %= ha;
-	// }
-	// sm = C(m,n-1);
-	// FOR(i,2,n-1){
-		// (ans += 1ll*C(n-3,i-2)%ha) %= ha;
-	// }
-	if(n < 3){
-		puts("0");
-		return 0;
+	int sm = 0;
+	FOR(j,1,m){
+		int gx = 1ll*C(j-1,n-2);
+		(sm += gx) %= ha;
 	}
-	ans = 1ll*(n-2)%ha*C(m,n-1)%ha*qpow(2,n-3)%ha;
+	FOR(i,2,n-1){
+		(ans += 1ll*sm*C(n-3,i-2)%ha) %= ha;
+	}
+	ans = 1ll*ans*(n-2)%ha;
 	printf("%d\n",ans);
 	return 0;
 }
