@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92393245": {
+    "contest_id": 1019,
+    "language": "GNU C++11",
+    "path": "codeforces/1019/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Sergey's problem",
+    "problem_url": "https://codeforces.com/contest/1019/problem/C",
+    "submission_id": "CF92393245",
+    "submission_url": "https://codeforces.com/contest/1019/submission/92393245",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "*3000"
+    ],
+    "timestamp": "Sep/10/2020 10:47"
+  },
   "CF92394865": {
     "contest_id": 1312,
     "language": "GNU C++11",
