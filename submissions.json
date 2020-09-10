@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92392308": {
+    "contest_id": 1019,
+    "language": "GNU C++11",
+    "path": "codeforces/1019/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Large Triangle",
+    "problem_url": "https://codeforces.com/contest/1019/problem/D",
+    "submission_id": "CF92392308",
+    "submission_url": "https://codeforces.com/contest/1019/submission/92392308",
+    "tags": [
+      "binary search",
+      "geometry",
+      "sortings",
+      "*2700"
+    ],
+    "timestamp": "Sep/10/2020 10:10"
+  },
   "CF92393245": {
     "contest_id": 1019,
     "language": "GNU C++11",
