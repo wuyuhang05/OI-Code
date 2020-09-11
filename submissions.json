@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92503103": {
+    "contest_id": 1019,
+    "language": "GNU C++11",
+    "path": "codeforces/1019/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Raining season",
+    "problem_url": "https://codeforces.com/contest/1019/problem/E",
+    "submission_id": "CF92503103",
+    "submission_url": "https://codeforces.com/contest/1019/submission/92503103",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "trees",
+      "*3200"
+    ],
+    "timestamp": "Sep/11/2020 21:50"
+  },
   "CF92555578": {
     "contest_id": 1288,
     "language": "GNU C++11",
