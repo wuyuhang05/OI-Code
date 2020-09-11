@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92483543": {
+    "contest_id": 1303,
+    "language": "GNU C++11",
+    "path": "codeforces/1303/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Number of Components",
+    "problem_url": "https://codeforces.com/contest/1303/problem/F",
+    "submission_id": "CF92483543",
+    "submission_url": "https://codeforces.com/contest/1303/submission/92483543",
+    "tags": [
+      "dsu",
+      "implementation",
+      "*2800"
+    ],
+    "timestamp": "Sep/11/2020 17:16"
+  },
   "CF92503103": {
     "contest_id": 1019,
     "language": "GNU C++11",
