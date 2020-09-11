@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92463583": {
+    "contest_id": 930,
+    "language": "GNU C++11",
+    "path": "codeforces/930/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Teodor is not a liar!",
+    "problem_url": "https://codeforces.com/contest/930/problem/C",
+    "submission_id": "CF92463583",
+    "submission_url": "https://codeforces.com/contest/930/submission/92463583",
+    "tags": [
+      "data structures",
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Sep/11/2020 08:58"
+  },
   "CF92465862": {
     "contest_id": 930,
     "language": "GNU C++11",
