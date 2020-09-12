@@ -14,7 +14,7 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 1e5+5;
+const int MAXN = 2000+5;
 
 struct Edge{
 	int to,w,c,nxt;
