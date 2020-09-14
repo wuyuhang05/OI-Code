@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92770079": {
+    "contest_id": 1237,
+    "language": "GNU C++11",
+    "path": "codeforces/1237/H.cpp",
+    "problem_index": "H",
+    "problem_name": "Balanced Reversals",
+    "problem_url": "https://codeforces.com/contest/1237/problem/H",
+    "submission_id": "CF92770079",
+    "submission_url": "https://codeforces.com/contest/1237/submission/92770079",
+    "tags": [
+      "constructive algorithms",
+      "*3300"
+    ],
+    "timestamp": "Sep/14/2020 15:48"
+  },
   "CF92777846": {
     "contest_id": 1406,
     "language": "GNU C++11",
