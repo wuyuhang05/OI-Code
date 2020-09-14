@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92755790": {
+    "contest_id": 1237,
+    "language": "GNU C++11",
+    "path": "codeforces/1237/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Balanced Domino Placements",
+    "problem_url": "https://codeforces.com/contest/1237/problem/F",
+    "submission_id": "CF92755790",
+    "submission_url": "https://codeforces.com/contest/1237/submission/92755790",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*2600"
+    ],
+    "timestamp": "Sep/14/2020 09:54"
+  },
   "CF92758553": {
     "contest_id": 1406,
     "language": "GNU C++11",
