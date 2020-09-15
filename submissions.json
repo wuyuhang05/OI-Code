@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92902763": {
+    "contest_id": 666,
+    "language": "GNU C++11",
+    "path": "codeforces/666/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Chain Reaction",
+    "problem_url": "https://codeforces.com/contest/666/problem/D",
+    "submission_id": "CF92902763",
+    "submission_url": "https://codeforces.com/contest/666/submission/92902763",
+    "tags": [
+      "brute force",
+      "geometry",
+      "*3000"
+    ],
+    "timestamp": "Sep/15/2020 20:53"
+  },
   "CF92938478": {
     "contest_id": 1148,
     "language": "GNU C++11",
