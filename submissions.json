@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92889338": {
+    "contest_id": 1404,
+    "language": "GNU C++11",
+    "path": "codeforces/1404/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Bricks",
+    "problem_url": "https://codeforces.com/contest/1404/problem/E",
+    "submission_id": "CF92889338",
+    "submission_url": "https://codeforces.com/contest/1404/submission/92889338",
+    "tags": [
+      "flows",
+      "graph matchings",
+      "graphs",
+      "*2800"
+    ],
+    "timestamp": "Sep/15/2020 17:46"
+  },
   "CF92902763": {
     "contest_id": 666,
     "language": "GNU C++11",
