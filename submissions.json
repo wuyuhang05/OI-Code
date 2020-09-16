@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92960681": {
+    "contest_id": 1148,
+    "language": "GNU C++11",
+    "path": "codeforces/1148/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Gold Experience",
+    "problem_url": "https://codeforces.com/contest/1148/problem/G",
+    "submission_id": "CF92960681",
+    "submission_url": "https://codeforces.com/contest/1148/submission/92960681",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "math",
+      "number theory",
+      "probabilities",
+      "*3300"
+    ],
+    "timestamp": "Sep/16/2020 17:15"
+  },
   "CF92967431": {
     "contest_id": 471,
     "language": "GNU C++11",
