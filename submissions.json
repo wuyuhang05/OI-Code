@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF92967431": {
+    "contest_id": 471,
+    "language": "GNU C++11",
+    "path": "codeforces/471/B.cpp",
+    "problem_index": "B",
+    "problem_name": "MUH and Important Things",
+    "problem_url": "https://codeforces.com/contest/471/problem/B",
+    "submission_id": "CF92967431",
+    "submission_url": "https://codeforces.com/contest/471/submission/92967431",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Sep/16/2020 19:08"
+  },
   "CF92967973": {
     "contest_id": 471,
     "language": "GNU C++11",
