@@ -36,10 +36,12 @@ std::vector<int> G[MAXN],v[MAXM];
 
 inline void reduce(int i){
 	int x = a[i],q = std::sqrt(1.0*x);
+	// if(i == 6) DEBUG(x);
 	FOR(j,1,cnt){
 		int p = prime[j];
 		if(p > x || p > q) break;
 		if(!(x%p)){
+			// if(i == 6) DEBUG(p);
 			int c = 0;v[j].pb(i);G[i].pb(p);
 			while(!(x%p)) ++c,x /= p;
 			--c;while(c--) a[i] /= p;
@@ -48,6 +50,7 @@ inline void reduce(int i){
 	if(x != 1){
 		G[i].pb(x);
 		int p = std::lower_bound(prime+1,prime+cnt+1,x)-prime;
+		assert(prime[p] == x);
 		v[p].pb(i);
 	}
 }
@@ -56,8 +59,9 @@ int f[MAXM];
 // 求有多少个和它不互质 枚举gcd容斥即可
 int b[MAXN];
 
-inline int deg(int i){
+inline int deg(int i){// id
 	int sz = G[i].size(),res = 0;
+	assert(sz <= 8);
 	FOR(S,1,(1<<sz)-1){
 		int t = 1;
 		FOR(j,0,sz-1){
@@ -67,7 +71,9 @@ inline int deg(int i){
 		if((__builtin_popcount(S)-1)&1) gx = -gx;
 		res += gx;
 	}
-	return res-1;
+	// DEBUG(sz);DEBUG(res);
+	// assert(res>0);
+	return res-1;// remove itself
 }
 
 inline void add(int i,int d){
@@ -120,6 +126,9 @@ int main(){
 			break;
 		}
 	}
+	assert(u != -1 && v != -1 && w != -1);
+	assert(std::__gcd(a[u],a[v]) == 1);
+	assert(std::__gcd(a[v],a[w]) == 1);
 	add(u,-1);add(v,-1);add(w,-1);
 	if(k == 3){
 		printf("%d %d %d\n",u,v,w);
@@ -137,18 +146,22 @@ int main(){
 			if(deg(b[i]) == m-1) ++c,printf("%d ",b[i]);
 			if(c == k) break;
 		}
+		assert(c==k);
 		puts("");
 		return 0;
 	}
+	assert(m-c+3 >= k);
 	int l = 1,r = m,ans = -1;
 	while(l <= r){
 		int mid = (l + r) >> 1;
 		if(chk(mid) >= k) ans = mid,r = mid-1;
 		else l = mid+1;
 	}
+	assert(ans != -1);
 	int _ = chk(ans),t = _-chk(ans-1)-2,d = _-k;
 	FOR(i,ans+1,m) add(b[i],-1);
 	FOR(i,1,ans) vis[i] = (deg(b[i]) != ans-1);
+	assert(vis[ans]);//assert(t >= 0);
 	FOR(i,1,ans-1){
 		if(!d) break;
 		if(t <= 0) break;
@@ -158,6 +171,7 @@ int main(){
 		--d;--t;vis[i] = 0;
 	}
 	FOR(i,1,ans) if(vis[i]) printf("%d ",b[i]);
+	assert(d == 0 || d == 1);
 	if(!d) printf("%d ",u);
 	printf("%d %d\n",v,w);
 	return 0;
