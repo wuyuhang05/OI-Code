@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93011266": {
+    "contest_id": 997,
+    "language": "GNU C++17",
+    "path": "codeforces/997/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Roman Digits",
+    "problem_url": "https://codeforces.com/contest/997/problem/B",
+    "submission_id": "CF93011266",
+    "submission_url": "https://codeforces.com/contest/997/submission/93011266",
+    "tags": [
+      "brute force",
+      "combinatorics",
+      "dp",
+      "greedy",
+      "math",
+      "*2000"
+    ],
+    "timestamp": "Sep/17/2020 08:31"
+  },
   "CF93012508": {
     "contest_id": 997,
     "language": "GNU C++17",
