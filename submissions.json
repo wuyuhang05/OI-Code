@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93112348": {
+    "contest_id": 456,
+    "language": "GNU C++11",
+    "path": "codeforces/456/D.cpp",
+    "problem_index": "D",
+    "problem_name": "A Lot of Games",
+    "problem_url": "https://codeforces.com/contest/456/problem/D",
+    "submission_id": "CF93112348",
+    "submission_url": "https://codeforces.com/contest/456/submission/93112348",
+    "tags": [
+      "dp",
+      "games",
+      "strings",
+      "*1900"
+    ],
+    "timestamp": "Sep/18/2020 19:33"
+  },
   "CF93114664": {
     "contest_id": 456,
     "language": "GNU C++11",
