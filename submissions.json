@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93082075": {
+    "contest_id": 1086,
+    "language": "GNU C++11",
+    "path": "codeforces/1086/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Connect Three",
+    "problem_url": "https://codeforces.com/contest/1086/problem/A",
+    "submission_id": "CF93082075",
+    "submission_url": "https://codeforces.com/contest/1086/submission/93082075",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Sep/18/2020 08:16"
+  },
   "CF93082360": {
     "contest_id": 1086,
     "language": "GNU C++11",
