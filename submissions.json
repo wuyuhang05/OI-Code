@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93114664": {
+    "contest_id": 456,
+    "language": "GNU C++11",
+    "path": "codeforces/456/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Civilization",
+    "problem_url": "https://codeforces.com/contest/456/problem/E",
+    "submission_id": "CF93114664",
+    "submission_url": "https://codeforces.com/contest/456/submission/93114664",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Sep/18/2020 20:04"
+  },
   "CF93131582": {
     "contest_id": 1086,
     "language": "GNU C++11",
