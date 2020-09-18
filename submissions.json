@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93131582": {
+    "contest_id": 1086,
+    "language": "GNU C++11",
+    "path": "codeforces/1086/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Forest Fires",
+    "problem_url": "https://codeforces.com/contest/1086/problem/F",
+    "submission_id": "CF93131582",
+    "submission_url": "https://codeforces.com/contest/1086/submission/93131582",
+    "tags": [
+      "math",
+      "*3500"
+    ],
+    "timestamp": "Sep/18/2020 23:31"
+  },
   "CF93200163": {
     "contest_id": 1419,
     "language": "GNU C++11",
