@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93085390": {
+    "contest_id": 1086,
+    "language": "GNU C++11",
+    "path": "codeforces/1086/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Rock-Paper-Scissors Champion",
+    "problem_url": "https://codeforces.com/contest/1086/problem/D",
+    "submission_id": "CF93085390",
+    "submission_url": "https://codeforces.com/contest/1086/submission/93085390",
+    "tags": [
+      "data structures",
+      "greedy",
+      "*2500"
+    ],
+    "timestamp": "Sep/18/2020 10:55"
+  },
   "CF93088776": {
     "contest_id": 1086,
     "language": "GNU C++11",
