@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93088776": {
+    "contest_id": 1086,
+    "language": "GNU C++11",
+    "path": "codeforces/1086/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Vasya and Templates",
+    "problem_url": "https://codeforces.com/contest/1086/problem/C",
+    "submission_id": "CF93088776",
+    "submission_url": "https://codeforces.com/contest/1086/submission/93088776",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "strings",
+      "*2300"
+    ],
+    "timestamp": "Sep/18/2020 12:42"
+  },
   "CF93090552": {
     "contest_id": 1418,
     "language": "GNU C++11",
