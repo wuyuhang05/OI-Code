@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93203968": {
+    "contest_id": 1419,
+    "language": "GNU C++11",
+    "path": "codeforces/1419/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Stairs",
+    "problem_url": "https://codeforces.com/contest/1419/problem/B",
+    "submission_id": "CF93203968",
+    "submission_url": "https://codeforces.com/contest/1419/submission/93203968",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Sep/19/2020 22:46"
+  },
   "CF93208105": {
     "contest_id": 1419,
     "language": "GNU C++11",
