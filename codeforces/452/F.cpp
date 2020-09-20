@@ -43,47 +43,55 @@ inline void read(T &x){
     if(flag) x = -x;
 }
 
-inline void add(int &x,int y){
-    x += y;if(x >= ha) x -= ha;
+struct Node{
+    int l,r,sm,rev;
+    Node(int l=0,int r=0,int sm=0,int rev=0) : l(l),r(r),sm(sm),rev(rev) {}
+
+    friend Node operator + (const Node &a,const Node &b){
+        return Node(a.l,b.r,(1ll*a.sm*pw[b.r-b.l+1]%ha+b.sm)%ha,(1ll*b.rev*pw[a.r-a.l+1]%ha+a.rev)%ha);
+    }
+}sm[MAXN<<2];
+
+#define lc ((x)<<1)
+#define rc ((x)<<1|1)
+
+inline void build(int x,int l,int r){
+    sm[x] = Node(l,r,1,1);
+    if(l == r) return;
+    int mid = (l + r) >> 1;
+    build(lc,l,mid);build(rc,mid+1,r);
+    sm[x] = sm[lc]+sm[rc];
 }
 
-struct BIT{
-    #define lowbit(x) ((x)&(-(x)))
-    int tree[MAXN];
-
-    inline void add(int pos,int x){
-        int t = pos;
-        while(pos < MAXN){
-            ::add(tree[pos],1ll*pw[pos-t]*x%ha);
-            pos += lowbit(pos);
-        }
+inline void update(int x,int l,int r,int p,int d){
+    if(l == r){
+        sm[x] = Node(l,r,d,d);
+        return;
     }
+    int mid = (l + r) >> 1;
+    if(p <= mid) update(lc,l,mid,p,d);
+    else update(rc,mid+1,r,p,d);
+    sm[x] = sm[lc]+sm[rc];
+}
 
-    inline int calc(int pos){
-        int res = 0,t = pos;
-        if(pos <= 0) return 0;
-        while(pos){
-            ::add(res,1ll*tree[pos]*pw[t-pos]%ha);
-            pos -= lowbit(pos);
-        }
-        return res;
-    }
+inline Node query(int x,int l,int r,int L,int R){
+    if(l == L && r == R) return sm[x];
+    int mid = (l + r) >> 1;
+    if(R <= mid) return query(lc,l,mid,L,R);
+    if(L > mid) return query(rc,mid+1,r,L,R);
+    return query(lc,l,mid,L,mid)+query(rc,mid+1,r,mid+1,R);
+}
 
-    inline int query(int l,int r){
-        return (calc(r)+ha-1ll*calc(l-1)*pw[r-l+1]%ha)%ha;
-    }
-}bit[2];
 int a[MAXN],n;
 
-inline void Solve(){// left:1 right:1
+inline void Solve(){// left:0 right:1
     read(n);FOR(i,1,n) read(a[i]);
-    CLR(bit,0);
+    build(1,1,n);
     FOR(i,1,n){
-        bit[0].add(a[i],1);
-        bit[1].add(n-a[i]+1,1);
+        update(1,1,n,a[i],0);
         int len = std::min(a[i]-1,n-a[i]);
         if(len <= 0) continue;
-        if(bit[1].query(n-(a[i]-1)+1,n-(a[i]-len)+1) != bit[0].query(a[i]+1,a[i]+len)){
+        if(query(1,1,n,a[i]-len,a[i]-1).rev != query(1,1,n,a[i]+1,a[i]+len).sm){
             puts("YES");
             return;
         }
@@ -92,7 +100,6 @@ inline void Solve(){// left:1 right:1
 }
 
 int main(){
-//    freopen("D.in","r",stdin);
     pw[0] = 1;FOR(i,1,MAXN-1) pw[i] = 2ll*pw[i-1]%ha;
     int T=1;//read(T);
     while(T--) Solve();
