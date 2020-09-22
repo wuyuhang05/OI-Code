@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93477880": {
+    "contest_id": 1158,
+    "language": "GNU C++11",
+    "path": "codeforces/1158/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Density of subarrays",
+    "problem_url": "https://codeforces.com/contest/1158/problem/F",
+    "submission_id": "CF93477880",
+    "submission_url": "https://codeforces.com/contest/1158/submission/93477880",
+    "tags": [
+      "dp",
+      "math",
+      "*3500"
+    ],
+    "timestamp": "Sep/22/2020 19:51"
+  },
   "CF93495396": {
     "contest_id": 417,
     "language": "GNU C++11",

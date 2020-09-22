@@ -34,7 +34,7 @@ inline int qpow(int a,int n=ha-2){
 }
 
 namespace Subtask1{ // O(n^2/c * 2^c)
-	int f[2][MAXN][(1<<11)+3],now;
+	int f[2][MAXN][(1<<10)+3],now;
 	// 考虑了前i个数 凑了j个[1..c],当前段哪些还没凑
 	inline void Solve(){
 		int U = (1<<c)-1;
@@ -122,7 +122,7 @@ namespace Subtask2{
 int main(){
 	scanf("%d%d",&n,&c);
 	FOR(i,1,n) scanf("%d",a+i);
-	if(c <= 11) Subtask1::Solve();
+	if(c <= 10) Subtask1::Solve();
 	else Subtask2::Solve();
 	FOR(i,0,n) printf("%d ",ans[i]);puts("");
 	return 0;
