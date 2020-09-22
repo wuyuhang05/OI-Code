@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93443500": {
+    "contest_id": 232,
+    "language": "GNU C++11",
+    "path": "codeforces/232/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Cycles",
+    "problem_url": "https://codeforces.com/contest/232/problem/A",
+    "submission_id": "CF93443500",
+    "submission_url": "https://codeforces.com/contest/232/submission/93443500",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "graphs",
+      "greedy",
+      "*1600"
+    ],
+    "timestamp": "Sep/22/2020 08:31"
+  },
   "CF93443779": {
     "contest_id": 232,
     "language": "GNU C++11",
