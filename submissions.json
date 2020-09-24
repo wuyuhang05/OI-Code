@@ -1616,6 +1616,27 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93602829": {
+    "contest_id": 1129,
+    "language": "GNU C++11",
+    "path": "codeforces/1129/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Morse Code",
+    "problem_url": "https://codeforces.com/contest/1129/problem/C",
+    "submission_id": "CF93602829",
+    "submission_url": "https://codeforces.com/contest/1129/submission/93602829",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "hashing",
+      "sortings",
+      "string suffix structures",
+      "strings",
+      "*2400"
+    ],
+    "timestamp": "Sep/24/2020 09:55"
+  },
   "CF93617588": {
     "contest_id": 1129,
     "language": "GNU C++11",
