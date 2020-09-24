@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93639907": {
+    "contest_id": 513,
+    "language": "GNU C++11",
+    "path": "codeforces/513/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Second price auction",
+    "problem_url": "https://codeforces.com/contest/513/problem/C",
+    "submission_id": "CF93639907",
+    "submission_url": "https://codeforces.com/contest/513/submission/93639907",
+    "tags": [
+      "bitmasks",
+      "probabilities",
+      "*2000"
+    ],
+    "timestamp": "Sep/24/2020 20:27"
+  },
   "CF93651806": {
     "contest_id": 1420,
     "language": "GNU C++11",
