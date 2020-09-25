@@ -1616,6 +1616,26 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93741613": {
+    "contest_id": 1098,
+    "language": "GNU C++11",
+    "path": "codeforces/1098/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Construct a tree",
+    "problem_url": "https://codeforces.com/contest/1098/problem/C",
+    "submission_id": "CF93741613",
+    "submission_url": "https://codeforces.com/contest/1098/submission/93741613",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "trees",
+      "*2400"
+    ],
+    "timestamp": "Sep/25/2020 09:47"
+  },
   "CF93745667": {
     "contest_id": 1098,
     "language": "GNU C++11",
