@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93771389": {
+    "contest_id": 1098,
+    "language": "GNU C++11",
+    "path": "codeforces/1098/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Fedya the Potter",
+    "problem_url": "https://codeforces.com/contest/1098/problem/E",
+    "submission_id": "CF93771389",
+    "submission_url": "https://codeforces.com/contest/1098/submission/93771389",
+    "tags": [
+      "binary search",
+      "implementation",
+      "math",
+      "number theory",
+      "*3400"
+    ],
+    "timestamp": "Sep/25/2020 17:59"
+  },
   "CF93781778": {
     "contest_id": 1098,
     "language": "GNU C++11",
