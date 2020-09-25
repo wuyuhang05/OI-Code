@@ -4,7 +4,7 @@
 #define se second
 #define db double
 #define U unsigned
-#define P std::pair<LL,int>
+#define P std::pair<int,int>
 #define LL long long
 #define pb push_back
 #define MP std::make_pair
@@ -13,22 +13,24 @@
 #define FOR(i,a,b) for(int i = a;i <= b;++i)
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
-
-const int MAXN = 1e5+5;
-P st[MAXN];
 #define int LL
+const int MAXN = 1e5+5;
 int a[MAXN],n;
+P st[MAXN];
 int tp;
 LL t[MAXN];
 int A[MAXN];
 int M;
 LL sm[MAXN],csm[MAXN],cnt[MAXN];
+
 inline LL f(LL n,LL a,LL b,LL c){
 	if(n < 0) return 0;
 	if(a < 0) return f(n,-a,b+n*a,c);
 	if(b < 0){
 		if(!a) return 0;
 		LL d = std::ceil((long double)(-b)/a);
+		// DEBUG(a);DEBUG(b);DEBUG(d);
+		// exit(0);
 		return f(n-d,a,b+a*d,c);
 	}
 	if(!a) return (b/c)*(n+1);
@@ -50,7 +52,7 @@ inline bool chk(LL k){// 判断答案是否<=k 如果<=k需要满足 <=k的数 >
 	// 计算 <= k 的数字数量
 	LL res = 0;
 	FOR(i,1,M){
-		LL l = std::min(k/A[i],cnt[i]);// 最多选几个
+		int l = std::min((LL)k/A[i],cnt[i]);// 最多选几个
 		res += cnt[i]*l - l*(l-1)/2;
 		sm[i] = sm[i-1]+A[i]*cnt[i];
 		csm[i] = csm[i-1]+cnt[i];
@@ -61,9 +63,13 @@ inline bool chk(LL k){// 判断答案是否<=k 如果<=k需要满足 <=k的数 >
 		r = std::max(r,l+1);
 		while(r <= M && sm[r]-sm[l-1] <= k) ++r;
 		res += (csm[r-1]-csm[l])*cnt[l];
+		// DEBUG(csm[r-1]-csm[l]);
 		while(r <= M && sm[r]-sm[l] <= k) res += calc(l,r,k),++r;
 		res += calc(l,r,k);
+		// DEBUG(l);DEBUG(r);
+		// if(l == 1) DEBUG(res);
 	}
+	// DEBUG(res);
 	LL m = n*(n+1)/2;
 	return res >= m*(m+1)/2 - res;
 }
@@ -80,10 +86,24 @@ signed main(){
 			st[++p] = st[j];
 		}
 		tp = p;
+		// DEBUG(i);
+		// FOR(j,1,tp) printf("%d %d\n",st[j].fi,st[j].se);
+		// puts("-------");
 		FOR(j,1,tp-1) t[st[j].fi] += st[j+1].se-st[j].se;
 		t[st[tp].fi] += i-st[tp].se+1;
 	}
 	FOR(i,1,MAXN-1) if(t[i]) A[++M] = i,cnt[M] = t[i];
+	// FOR(i,1,M) printf("%d %d\n",A[i],cnt[i]);
+	// std::vector<int> S,T;
+	// FOR(i,1,M) FOR(j,1,cnt[i]) S.pb(A[i]);std::sort(all(S));
+	// FOR(l,0,(int)S.size()-1){
+		// int sm = 0;
+		// FOR(r,l,(int)S.size()-1) sm += S[r],T.pb(sm);
+	// }
+	// std::sort(all(T));
+	// for(auto x:T) DEBUG(x);
+	// DEBUG(chk(80));
+	// exit(0);
 	LL l = 1,r = 1e15,ans = -1;
 	while(l <= r){
 		LL mid = (l + r) >> 1;
