@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93826650": {
+    "contest_id": 750,
+    "language": "GNU C++11",
+    "path": "codeforces/750/C.cpp",
+    "problem_index": "C",
+    "problem_name": "New Year and Rating",
+    "problem_url": "https://codeforces.com/contest/750/problem/C",
+    "submission_id": "CF93826650",
+    "submission_url": "https://codeforces.com/contest/750/submission/93826650",
+    "tags": [
+      "binary search",
+      "greedy",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Sep/26/2020 08:28"
+  },
   "CF93827693": {
     "contest_id": 750,
     "language": "GNU C++11",
