@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93944037": {
+    "contest_id": 582,
+    "language": "GNU C++11",
+    "path": "codeforces/582/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Number of Binominal Coefficients",
+    "problem_url": "https://codeforces.com/contest/582/problem/D",
+    "submission_id": "CF93944037",
+    "submission_url": "https://codeforces.com/contest/582/submission/93944037",
+    "tags": [
+      "dp",
+      "math",
+      "number theory",
+      "*3300"
+    ],
+    "timestamp": "Sep/27/2020 17:50"
+  },
   "CF93960522": {
     "contest_id": 582,
     "language": "GNU C++11",
