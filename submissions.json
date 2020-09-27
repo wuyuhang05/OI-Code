@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93960522": {
+    "contest_id": 582,
+    "language": "GNU C++11",
+    "path": "codeforces/582/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Boolean Function",
+    "problem_url": "https://codeforces.com/contest/582/problem/E",
+    "submission_id": "CF93960522",
+    "submission_url": "https://codeforces.com/contest/582/submission/93960522",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "expression parsing",
+      "*3000"
+    ],
+    "timestamp": "Sep/27/2020 21:27"
+  },
   "CF94038235": {
     "contest_id": 1119,
     "language": "GNU C++11",
