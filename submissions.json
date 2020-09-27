@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF93911130": {
+    "contest_id": 582,
+    "language": "GNU C++11",
+    "path": "codeforces/582/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Once Again...",
+    "problem_url": "https://codeforces.com/contest/582/problem/B",
+    "submission_id": "CF93911130",
+    "submission_url": "https://codeforces.com/contest/582/submission/93911130",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "matrices",
+      "*1900"
+    ],
+    "timestamp": "Sep/27/2020 08:20"
+  },
   "CF93911846": {
     "contest_id": 582,
     "language": "GNU C++11",
