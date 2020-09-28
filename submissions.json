@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94097257": {
+    "contest_id": 1426,
+    "language": "GNU C++11",
+    "path": "codeforces/1426/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Rock, Paper, Scissors",
+    "problem_url": "https://codeforces.com/contest/1426/problem/E",
+    "submission_id": "CF94097257",
+    "submission_url": "https://codeforces.com/contest/1426/submission/94097257",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "flows",
+      "greedy",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Sep/28/2020 17:20"
+  },
   "CF94099915": {
     "contest_id": 1426,
     "language": "GNU C++11",
