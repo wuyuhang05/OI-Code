@@ -18407,6 +18407,23 @@
     ],
     "timestamp": "Sep/28/2020 20:34"
   },
+  "CF94167719": {
+    "contest_id": 521,
+    "language": "GNU C++11",
+    "path": "codeforces/521/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "DNA Alignment",
+    "problem_url": "https://codeforces.com/contest/521/problem/A",
+    "submission_id": "CF94167719",
+    "submission_url": "https://codeforces.com/contest/521/submission/94167719",
+    "tags": [
+      "greedy",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Sep/29/2020 07:38"
+  },
   "CF94168158": {
     "contest_id": 521,
     "language": "GNU C++11",
