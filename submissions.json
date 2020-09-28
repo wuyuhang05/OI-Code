@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94116841": {
+    "contest_id": 1119,
+    "language": "GNU C++11",
+    "path": "codeforces/1119/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Get Ready for the Battle",
+    "problem_url": "https://codeforces.com/contest/1119/problem/G",
+    "submission_id": "CF94116841",
+    "submission_url": "https://codeforces.com/contest/1119/submission/94116841",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*3100"
+    ],
+    "timestamp": "Sep/28/2020 18:54"
+  },
   "CF94126140": {
     "contest_id": 1119,
     "language": "GNU C++11",
