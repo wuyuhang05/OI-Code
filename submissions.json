@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94126140": {
+    "contest_id": 1119,
+    "language": "GNU C++11",
+    "path": "codeforces/1119/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Niyaz and Small Degrees",
+    "problem_url": "https://codeforces.com/contest/1119/problem/F",
+    "submission_id": "CF94126140",
+    "submission_url": "https://codeforces.com/contest/1119/submission/94126140",
+    "tags": [
+      "data structures",
+      "dp",
+      "trees",
+      "*3400"
+    ],
+    "timestamp": "Sep/28/2020 20:34"
+  },
   "CF94918748": {
     "contest_id": 1310,
     "language": "GNU C++11",
