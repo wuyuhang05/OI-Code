@@ -18407,6 +18407,25 @@
     ],
     "timestamp": "Sep/28/2020 20:34"
   },
+  "CF94211288": {
+    "contest_id": 750,
+    "language": "GNU C++11",
+    "path": "codeforces/750/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "New Year and Binary Tree Paths",
+    "problem_url": "https://codeforces.com/contest/750/problem/G",
+    "submission_id": "CF94211288",
+    "submission_url": "https://codeforces.com/contest/750/submission/94211288",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "combinatorics",
+      "dp",
+      "*3200"
+    ],
+    "timestamp": "Sep/29/2020 21:01"
+  },
   "CF94379675": {
     "contest_id": 1408,
     "language": "GNU C++11",
