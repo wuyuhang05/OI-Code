@@ -18407,6 +18407,22 @@
     ],
     "timestamp": "Sep/28/2020 20:34"
   },
+  "CF94169478": {
+    "contest_id": 521,
+    "language": "GNU C++11",
+    "path": "codeforces/521/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Shop",
+    "problem_url": "https://codeforces.com/contest/521/problem/D",
+    "submission_id": "CF94169478",
+    "submission_url": "https://codeforces.com/contest/521/submission/94169478",
+    "tags": [
+      "greedy",
+      "*2800"
+    ],
+    "timestamp": "Sep/29/2020 09:00"
+  },
   "CF94170306": {
     "contest_id": 521,
     "language": "GNU C++11",
