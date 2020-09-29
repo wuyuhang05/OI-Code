@@ -18407,6 +18407,24 @@
     ],
     "timestamp": "Sep/28/2020 20:34"
   },
+  "CF94170306": {
+    "contest_id": 521,
+    "language": "GNU C++11",
+    "path": "codeforces/521/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Cubes",
+    "problem_url": "https://codeforces.com/contest/521/problem/B",
+    "submission_id": "CF94170306",
+    "submission_url": "https://codeforces.com/contest/521/submission/94170306",
+    "tags": [
+      "data structures",
+      "greedy",
+      "implementation",
+      "*2100"
+    ],
+    "timestamp": "Sep/29/2020 09:33"
+  },
   "CF94173056": {
     "contest_id": 521,
     "language": "GNU C++11",
