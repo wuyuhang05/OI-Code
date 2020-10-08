@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94918748": {
+    "contest_id": 1310,
+    "language": "GNU C++11",
+    "path": "codeforces/1310/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Au Pont Rouge",
+    "problem_url": "https://codeforces.com/contest/1310/problem/C",
+    "submission_id": "CF94918748",
+    "submission_url": "https://codeforces.com/contest/1310/submission/94918748",
+    "tags": [
+      "binary search",
+      "dp",
+      "strings",
+      "*2800"
+    ],
+    "timestamp": "Oct/08/2020 21:54"
+  },
   "CF94948650": {
     "contest_id": 1107,
     "language": "GNU C++11",
