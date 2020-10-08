@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94948773": {
+    "contest_id": 1107,
+    "language": "GNU C++11",
+    "path": "codeforces/1107/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Brutality",
+    "problem_url": "https://codeforces.com/contest/1107/problem/C",
+    "submission_id": "CF94948773",
+    "submission_url": "https://codeforces.com/contest/1107/submission/94948773",
+    "tags": [
+      "greedy",
+      "sortings",
+      "two pointers",
+      "*1300"
+    ],
+    "timestamp": "Oct/09/2020 06:48"
+  },
   "CF94949135": {
     "contest_id": 1107,
     "language": "GNU C++11",
