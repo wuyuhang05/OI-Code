@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94969856": {
+    "contest_id": 1120,
+    "language": "GNU C++11",
+    "path": "codeforces/1120/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Secret Letters",
+    "problem_url": "https://codeforces.com/contest/1120/problem/F",
+    "submission_id": "CF94969856",
+    "submission_url": "https://codeforces.com/contest/1120/submission/94969856",
+    "tags": [
+      "data structures",
+      "dp",
+      "greedy",
+      "*3100"
+    ],
+    "timestamp": "Oct/09/2020 16:35"
+  },
   "CF95024157": {
     "contest_id": 1202,
     "language": "GNU C++11",
