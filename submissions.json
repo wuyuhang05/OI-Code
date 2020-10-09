@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94960595": {
+    "contest_id": 875,
+    "language": "GNU C++11",
+    "path": "codeforces/875/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Royal Questions",
+    "problem_url": "https://codeforces.com/contest/875/problem/F",
+    "submission_id": "CF94960595",
+    "submission_url": "https://codeforces.com/contest/875/submission/94960595",
+    "tags": [
+      "dsu",
+      "graphs",
+      "greedy",
+      "*2500"
+    ],
+    "timestamp": "Oct/09/2020 13:52"
+  },
   "CF94963699": {
     "contest_id": 1239,
     "language": "GNU C++11",
