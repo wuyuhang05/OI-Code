@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94967958": {
+    "contest_id": 538,
+    "language": "GNU C++11",
+    "path": "codeforces/538/H.cpp",
+    "problem_index": "H",
+    "problem_name": "Summer Dichotomy",
+    "problem_url": "https://codeforces.com/contest/538/problem/H",
+    "submission_id": "CF94967958",
+    "submission_url": "https://codeforces.com/contest/538/submission/94967958",
+    "tags": [
+      "2-sat",
+      "data structures",
+      "dfs and similar",
+      "greedy",
+      "*3200"
+    ],
+    "timestamp": "Oct/09/2020 16:02"
+  },
   "CF94969856": {
     "contest_id": 1120,
     "language": "GNU C++11",
