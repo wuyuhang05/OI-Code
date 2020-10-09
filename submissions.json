@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF94963699": {
+    "contest_id": 1239,
+    "language": "GNU C++11",
+    "path": "codeforces/1239/B.cpp",
+    "problem_index": "B",
+    "problem_name": "The World Is Just a Programming Task (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1239/problem/B",
+    "submission_id": "CF94963699",
+    "submission_url": "https://codeforces.com/contest/1239/submission/94963699",
+    "tags": [
+      "implementation",
+      "*2500"
+    ],
+    "timestamp": "Oct/09/2020 14:51"
+  },
   "CF94967958": {
     "contest_id": 538,
     "language": "GNU C++11",
