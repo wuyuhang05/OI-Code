@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF95025944": {
+    "contest_id": 1202,
+    "language": "GNU C++11",
+    "path": "codeforces/1202/B.cpp",
+    "problem_index": "B",
+    "problem_name": "You Are Given a Decimal String...",
+    "problem_url": "https://codeforces.com/contest/1202/problem/B",
+    "submission_id": "CF95025944",
+    "submission_url": "https://codeforces.com/contest/1202/submission/95025944",
+    "tags": [
+      "brute force",
+      "dp",
+      "shortest paths",
+      "*1700"
+    ],
+    "timestamp": "Oct/10/2020 09:33"
+  },
   "CF95026642": {
     "contest_id": 1202,
     "language": "GNU C++11",
