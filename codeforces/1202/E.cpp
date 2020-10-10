@@ -49,6 +49,7 @@ inline void build(){
 			else ch[v][i] = ch[fail[v]][i];
 		}
 	}
+	// FOR(i,1,tot) sm[i] += sm[fail[i]];
 }
 
 LL pre[MAXN],suf[MAXN];
