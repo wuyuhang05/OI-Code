@@ -14,7 +14,7 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 2e5 + 5;
+const int MAXN = 3e5 + 5;
 
 int ch[MAXN][26],tot = 1,fail[MAXN],rt = 1,n;
 std::string s[MAXN],t;
