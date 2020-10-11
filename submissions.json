@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF95262635": {
+    "contest_id": 1025,
+    "language": "GNU C++11",
+    "path": "codeforces/1025/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Colored Cubes",
+    "problem_url": "https://codeforces.com/contest/1025/problem/E",
+    "submission_id": "CF95262635",
+    "submission_url": "https://codeforces.com/contest/1025/submission/95262635",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "matrices",
+      "*2700"
+    ],
+    "timestamp": "Oct/11/2020 20:50"
+  },
   "CF95400499": {
     "contest_id": 494,
     "language": "GNU C++11",
