@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF95405168": {
+    "contest_id": 494,
+    "language": "GNU C++11",
+    "path": "codeforces/494/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Helping People",
+    "problem_url": "https://codeforces.com/contest/494/problem/C",
+    "submission_id": "CF95405168",
+    "submission_url": "https://codeforces.com/contest/494/submission/95405168",
+    "tags": [
+      "dp",
+      "probabilities",
+      "*2600"
+    ],
+    "timestamp": "Oct/13/2020 16:38"
+  },
   "CF95418314": {
     "contest_id": 494,
     "language": "GNU C++11",
