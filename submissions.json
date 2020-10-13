@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF95400499": {
+    "contest_id": 494,
+    "language": "GNU C++11",
+    "path": "codeforces/494/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Treasure",
+    "problem_url": "https://codeforces.com/contest/494/problem/A",
+    "submission_id": "CF95400499",
+    "submission_url": "https://codeforces.com/contest/494/submission/95400499",
+    "tags": [
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Oct/13/2020 15:26"
+  },
   "CF95402301": {
     "contest_id": 494,
     "language": "GNU C++11",
