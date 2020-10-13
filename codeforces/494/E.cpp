@@ -47,11 +47,10 @@ inline void build(int x,int l,int r){
 
 inline void modify(int x,int l,int r,int L,int R,int d){
 	if(L > R) return;
-	int len = S[r-1]-(l==1?0:S[l-2]);
+	int len = S[r]-S[l-1];
 	if(l == L && r == R){
 		tag[x] += d;
-		if(tag[x]) sm[x] = len;
-		else sm[x] = sm[lc]+sm[rc];
+		sm[x] = tag[x] ? len : (l == r ? 0 : (sm[lc]+sm[rc])%2);
 		// DEBUG(l);DEBUG(r);
 		// for(auto x:S) DEBUG(x);
 		// DEBUG(tag[x]);DEBUG(sm[lc]);DEBUG(sm[rc]);DEBUG(sm[x]);
@@ -62,8 +61,7 @@ inline void modify(int x,int l,int r,int L,int R,int d){
 	if(R <= mid) modify(lc,l,mid,L,R,d);
 	else if(L > mid) modify(rc,mid+1,r,L,R,d);
 	else modify(lc,l,mid,L,mid,d),modify(rc,mid+1,r,mid+1,R,d);
-	if(tag[x]) sm[x] = len;
-	else sm[x] = sm[lc]+sm[rc];
+	sm[x] = tag[x] ? len : (l == r ? 0 : (sm[lc]+sm[rc])%2);
 }
 
 inline int work(int c){
@@ -78,34 +76,35 @@ inline int work(int c){
 		if(a[i].x1 > a[i].x2 || a[i].y1 > a[i].y2) continue;
 		if(b[i].x1&U) a[i].x1++;
 		if(b[i].y1&U) a[i].y1++;
-		S.pb(a[i].y1-1);S.pb(a[i].y2);
-		G.pb(Event(a[i].x1,a[i].y1-1,a[i].y2,1));
-		G.pb(Event(a[i].x2+1,a[i].y1-1,a[i].y2,-1));
+		S.pb(a[i].y1);S.pb(a[i].y2+1);
+		G.pb(Event(a[i].x1,a[i].y1,a[i].y2+1,1));
+		G.pb(Event(a[i].x2+1,a[i].y1,a[i].y2+1,-1));
 	}
 	std::sort(all(S));S.erase(std::unique(all(S)),S.end());
 	for(auto &x:G){
 		x.y1 = std::lower_bound(all(S),x.y1)-S.begin()+1;
 		x.y2 = std::lower_bound(all(S),x.y2)-S.begin()+1;
 	}
-	int m = S.size();
+	int m = S.size();S.pb(S.back());
 	// modify(1,1,m,1,3,1);
 	// modify(1,1,m,3,4,1);
 	// DEBUG(S[3]-S[1]);
 	// DEBUG(sm[1]);
 	// exit(0);
 	std::sort(all(G));build(1,1,m);
-	int las = 0,ans = 0,ps = 0;
+	int las = S[0],ans = 0,ps = 0;
 	while(ps < G.size()){
 		int t = G[ps].x;
-		ans += (G[ps].x-las)*sm[1];
-		while(ps+1 < G.size() && G[ps+1].x == t) modify(1,1,m,G[ps].y1+1,G[ps].y2,G[ps].d),++ps;
+		(ans += 1ll*(G[ps].x-las)*sm[1]%2) %= 2;
+		while(ps+1 < G.size() && G[ps+1].x == t) modify(1,1,m,G[ps].y1,G[ps].y2-1,G[ps].d),++ps;
 		// DEBUG(G[ps].y1),DEBUG(G[ps].y2),DEBUG(G[ps].d);
-		modify(1,1,m,G[ps].y1+1,G[ps].y2,G[ps].d);
+		modify(1,1,m,G[ps].y1,G[ps].y2-1,G[ps].d);
 		// DEBUG(G[ps].x-las);
 		// DEBUG(sm[1]);
 		// exit(0);
 		las = G[ps].x;++ps;
 	}
+	// DEBUG(ans);
 	return ans;
 }
 
