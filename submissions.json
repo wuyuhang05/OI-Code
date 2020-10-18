@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF95834340": {
+    "contest_id": 930,
+    "language": "GNU C++11",
+    "path": "codeforces/930/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Coins Exhibition",
+    "problem_url": "https://codeforces.com/contest/930/problem/E",
+    "submission_id": "CF95834340",
+    "submission_url": "https://codeforces.com/contest/930/submission/95834340",
+    "tags": [
+      "data structures",
+      "dp",
+      "math",
+      "*2900"
+    ],
+    "timestamp": "Oct/18/2020 09:55"
+  },
   "CF95856389": {
     "contest_id": 1421,
     "language": "GNU C++11",
