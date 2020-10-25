@@ -1616,6 +1616,24 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF96685548": {
+    "contest_id": 1434,
+    "language": "GNU C++11",
+    "path": "codeforces/1434/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Solo mid Oracle",
+    "problem_url": "https://codeforces.com/contest/1434/problem/C",
+    "submission_id": "CF96685548",
+    "submission_url": "https://codeforces.com/contest/1434/submission/96685548",
+    "tags": [
+      "binary search",
+      "greedy",
+      "math",
+      "ternary search",
+      "*2100"
+    ],
+    "timestamp": "Oct/25/2020 20:28"
+  },
   "CF96858855": {
     "contest_id": 1149,
     "language": "GNU C++14",
