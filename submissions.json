@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF97079645": {
+    "contest_id": 1434,
+    "language": "GNU C++14",
+    "path": "codeforces/1434/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Roads and Ramen",
+    "problem_url": "https://codeforces.com/contest/1434/problem/D",
+    "submission_id": "CF97079645",
+    "submission_url": "https://codeforces.com/contest/1434/submission/97079645",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "trees",
+      "*2800"
+    ],
+    "timestamp": "Oct/29/2020 20:08"
+  },
   "CF97310772": {
     "contest_id": 1444,
     "language": "GNU C++14",
