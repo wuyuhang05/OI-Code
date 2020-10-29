@@ -1616,6 +1616,25 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF97062119": {
+    "contest_id": 1437,
+    "language": "GNU C++14",
+    "path": "codeforces/1437/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Make It Increasing",
+    "problem_url": "https://codeforces.com/contest/1437/problem/E",
+    "submission_id": "CF97062119",
+    "submission_url": "https://codeforces.com/contest/1437/submission/97062119",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "data structures",
+      "dp",
+      "implementation",
+      "*2200"
+    ],
+    "timestamp": "Oct/29/2020 16:02"
+  },
   "CF97064614": {
     "contest_id": 1437,
     "language": "GNU C++14",
