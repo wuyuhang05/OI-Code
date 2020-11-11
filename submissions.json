@@ -1616,6 +1616,23 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF98119252": {
+    "contest_id": 1444,
+    "language": "GNU C++14",
+    "path": "codeforces/1444/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Rectangular Polyline",
+    "problem_url": "https://codeforces.com/contest/1444/problem/D",
+    "submission_id": "CF98119252",
+    "submission_url": "https://codeforces.com/contest/1444/submission/98119252",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "geometry",
+      "*2900"
+    ],
+    "timestamp": "Nov/11/2020 19:09"
+  },
   "CF98514785": {
     "contest_id": 1446,
     "language": "GNU C++14",
