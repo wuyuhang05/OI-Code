@@ -1,4 +1,26 @@
 {
+  "CF100623510": {
+    "contest_id": 1455,
+    "language": "GNU C++11",
+    "path": "codeforces/1455/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Four Points",
+    "problem_url": "https://codeforces.com/contest/1455/problem/E",
+    "submission_id": "CF100623510",
+    "submission_url": "https://codeforces.com/contest/1455/submission/100623510",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "flows",
+      "geometry",
+      "greedy",
+      "implementation",
+      "math",
+      "ternary search",
+      "*2400"
+    ],
+    "timestamp": "Dec/07/2020 19:35"
+  },
   "CF100626780": {
     "contest_id": 1455,
     "language": "GNU C++11",
