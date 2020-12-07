@@ -49,20 +49,23 @@ int main(){
     prework();
     scanf("%d%d",&n,&m);
     scanf("%s",str+1);
-    int B1=0,W2=0,p=0;
+    int B1=0,W2=0,p=0,p2=0;
     FOR(i,1,n){
         B1 += (str[i] == 'b' && (i&1));
         W2 += (str[i] == 'w' && (!(i&1)));
         p += (str[i] == '?');
+        p2 += (str[i] == '?' && (!(i&1)));
     }
-    int ans = 0;
+    int ans = 0,all = 0;
     FOR(x,0,n){
-        int c = C(p,x),d = std::abs(x-(n/2)+B1+W2);
+        int c = C(p,x-B1-W2),d = std::abs(x-(n/2));
         if(d&1) continue;
+        d >>= 1;
+        add(all,c);
         c = 1ll*c*d%ha;
         add(ans,c);
     }
-    ans = 1ll*ans*qpow(qpow(2,p))%ha;
+    ans = 1ll*ans*qpow(all)%ha;
     printf("%d\n",ans);
     return 0;
 }
