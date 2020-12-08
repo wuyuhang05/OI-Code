@@ -1,4 +1,23 @@
 {
+  "CF100677810": {
+    "contest_id": 1427,
+    "language": "GNU C++11",
+    "path": "codeforces/1427/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Xum",
+    "problem_url": "https://codeforces.com/contest/1427/problem/E",
+    "submission_id": "CF100677810",
+    "submission_url": "https://codeforces.com/contest/1427/submission/100677810",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "math",
+      "matrices",
+      "number theory",
+      "*2500"
+    ],
+    "timestamp": "Dec/08/2020 16:32"
+  },
   "CF100685723": {
     "contest_id": 504,
     "language": "GNU C++11",
