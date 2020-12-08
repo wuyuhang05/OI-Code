@@ -1,4 +1,24 @@
 {
+  "CF100671086": {
+    "contest_id": 1438,
+    "language": "GNU C++11",
+    "path": "codeforces/1438/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Yurii Can Do Everything",
+    "problem_url": "https://codeforces.com/contest/1438/problem/E",
+    "submission_id": "CF100671086",
+    "submission_url": "https://codeforces.com/contest/1438/submission/100671086",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "brute force",
+      "constructive algorithms",
+      "divide and conquer",
+      "two pointers",
+      "*2500"
+    ],
+    "timestamp": "Dec/08/2020 14:34"
+  },
   "CF100677810": {
     "contest_id": 1427,
     "language": "GNU C++11",
