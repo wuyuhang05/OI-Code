@@ -1,4 +1,22 @@
 {
+  "CF100752225": {
+    "contest_id": 1452,
+    "language": "GNU C++11",
+    "path": "codeforces/1452/G.cpp",
+    "problem_index": "G",
+    "problem_name": "Game On Tree",
+    "problem_url": "https://codeforces.com/contest/1452/problem/G",
+    "submission_id": "CF100752225",
+    "submission_url": "https://codeforces.com/contest/1452/submission/100752225",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "greedy",
+      "trees",
+      "*2700"
+    ],
+    "timestamp": "Dec/09/2020 17:42"
+  },
   "CF100757724": {
     "contest_id": 504,
     "language": "GNU C++11",
