@@ -1,4 +1,20 @@
 {
+  "CF100757724": {
+    "contest_id": 504,
+    "language": "GNU C++11",
+    "path": "codeforces/504/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Misha and Palindrome Degree",
+    "problem_url": "https://codeforces.com/contest/504/problem/C",
+    "submission_id": "CF100757724",
+    "submission_url": "https://codeforces.com/contest/504/submission/100757724",
+    "tags": [
+      "implementation",
+      "math",
+      "*2500"
+    ],
+    "timestamp": "Dec/09/2020 19:09"
+  },
   "CF100761671": {
     "contest_id": 504,
     "language": "GNU C++11",
