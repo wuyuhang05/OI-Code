@@ -1,4 +1,20 @@
 {
+  "CF100983494": {
+    "contest_id": 506,
+    "language": "GNU C++11",
+    "path": "codeforces/506/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Mr. Kitayuta's Technology",
+    "problem_url": "https://codeforces.com/contest/506/problem/B",
+    "submission_id": "CF100983494",
+    "submission_url": "https://codeforces.com/contest/506/submission/100983494",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "*2200"
+    ],
+    "timestamp": "Dec/12/2020 11:25"
+  },
   "CF101025851": {
     "contest_id": 115,
     "language": "GNU C++11",
