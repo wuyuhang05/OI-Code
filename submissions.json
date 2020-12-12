@@ -1,4 +1,19 @@
 {
+  "CF100981552": {
+    "contest_id": 702,
+    "language": "GNU C++11",
+    "path": "codeforces/702/F.cpp",
+    "problem_index": "F",
+    "problem_name": "T-Shirts",
+    "problem_url": "https://codeforces.com/contest/702/problem/F",
+    "submission_id": "CF100981552",
+    "submission_url": "https://codeforces.com/contest/702/submission/100981552",
+    "tags": [
+      "data structures",
+      "*2800"
+    ],
+    "timestamp": "Dec/12/2020 10:19"
+  },
   "CF100982437": {
     "contest_id": 506,
     "language": "GNU C++11",
