@@ -1,3 +1,50 @@
+#pragma GCC optimize(2)
+#pragma GCC optimize(3)
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("inline")
+#pragma GCC optimize("-fgcse")
+#pragma GCC optimize("-fgcse-lm")
+#pragma GCC optimize("-fipa-sra")
+#pragma GCC optimize("-ftree-pre")
+#pragma GCC optimize("-ftree-vrp")
+#pragma GCC optimize("-fpeephole2")
+#pragma GCC optimize("-ffast-math")
+#pragma GCC optimize("-fsched-spec")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC optimize("-falign-jumps")
+#pragma GCC optimize("-falign-loops")
+#pragma GCC optimize("-falign-labels") 
+#pragma GCC optimize("-fdevirtualize")
+#pragma GCC optimize("-fcaller-saves")
+#pragma GCC optimize("-fcrossjumping")
+#pragma GCC optimize("-fthread-jumps")
+#pragma GCC optimize("-funroll-loops")
+#pragma GCC optimize("-fwhole-program")
+#pragma GCC optimize("-freorder-blocks")
+#pragma GCC optimize("-fschedule-insns")
+#pragma GCC optimize("inline-functions")
+#pragma GCC optimize("-ftree-tail-merge")
+#pragma GCC optimize("-fschedule-insns2")
+#pragma GCC optimize("-fstrict-aliasing")
+#pragma GCC optimize("-fstrict-overflow")
+#pragma GCC optimize("-falign-functions")
+#pragma GCC optimize("-fcse-skip-blocks")
+#pragma GCC optimize("-fcse-follow-jumps")
+#pragma GCC optimize("-fsched-interblock")
+#pragma GCC optimize("-fpartial-inlining")
+#pragma GCC optimize("no-stack-protector")
+#pragma GCC optimize("-freorder-functions")
+#pragma GCC optimize("-findirect-inlining")
+#pragma GCC optimize("-fhoist-adjacent-loads")
+#pragma GCC optimize("-frerun-cse-after-loop")
+#pragma GCC optimize("inline-small-functions")
+#pragma GCC optimize("-finline-small-functions")
+#pragma GCC optimize("-ftree-switch-conversion")
+#pragma GCC optimize("-foptimize-sibling-calls")
+#pragma GCC optimize("-fexpensive-optimizations")
+#pragma GCC optimize("-funsafe-loop-optimizations")
+#pragma GCC optimize("inline-functions-called-once")
+#pragma GCC optimize("-fdelete-null-pointer-checks")
 #include <bits/stdc++.h>
 
 #define fi first
@@ -10,57 +57,43 @@
 #define MP std::make_pair
 #define all(x) x.begin(),x.end()
 #define CLR(i,a) memset(i,a,sizeof(i))
-#define FOR(i,a,b) for(int i = a;i <= b;++i)
-#define ROF(i,a,b) for(int i = a;i >= b;--i)
+#define FOR(i,a,b) for(register int i = a;i <= b;++i)
+#define ROF(i,a,b) for(register int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
 const int MAXN = 2000+5;
 const int ha = 1e6 + 3;
-
-inline void add(int &x,int y){
-    x += y-ha;x += x>>31&ha;
-}
-
 char str[MAXN];
-int a[MAXN],n;
-int f[2][MAXN],now;
-int sm[MAXN];
+int a[MAXN];
+int n;
+int f[MAXN][MAXN],g[MAXN][MAXN];
 
 int main(){
     scanf("%s",str+1);int len = strlen(str+1);
+    //int len = 2000;
+    //FOR(i,1,1000) str[i<<1] = '-',str[i<<1|1] = '1';
     FOR(i,1,len){
-        if(str[i] == '+' || str[i] == '-') a[++n] = 1;
-        else if(str[i] == '*' || str[i] == '/') a[++n] = 2;
-        else{
+        if(isdigit(str[i])){
             a[++n] = 0;
-            while(isdigit(str[i])) ++i;--i;
-        }
-    }
-    if(a[1]==2 || a[n]){
-        puts("0");
-        return 0;
-    }
-    for(int l = 1,r = 1;l <= n;l = r+1){
-        r = l;if(!a[l]) continue;
-        while(r+1 <= n && a[r]) ++r;
-        FOR(i,l+1,r) if(a[i] == 2){
-            puts("0");
-            return 0;
-        }
-    }
-    f[now=0][0] = 1;
-    FOR(i,1,n){
-        CLR(f[now^1],0);
-        if(a[i] == 0) continue;
-        if(a[i+1] == 0){
-            ROF(j,n,0) add(f[now][j],f[now][j+1]);
-            FOR(j,0,n) f[now^1][j] = f[now][std::max(0,j-1)];
+            while(isdigit(str[i])) ++i;
+            --i;
         }
         else{
-            FOR(j,1,n) f[now^1][j] = f[now][j-1];
+            if(str[i] == '+' || str[i] == '-') a[++n] = 1;
+            else a[++n] = 2;
         }
-        now ^= 1;
     }
-    printf("%d\n",f[now][0]);
+    FOR(i,1,n) f[i][i] = g[i][i] = !a[i];
+    ROF(l,n-1,1) if(a[l] != 2){
+        int *p1 = f[l]-1;
+        FOR(r,l+1,n) if(!a[r]){
+            LL t = 0;
+            if(a[l] == 1) t = f[l+1][r];
+            int *p2 = g[r]+1;
+            FOR(k,l+1,r-1) if(a[k]) t += 1ll*p1[k]*p2[k];
+            f[l][r] = g[r][l] = t%ha;
+        }
+    }
+    printf("%d\n",f[1][n]);
     return 0;
 }
