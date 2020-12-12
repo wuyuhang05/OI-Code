@@ -1,4 +1,20 @@
 {
+  "CF101025971": {
+    "contest_id": 115,
+    "language": "GNU C++11",
+    "path": "codeforces/115/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Unambiguous Arithmetic Expression",
+    "problem_url": "https://codeforces.com/contest/115/problem/D",
+    "submission_id": "CF101025971",
+    "submission_url": "https://codeforces.com/contest/115/submission/101025971",
+    "tags": [
+      "dp",
+      "expression parsing",
+      "*2600"
+    ],
+    "timestamp": "Dec/12/2020 22:00"
+  },
   "CF101026012": {
     "contest_id": 115,
     "language": "GNU C++11",
