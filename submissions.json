@@ -1,4 +1,20 @@
 {
+  "CF101069130": {
+    "contest_id": 506,
+    "language": "GNU C++11",
+    "path": "codeforces/506/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Mr. Kitayuta vs. Bamboos",
+    "problem_url": "https://codeforces.com/contest/506/problem/C",
+    "submission_id": "CF101069130",
+    "submission_url": "https://codeforces.com/contest/506/submission/101069130",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*2900"
+    ],
+    "timestamp": "Dec/13/2020 11:59"
+  },
   "CF101074275": {
     "contest_id": 516,
     "language": "GNU C++11",
