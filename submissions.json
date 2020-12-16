@@ -1,4 +1,20 @@
 {
+  "CF101422490": {
+    "contest_id": 609,
+    "language": "GNU C++11",
+    "path": "codeforces/609/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Load Balancing",
+    "problem_url": "https://codeforces.com/contest/609/problem/C",
+    "submission_id": "CF101422490",
+    "submission_url": "https://codeforces.com/contest/609/submission/101422490",
+    "tags": [
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Dec/16/2020 20:21"
+  },
   "CF101424071": {
     "contest_id": 609,
     "language": "GNU C++11",
