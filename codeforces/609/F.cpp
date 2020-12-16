@@ -4,7 +4,7 @@
 #define se second
 #define db double
 #define U unsigned
-#define P std::pair
+#define P std::pair<int,int>
 #define LL long long
 #define pb push_back
 #define MP std::make_pair
@@ -16,67 +16,66 @@
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
 const int MAXN = 2e5 + 5;
+
 int n,m;
-LL ans[MAXN];int cnt[MAXN];
-int x[MAXN];
 
 struct Node{
-    LL l,r;int id;
-    Node(LL l=0,LL r=0,int id=0) : l(l),r(r),id(id) {}
+    int x;LL t;int id;
+}a[MAXN];
 
-    inline bool operator < (const Node &t) const {
-        return l < t.l;
+LL mx[MAXN<<2];
+#define lc ((x)<<1)
+#define rc ((x)<<1|1)
+
+inline void update(int x,int l,int r,int p,LL d){
+    if(l == r){
+        mx[x] = d;return;
     }
-};
+    int mid = (l + r) >> 1;
+    if(p <= mid) update(lc,l,mid,p,d);
+    else update(rc,mid+1,r,p,d);
+    mx[x] = std::max(mx[lc],mx[rc]);
+}
 
-std::set<Node> S;
-std::multiset<P<LL,LL> > frog;
+inline LL query(int x,int l,int r,LL k){//  >= k;
+    if(mx[x] < k) return -1;
+    if(l == r) return l;
+    int mid = (l + r) >> 1;
+    if(mx[lc] >= k) return query(lc,l,mid,k);
+    return query(rc,mid+1,r,k);
+}
 
-P<int,int> a[MAXN];
-int id[MAXN];
+std::multiset<P> S;
+int cnt[MAXN];LL ans[MAXN];
 
 int main(){
     scanf("%d%d",&n,&m);
-    FOR(i,1,n) scanf("%d%d",&a[i].fi,&a[i].se),id[i] = i;
-    std::sort(id+1,id+n+1,[&](int x,int y){
-              return a[x].fi < a[y].fi;
+    FOR(i,1,n) scanf("%d%lld",&a[i].x,&a[i].t),a[i].id = i;
+    std::sort(a+1,a+n+1,[&](const Node &a,const Node &b){
+              return a.x < b.x;
               });
-    S.insert(Node(-1e18,-1e18));S.insert(Node(1e18,1e18));
-    LL las = -1e9;
-    FOR(cc,1,n){
-        int i = id[cc];
-        int t = a[i].se;x[i] = a[i].fi;ans[i] = t;
-        // [x,x+t]
-        LL l = x[i],r = x[i]+t;l = std::max(l,las+1);
-        if(l <= r) S.insert(Node(l,r,i));
-        las = std::max(las,r);
-    }
+    FOR(i,1,n) update(1,1,n,i,a[i].x+a[i].t);
     FOR(i,1,m){
         int p,b;scanf("%d%d",&p,&b);
-        auto it = S.upper_bound(Node(p,0));--it;
-        if(it->l > p || p > it->r){
-            frog.insert(MP(p,b));
+        int t = query(1,1,n,p);
+        if(t == -1 || a[t].x > p){
+            S.insert(MP(p,b));
+            continue;
         }
-        else{
-            ans[it->id] += b;cnt[it->id]++;
-            while(!frog.empty()){
-                auto p = frog.lower_bound(MP(x[it->id],-1e9));
-                if(p == frog.end() || p->fi > x[it->id]+ans[it->id]) break;
-                ans[it->id] += p->se;cnt[it->id]++;frog.erase(p);
+        a[t].t += b;++cnt[a[t].id];
+        while(!S.empty()){
+            auto p = S.lower_bound(MP(a[t].x,-1e9));
+            if(p == S.end()) break;
+            if(p->fi <= a[t].t+a[t].x){
+                a[t].t += p->se;
+                ++cnt[a[t].id];
+                S.erase(p);
             }
-            LL now = x[it->id]+ans[it->id];
-            auto q = it;++q;
-            while(q->l != 1e18){
-                if(q->r <= now) q = S.erase(q);
-                else{
-                    Node t = *q;S.erase(q);
-                    t.l = std::max(t.l,now+1);S.insert(t);
-                    break;
-                }
-            }
-            Node t = *it;S.erase(it);t.r = now;S.insert(t);
+            else break;
         }
+        update(1,1,n,t,a[t].x+a[t].t);
     }
+    FOR(i,1,n) ans[a[i].id] = a[i].t;
     FOR(i,1,n) printf("%d %lld\n",cnt[i],ans[i]);
     return 0;
 }
