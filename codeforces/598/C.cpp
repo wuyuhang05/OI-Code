@@ -22,7 +22,7 @@ struct Node{
     int x,y,id;double deg;
     Node(int x=0,int y=0,int id=0) : x(x),y(y),id(id){
         deg = atan2(y,x);
-        //if(deg < 0) deg += 2*pi;
+        if(deg < 0) deg += 2*pi;
     }
 
     inline bool operator < (const Node &t) const {

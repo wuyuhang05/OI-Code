@@ -1,4 +1,20 @@
 {
+  "CF101374530": {
+    "contest_id": 598,
+    "language": "GNU C++11",
+    "path": "codeforces/598/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Nearest vectors",
+    "problem_url": "https://codeforces.com/contest/598/problem/C",
+    "submission_id": "CF101374530",
+    "submission_url": "https://codeforces.com/contest/598/submission/101374530",
+    "tags": [
+      "geometry",
+      "sortings",
+      "*2300"
+    ],
+    "timestamp": "Dec/16/2020 08:58"
+  },
   "CF101374633": {
     "contest_id": 598,
     "language": "GNU C++11",
