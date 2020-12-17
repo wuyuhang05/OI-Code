@@ -1,4 +1,21 @@
 {
+  "CF101467051": {
+    "contest_id": 612,
+    "language": "GNU C++11",
+    "path": "codeforces/612/A.cpp",
+    "problem_index": "A",
+    "problem_name": "The Text Splitting",
+    "problem_url": "https://codeforces.com/contest/612/problem/A",
+    "submission_id": "CF101467051",
+    "submission_url": "https://codeforces.com/contest/612/submission/101467051",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1300"
+    ],
+    "timestamp": "Dec/17/2020 09:25"
+  },
   "CF101467128": {
     "contest_id": 612,
     "language": "GNU C++11",
