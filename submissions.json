@@ -1,4 +1,20 @@
 {
+  "CF101467570": {
+    "contest_id": 612,
+    "language": "GNU C++11",
+    "path": "codeforces/612/D.cpp",
+    "problem_index": "D",
+    "problem_name": "The Union of k-Segments",
+    "problem_url": "https://codeforces.com/contest/612/problem/D",
+    "submission_id": "CF101467570",
+    "submission_url": "https://codeforces.com/contest/612/submission/101467570",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Dec/17/2020 09:50"
+  },
   "CF101467871": {
     "contest_id": 612,
     "language": "GNU C++11",
