@@ -1,4 +1,19 @@
 {
+  "CF101534032": {
+    "contest_id": 1463,
+    "language": "GNU C++11",
+    "path": "codeforces/1463/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Busy Robot",
+    "problem_url": "https://codeforces.com/contest/1463/problem/C",
+    "submission_id": "CF101534032",
+    "submission_url": "https://codeforces.com/contest/1463/submission/101534032",
+    "tags": [
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Dec/17/2020 23:02"
+  },
   "CF101552573": {
     "contest_id": 1463,
     "language": "GNU C++11",
