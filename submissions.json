@@ -1,4 +1,24 @@
 {
+  "CF101580847": {
+    "contest_id": 1463,
+    "language": "GNU C++11",
+    "path": "codeforces/1463/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Plan of Lectures",
+    "problem_url": "https://codeforces.com/contest/1463/problem/E",
+    "submission_id": "CF101580847",
+    "submission_url": "https://codeforces.com/contest/1463/submission/101580847",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "sortings",
+      "trees",
+      "*2400"
+    ],
+    "timestamp": "Dec/18/2020 00:48"
+  },
   "CF101719229": {
     "contest_id": 1458,
     "language": "GNU C++11",
