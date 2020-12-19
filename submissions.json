@@ -1,4 +1,19 @@
 {
+  "CF101782383": {
+    "contest_id": 612,
+    "language": "GNU C++11",
+    "path": "codeforces/612/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Simba on the Circle",
+    "problem_url": "https://codeforces.com/contest/612/problem/F",
+    "submission_id": "CF101782383",
+    "submission_url": "https://codeforces.com/contest/612/submission/101782383",
+    "tags": [
+      "dp",
+      "*2600"
+    ],
+    "timestamp": "Dec/19/2020 23:23"
+  },
   "CF101811410": {
     "contest_id": 1458,
     "language": "GNU C++11",
