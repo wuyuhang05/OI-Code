@@ -1,0 +1,19 @@
+{
+  "CF101853194": {
+    "contest_id": 620,
+    "language": "GNU C++11",
+    "path": "codeforces/620/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Xors on Segments",
+    "problem_url": "https://codeforces.com/contest/620/problem/F",
+    "submission_id": "CF101853194",
+    "submission_url": "https://codeforces.com/contest/620/submission/101853194",
+    "tags": [
+      "data structures",
+      "strings",
+      "trees",
+      "*2800"
+    ],
+    "timestamp": "Dec/20/2020 21:47"
+  }
+}
