@@ -1,4 +1,20 @@
 {
+  "CF101813736": {
+    "contest_id": 616,
+    "language": "GNU C++11",
+    "path": "codeforces/616/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Expensive Strings",
+    "problem_url": "https://codeforces.com/contest/616/problem/F",
+    "submission_id": "CF101813736",
+    "submission_url": "https://codeforces.com/contest/616/submission/101813736",
+    "tags": [
+      "string suffix structures",
+      "strings",
+      "*2700"
+    ],
+    "timestamp": "Dec/20/2020 11:02"
+  },
   "CF101824500": {
     "contest_id": 616,
     "language": "GNU C++11",
