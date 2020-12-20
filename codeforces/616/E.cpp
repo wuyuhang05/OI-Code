@@ -16,24 +16,21 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-LL n,m;
 const int ha = 1e9 + 7;
-
-inline LL calc(LL n){
-    LL x = n,y = n+1;
-    if(x&1) y >>= 1;
-    else x >>= 1;
-    return (x%ha)*(y%ha)%ha;
-}
+const int inv2 = 500000004;
+LL n,m;
+LL ans = 0;
 
 int main(){
     scanf("%lld%lld",&n,&m);
-    LL res = (n%ha)*(m%ha)%ha;
-    m = std::min(m,n);
+    ans = (ha-n%ha*(m%ha)%ha)%ha;m = std::min(m,n);
     for(LL l = 1,r;l <= m;l = r+1){
         r = std::min(m,n/(n/l));
-        (res += ha-(n/l)%ha*(calc(r)-calc(l-1)+ha)%ha) %= ha;
+        LL c = r%ha*((r+1)%ha)%ha*inv2%ha;
+        (c += ha-(l-1)%ha*(l%ha)%ha*inv2%ha) %= ha;
+        (ans += (n/l)%ha*(c%ha)%ha)%=ha;
     }
-    printf("%lld\n",res);
+    ans = (ha-ans)%ha;
+    printf("%lld\n",ans);
     return 0;
 }
