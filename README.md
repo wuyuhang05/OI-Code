@@ -12,6 +12,7 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1028 | [F - Bear and Fair Set](https://codeforces.com/contest/628/problem/F) | [GNU C++11](./codeforces/628/F.cpp) | `flows` `*2500` | Dec/22/2020 22:13 | 
 1027 | [E - Zbazi in Zeydabad](https://codeforces.com/contest/628/problem/E) | [GNU C++11](./codeforces/628/E.cpp) | `data structures` `implementation` `*2300` | Dec/22/2020 14:58 | 
 1026 | [D - Magic Numbers](https://codeforces.com/contest/628/problem/D) | [GNU C++11](./codeforces/628/D.cpp) | `dp` `*2200` | Dec/22/2020 14:04 | 
 1025 | [C - Bear and String Distance](https://codeforces.com/contest/628/problem/C) | [GNU C++11](./codeforces/628/C.cpp) | `greedy` `strings` `*1300` | Dec/22/2020 13:41 | 
