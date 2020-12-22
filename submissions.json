@@ -1616,6 +1616,22 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF102014801": {
+    "contest_id": 628,
+    "language": "GNU C++11",
+    "path": "codeforces/628/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Tennis Tournament",
+    "problem_url": "https://codeforces.com/contest/628/problem/A",
+    "submission_id": "CF102014801",
+    "submission_url": "https://codeforces.com/contest/628/submission/102014801",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/22/2020 13:34"
+  },
   "CF102014917": {
     "contest_id": 628,
     "language": "GNU C++11",
