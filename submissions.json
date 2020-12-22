@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF101999770": {
+    "contest_id": 622,
+    "language": "GNU C++11",
+    "path": "codeforces/622/B.cpp",
+    "problem_index": "B",
+    "problem_name": "The Time",
+    "problem_url": "https://codeforces.com/contest/622/problem/B",
+    "submission_id": "CF101999770",
+    "submission_url": "https://codeforces.com/contest/622/submission/101999770",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Dec/22/2020 10:24"
+  },
   "CF101999852": {
     "contest_id": 622,
     "language": "GNU C++11",
