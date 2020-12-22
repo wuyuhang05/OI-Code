@@ -32,43 +32,14 @@ inline int qpow(int a,int n=ha-2){
 int n,m;
 int f[MAXN];
 
-inline void add(int &x,int y){
-    x += y-ha;x += x>>31&ha;
-}
-
-struct Node{
-    int a[2][2];
-    Node(){CLR(a,0);}
-    inline Node operator * (const Node &t) const {
-        Node res;
-        FOR(i,0,1) FOR(j,0,1){
-            LL x=0;
-            FOR(k,0,1) x += (LL)a[i][k]*t.a[k][j];
-            res.a[i][j] = x%ha;
-        }
-        return res;
-    }
-};
-
-inline Node qpow(Node a,int n){
-    Node res;res.a[0][0] = res.a[1][1] = 1;
-    while(n){
-        if(n&1) res = res*a;
-        a = a*a;
-        n >>= 1;
-    }
-    return res;
-}
-
 int main(){
     scanf("%d%d",&n,&m);
-    Node A;
-    A.a[1][0] = 1;
-    A.a[0][0] = 3ll*m-1;
-    A.a[0][1] = (ha-2ll*m*m%ha+m)%ha;
-    A = qpow(A,n-1);
-    int ans = 1ll*A.a[0][0]*(3*m-1)%ha;
-    add(ans,A.a[0][1]);
+    f[0] = 1;f[1] = 3*m-1;
+    FOR(i,2,n){
+        f[i] = 1ll*(3*m-1)*f[i-1]%ha;
+        (f[i] += ha-1ll*m*(2*m-1)%ha*f[i-2]%ha) %= ha;
+    }
+    int ans = f[n];
     (ans += ha-qpow(m,n)) %= ha;
     ans = 1ll*ans*m%ha*qpow(2*m-1)%ha;
     (ans += qpow(m,n)) %= ha;
