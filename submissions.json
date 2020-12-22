@@ -1834,6 +1834,18 @@
     ],
     "timestamp": "Dec/22/2020 14:58"
   },
+  "CF102048128": {
+    "contest_id": 628,
+    "language": "GNU C++11",
+    "path": "codeforces/628/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Bear and Fair Set",
+    "problem_url": "https://codeforces.com/contest/628/problem/F",
+    "submission_id": "CF102048128",
+    "submission_url": "https://codeforces.com/contest/628/submission/102048128",
+    "tags": [],
+    "timestamp": "Dec/22/2020 22:09"
+  },
   "CF102048399": {
     "contest_id": 628,
     "language": "GNU C++11",
