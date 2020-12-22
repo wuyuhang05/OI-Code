@@ -29,20 +29,23 @@ inline int qpow(int a,int n=ha-2){
 	return res;
 }
 
-int n,m;
-int f[MAXN];
+int fac[MAXN],inv[MAXN];
+
+inline int C(int n,int m){
+    return n < 0 || m < 0 || n < m ? 0 : 1ll*fac[n]*inv[m]%ha*inv[n-m]%ha;
+}
 
 int main(){
-    scanf("%d%d",&n,&m);
-    f[0] = 1;f[1] = 3*m-1;
-    FOR(i,2,n){
-        f[i] = 1ll*(3*m-1)*f[i-1]%ha;
-        (f[i] += ha-1ll*m*(2*m-1)%ha*f[i-2]%ha) %= ha;
+    fac[0] = 1;FOR(i,1,MAXN-1) fac[i] = 1ll*fac[i-1]*i%ha;
+    inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
+    int n,m;scanf("%d%d",&n,&m);int ans = qpow(m,n);
+    FOR(i,1,n){
+        int sm = 0;
+        //FOR(i,len,n) (sm += 1ll*C(i-1,len-1)*qpow(m-1,i-len)%ha*qpow(m,n-i)%ha) %= ha;
+        sm = 1ll*qpow(m,n-i+1)*qpow(2*m-1,i-1)%ha;
+        (ans += sm) %= ha;
+//        (ans += 1ll*qpow(m,len)*sm%ha) %= ha;
     }
-    int ans = f[n];
-    (ans += ha-qpow(m,n)) %= ha;
-    ans = 1ll*ans*m%ha*qpow(2*m-1)%ha;
-    (ans += qpow(m,n)) %= ha;
     printf("%d\n",ans);
     return 0;
 }
