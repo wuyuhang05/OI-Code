@@ -1616,6 +1616,21 @@
     ],
     "timestamp": "Dec/20/2020 21:47"
   },
+  "CF102000039": {
+    "contest_id": 622,
+    "language": "GNU C++11",
+    "path": "codeforces/622/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Optimal Number Permutation",
+    "problem_url": "https://codeforces.com/contest/622/problem/D",
+    "submission_id": "CF102000039",
+    "submission_url": "https://codeforces.com/contest/622/submission/102000039",
+    "tags": [
+      "constructive algorithms",
+      "*1900"
+    ],
+    "timestamp": "Dec/22/2020 10:36"
+  },
   "CF102000408": {
     "contest_id": 622,
     "language": "GNU C++11",

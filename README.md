@@ -12,15 +12,16 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1022 | [E - Zbazi in Zeydabad](https://codeforces.com/contest/628/problem/E) | [GNU C++11](./codeforces/628/E.cpp) | `data structures` `implementation` `*2300` | Dec/22/2020 14:58 | 
-1021 | [D - Magic Numbers](https://codeforces.com/contest/628/problem/D) | [GNU C++11](./codeforces/628/D.cpp) | `dp` `*2200` | Dec/22/2020 14:04 | 
-1020 | [C - Bear and String Distance](https://codeforces.com/contest/628/problem/C) | [GNU C++11](./codeforces/628/C.cpp) | `greedy` `strings` `*1300` | Dec/22/2020 13:41 | 
-1019 | [B - New Skateboard](https://codeforces.com/contest/628/problem/B) | [GNU C++11](./codeforces/628/B.cpp) | `dp` `*1300` | Dec/22/2020 13:37 | 
-1018 | [A - Tennis Tournament](https://codeforces.com/contest/628/problem/A) | [GNU C++11](./codeforces/628/A.cpp) | `implementation` `math` `*1000` | Dec/22/2020 13:34 | 
-1017 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/22/2020 12:21 | 
-1016 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/22/2020 12:09 | 
-1015 | [F - The Sum of the k-th Powers](https://codeforces.com/contest/622/problem/F) | [GNU C++11](./codeforces/622/F.cpp) | `math` `*2600` | Dec/22/2020 11:06 | 
-1014 | [E - Ants in Leaves](https://codeforces.com/contest/622/problem/E) | [GNU C++11](./codeforces/622/E.cpp) | `dfs and similar` `greedy` `sortings` `trees` `*2200` | Dec/22/2020 10:52 | 
+1023 | [E - Zbazi in Zeydabad](https://codeforces.com/contest/628/problem/E) | [GNU C++11](./codeforces/628/E.cpp) | `data structures` `implementation` `*2300` | Dec/22/2020 14:58 | 
+1022 | [D - Magic Numbers](https://codeforces.com/contest/628/problem/D) | [GNU C++11](./codeforces/628/D.cpp) | `dp` `*2200` | Dec/22/2020 14:04 | 
+1021 | [C - Bear and String Distance](https://codeforces.com/contest/628/problem/C) | [GNU C++11](./codeforces/628/C.cpp) | `greedy` `strings` `*1300` | Dec/22/2020 13:41 | 
+1020 | [B - New Skateboard](https://codeforces.com/contest/628/problem/B) | [GNU C++11](./codeforces/628/B.cpp) | `dp` `*1300` | Dec/22/2020 13:37 | 
+1019 | [A - Tennis Tournament](https://codeforces.com/contest/628/problem/A) | [GNU C++11](./codeforces/628/A.cpp) | `implementation` `math` `*1000` | Dec/22/2020 13:34 | 
+1018 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/22/2020 12:21 | 
+1017 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/22/2020 12:09 | 
+1016 | [F - The Sum of the k-th Powers](https://codeforces.com/contest/622/problem/F) | [GNU C++11](./codeforces/622/F.cpp) | `math` `*2600` | Dec/22/2020 11:06 | 
+1015 | [E - Ants in Leaves](https://codeforces.com/contest/622/problem/E) | [GNU C++11](./codeforces/622/E.cpp) | `dfs and similar` `greedy` `sortings` `trees` `*2200` | Dec/22/2020 10:52 | 
+1014 | [D - Optimal Number Permutation](https://codeforces.com/contest/622/problem/D) | [GNU C++11](./codeforces/622/D.cpp) | `constructive algorithms` `*1900` | Dec/22/2020 10:36 | 
 1013 | [F - Xors on Segments](https://codeforces.com/contest/620/problem/F) | [GNU C++11](./codeforces/620/F.cpp) | `data structures` `strings` `trees` `*2800` | Dec/20/2020 21:47 | 
 1012 | [F - Xors on Segments](https://codeforces.com/contest/620/problem/F) | [GNU C++11](./codeforces/620/F.cpp) | `data structures` `strings` `trees` `*2800` | Dec/20/2020 16:54 | 
 1011 | [D - Professor GukiZ and Two Arrays](https://codeforces.com/contest/620/problem/D) | [GNU C++11](./codeforces/620/D.cpp) | `binary search` `two pointers` `*2200` | Dec/20/2020 16:12 | 
