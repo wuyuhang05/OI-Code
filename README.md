@@ -12,7 +12,8 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1030 | [D - Tavas in Kansas](https://codeforces.com/contest/536/problem/D) | [GNU C++11](./codeforces/536/D.cpp) | `dp` `games` `*2900` | Dec/24/2020 22:45 | 
+1031 | [D - Tavas in Kansas](https://codeforces.com/contest/536/problem/D) | [GNU C++11](./codeforces/536/D.cpp) | `dp` `games` `*2900` | Dec/24/2020 22:45 | 
+1030 | [E - Transmitting Levels](https://codeforces.com/contest/526/problem/E) | [GNU C++11](./codeforces/526/E.cpp) | `dp` `implementation` `*2400` | Dec/24/2020 15:56 | 
 1029 | [F - Bear and Fair Set](https://codeforces.com/contest/628/problem/F) | [GNU C++11](./codeforces/628/F.cpp) | `flows` `*2500` | Dec/22/2020 22:13 | 
 1028 | [F - Bear and Fair Set](https://codeforces.com/contest/628/problem/F) | [GNU C++11](./codeforces/628/F.cpp) |  | Dec/22/2020 22:09 | 
 1027 | [E - Zbazi in Zeydabad](https://codeforces.com/contest/628/problem/E) | [GNU C++11](./codeforces/628/E.cpp) | `data structures` `implementation` `*2300` | Dec/22/2020 14:58 | 
