@@ -1893,6 +1893,20 @@
     ],
     "timestamp": "Dec/24/2020 22:45"
   },
+  "CF102277692": {
+    "contest_id": 632,
+    "language": "GNU C++11",
+    "path": "codeforces/632/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Grandma Laura and Apples",
+    "problem_url": "https://codeforces.com/contest/632/problem/A",
+    "submission_id": "CF102277692",
+    "submission_url": "https://codeforces.com/contest/632/submission/102277692",
+    "tags": [
+      "*1200"
+    ],
+    "timestamp": "Dec/25/2020 13:26"
+  },
   "CF102277848": {
     "contest_id": 632,
     "language": "GNU C++11",
