@@ -1893,6 +1893,22 @@
     ],
     "timestamp": "Dec/24/2020 22:45"
   },
+  "CF102273994": {
+    "contest_id": 533,
+    "language": "GNU C++11",
+    "path": "codeforces/533/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Landmarks",
+    "problem_url": "https://codeforces.com/contest/533/problem/D",
+    "submission_id": "CF102273994",
+    "submission_url": "https://codeforces.com/contest/533/submission/102273994",
+    "tags": [
+      "data structures",
+      "dp",
+      "*3000"
+    ],
+    "timestamp": "Dec/25/2020 11:26"
+  },
   "CF102277692": {
     "contest_id": 632,
     "language": "GNU C++11",
