@@ -18,33 +18,46 @@
 
 const int MAXN = 1e6 + 5;
 int n,q,a[MAXN];
-int f[MAXN],sf[MAXN],g[MAXN],sg[MAXN];
+int f[MAXN];
 
 int main(){
     scanf("%d%d",&n,&q);
-    FOR(i,1,n) scanf("%d",a+i);
+    LL s = 0;
+    FOR(i,0,n-1) scanf("%d",a+i),s += a[i];
     while(q--){
         LL b;scanf("%lld",&b);
-        FOR(i,0,n+3) sf[i] = sg[i] = f[i] = g[i] = 0;
-        // f[i]: i->1
-        // g[i]: i->n
-        int j = 1;LL sm = 0;
-        FOR(i,1,n){
-            sm += a[i];
-            while(sm > b) sm -= a[j++];
-            if(j == 1) f[i] = 1,sf[i] = sm;
-            else sf[i] = sf[j-1],f[i] = f[j-1]+1;
+        if(s <= b){
+            puts("1");
+            continue;
         }
-        j = n;sm = 0;
-        ROF(i,n,1){
-            sm += a[i];
-            while(sm > b) sm -= a[j--];
-            if(j == n) g[i] = 1,sg[i] = sm;
-            else sg[i] = sg[j+1],g[i] = g[j+1]+1;
+        LL sm = 0,t = 0;
+        FOR(i,0,n-1){
+            while(sm+a[(i+t)%n] <= b) sm += a[(i+t)%n],++t;
+            f[i] = t;
+            sm -= a[i];t--;
         }
-        int ans = std::min(f[n],g[1]);
-        FOR(i,1,n-1){
-            ans = std::min(ans,f[i]+g[i+1]-(sf[i]+sg[i+1]<=b));
+        sm = 0;int now = 0;
+        int mn = 1e9,ps = -1;
+        while(sm < n){
+            if(mn > f[now]){
+                mn = f[now];
+                ps = now;
+            }
+            sm += f[now];
+            (now += f[now]) %= n;
+        }
+        int ans = 1e9;
+        FOR(i,0,f[ps]){
+            int t = (ps+i)%n;
+            auto work = [&](int x){
+                int ans = 0,sm = 0;
+                while(sm < n){
+                    ans++;sm += f[x];
+                    (x += f[x]) %= n;
+                }
+                return ans;
+            };
+            ans = std::min(ans,work(t));
         }
         printf("%d\n",ans);
     }
