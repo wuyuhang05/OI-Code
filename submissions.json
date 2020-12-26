@@ -2009,6 +2009,22 @@
     ],
     "timestamp": "Dec/25/2020 15:00"
   },
+  "CF102360020": {
+    "contest_id": 652,
+    "language": "GNU C++11",
+    "path": "codeforces/652/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Nested Segments",
+    "problem_url": "https://codeforces.com/contest/652/problem/D",
+    "submission_id": "CF102360020",
+    "submission_url": "https://codeforces.com/contest/652/submission/102360020",
+    "tags": [
+      "data structures",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Dec/26/2020 09:41"
+  },
   "CF102361263": {
     "contest_id": 652,
     "language": "GNU C++11",
