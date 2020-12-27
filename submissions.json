@@ -2107,6 +2107,23 @@
     ],
     "timestamp": "Dec/26/2020 15:54"
   },
+  "CF102438529": {
+    "contest_id": 913,
+    "language": "GNU C++11",
+    "path": "codeforces/913/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Logical Expression",
+    "problem_url": "https://codeforces.com/contest/913/problem/E",
+    "submission_id": "CF102438529",
+    "submission_url": "https://codeforces.com/contest/913/submission/102438529",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "shortest paths",
+      "*2400"
+    ],
+    "timestamp": "Dec/27/2020 10:29"
+  },
   "CF102535943": {
     "contest_id": 528,
     "language": "GNU C++11",
