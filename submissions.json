@@ -2107,6 +2107,23 @@
     ],
     "timestamp": "Dec/26/2020 15:54"
   },
+  "CF102535943": {
+    "contest_id": 528,
+    "language": "GNU C++11",
+    "path": "codeforces/528/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Fuzzy Search",
+    "problem_url": "https://codeforces.com/contest/528/problem/D",
+    "submission_id": "CF102535943",
+    "submission_url": "https://codeforces.com/contest/528/submission/102535943",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "fft",
+      "*2500"
+    ],
+    "timestamp": "Dec/28/2020 20:01"
+  },
   "CF102536123": {
     "contest_id": 528,
     "language": "GNU C++11",

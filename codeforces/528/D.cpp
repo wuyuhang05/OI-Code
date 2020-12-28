@@ -31,15 +31,22 @@ inline int qpow(int a,int n=ha-2){
 	return res;
 }
 
-int r[MAXN],N,n,m,k;
+struct Poly{
+    std::vector<int> x;
+    inline int deg(){return SZ(x)-1;}
+    inline void ext(const int &n){x.resize(n+1);}
+    inline int& operator [] (const int &n){return x[n];}
+};
+
+int r[MAXN],N;
 
 inline void init(int n){
     int len = 0;N = 1;while(N <= n) N <<= 1,len++;
     FOR(i,0,N-1) r[i] = (r[i>>1]>>1)|((i&1)<<(len-1));
 }
 
-inline void NTT(int A[],int opt){
-    FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
+inline void NTT(Poly &A,int opt){
+    A.ext(N);FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
     for(int mid = 1;mid < N;mid <<= 1){
         int W = qpow(opt==1?g:invg,(ha-1)/(mid<<1));
         for(int i = 0;i < N;i += (mid<<1)){
@@ -56,11 +63,13 @@ inline void NTT(int A[],int opt){
     }
 }
 
-inline void mul(int A[],int B[]){
-    init(n+m-2);
+inline Poly operator * (Poly A,Poly B){
+    int len = A.deg()+B.deg();init(len);
     NTT(A,1);NTT(B,1);FOR(i,0,N-1) A[i] = 1ll*A[i]*B[i]%ha;NTT(A,-1);
+    return A;
 }
 
+int n,m,k;
 int ans[MAXN],S[MAXN],T[MAXN];
 char str[MAXN];
 int sm[MAXN][4],occ[MAXN];
@@ -72,14 +81,12 @@ inline int ctoi(char x){
     return 3;
 }
 
-int A[MAXN],B[MAXN];
-
 inline void gao(int o){
-    CLR(A,0);CLR(B,0);
+    Poly A,B;A.ext(n-1);B.ext(m-1);
     FOR(i,0,n-1) A[i] = !((occ[i]>>o)&1);
     FOR(i,0,m-1) B[i] = (T[i]==o);
-    std::reverse(B,B+m);
-    mul(A,B);
+    std::reverse(all(B.x));
+    A = A*B;
     FOR(i,0,n-m) ans[i] |= A[i+m-1];
 }
 
