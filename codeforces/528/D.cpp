@@ -33,66 +33,32 @@ inline int qpow(int a,int n=ha-2){
 
 int r[MAXN],N,n,m,k;
 
-struct Node{
-    double x,y;// x+iy
-    Node(double x=0,double y=0) : x(x),y(y) {}
-
-    inline Node operator + (const Node &t) const {
-        return Node(x+t.x,y+t.y);
-    }
-
-    inline Node operator - (const Node &t) const {
-        return Node(x-t.x,y-t.y);
-    }
-
-    inline Node operator * (const Node &t) const {
-        return Node(x*t.x-y*t.y,x*t.y+y*t.x);
-    }
-
-    inline Node operator / (const double &t) const {
-        return Node(x/t,y/t);
-    }
-
-    inline Node conj(){return Node(x,-y);}
-};
-
 inline void init(int n){
     int len = 0;N = 1;while(N <= n) N <<= 1,len++;
     FOR(i,0,N-1) r[i] = (r[i>>1]>>1)|((i&1)<<(len-1));
 }
 
-const double pi = acos(-1);
-
-inline Node Exp(double x){return Node(cos(x),sin(x));}
-
-inline void FFT(Node A[]){
+inline void NTT(int A[],int opt){
     FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
     for(int mid = 1;mid < N;mid <<= 1){
-        Node W = Exp((2*pi)/(mid<<1));
+        int W = qpow(opt==1?g:invg,(ha-1)/(mid<<1));
         for(int i = 0;i < N;i += (mid<<1)){
-            Node w(1,0);
-            for(int j = 0;j < mid;++j,w = w*W){
-                Node x = A[i+j],y = A[i+mid+j]*w;
-                A[i+j] = x+y;A[i+mid+j] = x-y;
-            } 
+            for(int w=1,j = 0;j < mid;++j,w = 1ll*w*W%ha){
+                int x = A[i+j],y = 1ll*A[i+mid+j]*w%ha;
+                A[i+j] = x+y-ha;A[i+j] += A[i+j]>>31&ha;
+                A[i+mid+j] = x-y;A[i+mid+j] += A[i+mid+j]>>31&ha;
+            }
         }
+    }
+    if(opt == -1){
+        int inv = qpow(N);
+        FOR(i,0,N-1) A[i] = 1ll*A[i]*inv%ha;
     }
 }
 
-Node t1[MAXN],t2[MAXN];
-
 inline void mul(int A[],int B[]){
-    FOR(i,0,N-1) t1[i] = Node(A[i],B[i]);
-//    FOR(i,0,N-1) t2[i] = Node(B[i],0);
-    FFT(t1);//FFT(t2);
-    FOR(i,0,N-1){
-//        t1[i] = t1[i]*t2[i];
-        Node x = t1[i],y = t1[i?N-i:0].conj();
-        t2[i] = ((x+y)*Node(0.5,0))*((x-y)*Node(0,-0.5));
-//        t2[i] = ((x+y)*(y-x).conj())/4;
-    }
-    FFT(t2);std::reverse(t2+1,t2+N);
-    FOR(i,0,n+m-2) A[i] = (int)(t2[i].x/N+0.5);
+    init(n+m-2);
+    NTT(A,1);NTT(B,1);FOR(i,0,N-1) A[i] = 1ll*A[i]*B[i]%ha;NTT(A,-1);
 }
 
 int ans[MAXN],S[MAXN],T[MAXN];
@@ -114,12 +80,11 @@ inline void gao(int o){
     FOR(i,0,m-1) B[i] = (T[i]==o);
     std::reverse(B,B+m);
     mul(A,B);
-//    FOR(i,0,n+m-2) printf("%d ",A[i]);puts("");
     FOR(i,0,n-m) ans[i] |= A[i+m-1];
 }
 
 int main(){
-    scanf("%d%d%d",&n,&m,&k);init(n+m-2);
+    scanf("%d%d%d",&n,&m,&k);
     scanf("%s",str);FOR(i,0,n-1) S[i] = ctoi(str[i]);
     scanf("%s",str);FOR(i,0,m-1) T[i] = ctoi(str[i]);
     FOR(i,0,n-1){
