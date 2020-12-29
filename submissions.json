@@ -2321,6 +2321,23 @@
     ],
     "timestamp": "Dec/29/2020 00:27"
   },
+  "CF102666627": {
+    "contest_id": 427,
+    "language": "GNU C++11",
+    "path": "codeforces/427/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Match & Catch",
+    "problem_url": "https://codeforces.com/contest/427/problem/D",
+    "submission_id": "CF102666627",
+    "submission_url": "https://codeforces.com/contest/427/submission/102666627",
+    "tags": [
+      "dp",
+      "string suffix structures",
+      "strings",
+      "*2200"
+    ],
+    "timestamp": "Dec/29/2020 15:39"
+  },
   "CF102696760": {
     "contest_id": 1175,
     "language": "GNU C++11",
