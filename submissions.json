@@ -2321,6 +2321,22 @@
     ],
     "timestamp": "Dec/29/2020 00:27"
   },
+  "CF102650668": {
+    "contest_id": 1469,
+    "language": "GNU C++11",
+    "path": "codeforces/1469/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Power Sockets",
+    "problem_url": "https://codeforces.com/contest/1469/problem/F",
+    "submission_id": "CF102650668",
+    "submission_url": "https://codeforces.com/contest/1469/submission/102650668",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy"
+    ],
+    "timestamp": "Dec/29/2020 09:41"
+  },
   "CF102663236": {
     "contest_id": 123,
     "language": "GNU C++11",
