@@ -47,7 +47,7 @@ inline int merge(int x,int y,int l,int r){
     if(!x || !y) return x|y;
     int v = ++cnt,mid = (l + r) >> 1;
     if(l == r){
-        sm[v] = Node(sm[x].mx+sm[y].mx,l);
+        sm[v] = Node(sm[x].mx+sm[y].mx,sm[x].ps);
         return v;
     }
     lc[v] = merge(lc[x],lc[y],l,mid);
@@ -147,3 +147,4 @@ int main(){
     }
     return 0;
 }
+
