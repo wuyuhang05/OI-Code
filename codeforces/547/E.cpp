@@ -1,25 +1,15 @@
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <cstdlib>
-#include <cstdio>
-#include <bitset>
-#include <vector>
-#include <cmath>
-#include <ctime>
-#include <queue>
-#include <stack>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
 
 #define fi first
 #define se second
+#define DB double
 #define U unsigned
 #define P std::pair
 #define LL long long
+#define LD long double
 #define pb push_back
 #define MP std::make_pair
+#define SZ(x) ((int)x.size())
 #define all(x) x.begin(),x.end()
 #define CLR(i,a) memset(i,a,sizeof(i))
 #define FOR(i,a,b) for(int i = a;i <= b;++i)
@@ -28,126 +18,93 @@
 
 const int MAXN = 5e5 + 5;
 
+int ch[MAXN][26],fail[MAXN],len[MAXN],tot=1;
+
+inline int work(int p,int c){
+    int q = ch[p][c],nq = ++tot;
+    FOR(i,0,25) ch[nq][i] = ch[q][i];fail[nq] = fail[q];len[nq] = len[p]+1;
+    fail[q] = nq;for(;p&&ch[p][c]==q;p=fail[p]) ch[p][c] = nq;
+    return nq;
+}
+
+inline int insert(int p,int c){
+    int q = ch[p][c];
+    if(q){
+        if(len[q] == len[p]+1) return q;
+        return work(p,c);
+    }
+    int np = ++tot;len[np] = len[p]+1;
+    for(;p&&!ch[p][c];p=fail[p]) ch[p][c] = np;
+    if(!p) fail[np] = 1;
+    else{
+        q = ch[p][c];
+        if(len[q] == len[p]+1) fail[np] = q;
+        else fail[np] = work(p,c);
+    }
+    return np;
+}
+
+int n,q;
 char str[MAXN];
-int n;
+int ps[MAXN];
+std::vector<int> T[MAXN];
+int dfn[MAXN],sz[MAXN];
 
-int sa[MAXN],tax[MAXN],pool1[MAXN],pool2[MAXN],M;
-int *tp=pool1,*rk=pool2;
-
-inline void sort(){
-	FOR(i,0,M) tax[i] = 0;
-	FOR(i,1,n) tax[rk[i]]++;
-	FOR(i,1,M) tax[i] += tax[i-1];
-	ROF(i,n,1) sa[tax[rk[tp[i]]]--] = tp[i];
+inline void dfs(int v){
+    static int ts = 0;dfn[v] = ++ts;sz[v] = 1;
+    for(auto x:T[v]) dfs(x),sz[v] += sz[x];
 }
 
-inline void build(){
-	M = 0;
-	FOR(i,1,n) rk[i] = str[i],tp[i] = i,M = std::max(M,rk[i]+1);
-	sort();
-	for(int w = 1,p = 0;p < n;w <<= 1,M = p){
-		p = 0;
-		FOR(i,1,w) tp[++p] = n-w+i;
-		FOR(i,1,n) if(sa[i] > w) tp[++p] = sa[i]-w;
-		sort();
-		std::swap(rk,tp);
-		rk[sa[1]] = p = 1;
-		FOR(i,2,n) rk[sa[i]] = (tp[sa[i-1]] == tp[sa[i]] && tp[sa[i-1]+w] == tp[sa[i]+w]) ? p : ++p;
-	}	
-}
-int hei[MAXN];
-inline void getheight(){
-	int k = 0;
-	FOR(i,1,n){ // hei[i] = lcp(sa[i],sa[i-1])
-		// hei[rk[i]] >= hei[rk[i-1]]-1
-		if(k) k--;
-		int j = sa[rk[i]-1];
-		while(str[i+k] == str[j+k]) ++k;
-		hei[rk[i]] = k;
-	}
-}
+// 二维数点 (c,dfn[])
+struct Node{
+    int opt,l,r,d,id;
+};
 
-const int MAXM = 19;
-int mn[MAXM+1][MAXN];
-int Log[MAXN];
+struct BIT{
+    #define lowbit(x) ((x)&(-(x)))
+    int tree[MAXN];
 
-inline void build2(){
-	FOR(i,1,n) mn[0][i] = hei[i];
-	FOR(i,1,Log[n]){
-		for(int j = 1;j+(1<<(i-1)) < MAXN;++j){
-			mn[i][j] = std::min(mn[i-1][j],mn[i-1][j+(1<<(i-1))]);
-		}
-	}
-}
+    inline void add(int pos,int x){
+        for(;pos<MAXN;pos+=lowbit(pos)) tree[pos] += x;
+    }
 
-inline int calc(int l,int r){
-	int c = Log[r-l+1];
-	return std::min(mn[c][l],mn[c][r-(1<<c)+1]);
-}
-char tmp[MAXN];
-int id[MAXN],dd[MAXN],ep[MAXN],len[MAXN];
-int root[MAXN];
-int sm[MAXN<<5],tot,lc[MAXN<<5],rc[MAXN<<5];
+    inline int query(int pos){
+        int res = 0;
+        for(;pos;pos-=lowbit(pos)) res += tree[pos];
+        return res;
+    }
+}bit;
 
-inline void insert(int prev,int &v,int l,int r,int p,int d){
-	v = ++tot;sm[v] = sm[prev]+d;lc[v] = lc[prev];rc[v] = rc[prev];
-	if(l == r) return;
-	int mid = (l + r) >> 1;
-	if(p <= mid) insert(lc[prev],lc[v],l,mid,p,d);
-	else insert(rc[prev],rc[v],mid+1,r,p,d);
-}
-
-inline int query(int x,int y,int l,int r,int L,int R){
-	if(l == L && r == R) return sm[y]-sm[x];
-	int mid = (l + r) >> 1;
-	if(R <= mid) return query(lc[x],lc[y],l,mid,L,R);
-	if(L > mid) return query(rc[x],rc[y],mid+1,r,L,R);
-	return query(lc[x],lc[y],l,mid,L,mid)+query(rc[x],rc[y],mid+1,r,mid+1,R);
-}
+std::vector<Node> G[MAXN];
+int ans[MAXN];
 
 int main(){
-	n = 0;
-	Log[0] = -1;
-	FOR(i,1,MAXN-1) Log[i] = Log[i>>1]+1;
-	int m,q;scanf("%d%d",&m,&q);
-	FOR(i,1,m){
-		if(i != 1) str[++n] = '$';
-		scanf("%s",tmp+1);
-		int l = strlen(tmp+1);
-		FOR(j,1,l) str[++n] = tmp[j],dd[n] = i;
-		ep[i] = n;len[i] = l;
-	}
-	build();
-	getheight();build2();
-	// DEBUG(calc(6,11));
-	// FOR(i,1,n) DEBUG(hei[i]);DEBUG(n);
-	FOR(i,1,n) id[rk[i]] = dd[i];
-	FOR(i,1,n) insert(root[i-1],root[i],1,n,id[i],1);
-	// DEBUG(id[9]);
-	// FOR(i,1,n) DEBUG(sa[i]);
-	// DEBUG(sa[9]);
-	while(q--){
-		int l,r,k;scanf("%d%d%d",&l,&r,&k);
-		// 求 l <= id <= r , L <= rk <= R 的 id 种类
-		// 先搞出 id[i] 表示 rk 为 i 的 id
-		// 然后搞出 L R
-		int kk = k==1?1:ep[k-1]+2;
-		kk = rk[kk];int L = kk,R = kk;
-		int ll = 1,rr = kk-1;
-		while(ll <= rr){
-			int mid = (ll+rr)>>1;
-			if(calc(mid+1,kk) >= len[k]) L = mid,rr = mid-1;
-			else ll = mid+1;
-		}
-		ll = kk+1,rr = n;
-		while(ll <= rr){
-			int mid = (ll+rr)>>1;
-			// DEBUG(ll);DEBUG(rr);
-			if(calc(kk+1,mid) >= len[k]) R = mid,ll = mid+1;
-			else rr = mid-1;
-		}
-		// DEBUG(L);DEBUG(R);
-		printf("%d\n",query(root[L-1],root[R],1,n,l,r));
-	}
-	return 0;
+//    freopen("A.in","r",stdin);
+//    freopen("A.out","w",stdout);
+    scanf("%d%d",&n,&q);int p = 1;
+    FOR(c,1,n){
+        scanf("%s",str+1);int len = strlen(str+1);p = 1;
+        FOR(i,1,len) p = insert(p,str[i]-'a'),G[c].pb({0,p,p,1,0});
+        ps[c] = p;
+    }
+    FOR(i,2,tot) T[fail[i]].pb(i);
+    dfs(1);
+    FOR(i,1,q){
+        int l,r,k;scanf("%d%d%d",&l,&r,&k);
+        int ll = dfn[ps[k]],rr = dfn[ps[k]]+sz[ps[k]]-1;
+        G[l-1].pb({1,ll,rr,-1,i});
+        G[r].pb({1,ll,rr,1,i});
+    }
+    FOR(i,1,n){
+        for(auto x:G[i]){
+            if(x.opt == 0){
+                bit.add(dfn[x.l],1);
+            }
+            else{
+                ans[x.id] += x.d*(bit.query(x.r)-bit.query(x.l-1));
+            }
+        }
+    }
+    FOR(i,1,q) printf("%d\n",ans[i]);
+    return 0;
 }
