@@ -2388,6 +2388,21 @@
     ],
     "timestamp": "Dec/29/2020 22:25"
   },
+  "CF102819398": {
+    "contest_id": 1466,
+    "language": "GNU C++11",
+    "path": "codeforces/1466/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Apollo versus Pan",
+    "problem_url": "https://codeforces.com/contest/1466/problem/E",
+    "submission_id": "CF102819398",
+    "submission_url": "https://codeforces.com/contest/1466/submission/102819398",
+    "tags": [
+      "bitmasks",
+      "math"
+    ],
+    "timestamp": "Dec/30/2020 23:39"
+  },
   "CF102822235": {
     "contest_id": 1466,
     "language": "GNU C++11",
