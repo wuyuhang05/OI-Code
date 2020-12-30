@@ -12,18 +12,19 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1073 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
-1072 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
-1071 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
-1070 | [C - Hard Process](https://codeforces.com/contest/660/problem/C) | [GNU C++11](./codeforces/660/C.cpp) | `binary search` `dp` `two pointers` `*1600` | Dec/31/2020 13:23 | 
-1069 | [B - Seating On Bus](https://codeforces.com/contest/660/problem/B) | [GNU C++11](./codeforces/660/B.cpp) | `implementation` `*1000` | Dec/31/2020 13:16 | 
-1068 | [A - Co-prime Array](https://codeforces.com/contest/660/problem/A) | [GNU C++11](./codeforces/660/A.cpp) | `greedy` `implementation` `math` `number theory` `*1200` | Dec/31/2020 13:10 | 
-1067 | [E - Cool Slogans](https://codeforces.com/contest/700/problem/E) | [GNU C++11](./codeforces/700/E.cpp) | `string suffix structures` `strings` `*3300` | Dec/31/2020 10:22 | 
-1066 | [F - Euclid's nightmare](https://codeforces.com/contest/1466/problem/F) | [GNU C++11](./codeforces/1466/F.cpp) | `dfs and similar` `dsu` `graphs` `math` | Dec/31/2020 00:07 | 
-1065 | [D - 13th Labour of Heracles](https://codeforces.com/contest/1466/problem/D) | [GNU C++11](./codeforces/1466/D.cpp) | `greedy` `trees` | Dec/30/2020 23:46 | 
-1064 | [E - Apollo versus Pan](https://codeforces.com/contest/1466/problem/E) | [GNU C++11](./codeforces/1466/E.cpp) | `bitmasks` `math` | Dec/30/2020 23:39 | 
-1063 | [C - Canine poetry](https://codeforces.com/contest/1466/problem/C) | [GNU C++11](./codeforces/1466/C.cpp) | `dp` `greedy` `strings` | Dec/30/2020 22:57 | 
-1062 | [B - Last minute enhancements](https://codeforces.com/contest/1466/problem/B) | [GNU C++11](./codeforces/1466/B.cpp) | `greedy` | Dec/30/2020 22:48 | 
+1074 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
+1073 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
+1072 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
+1071 | [C - Hard Process](https://codeforces.com/contest/660/problem/C) | [GNU C++11](./codeforces/660/C.cpp) | `binary search` `dp` `two pointers` `*1600` | Dec/31/2020 13:23 | 
+1070 | [B - Seating On Bus](https://codeforces.com/contest/660/problem/B) | [GNU C++11](./codeforces/660/B.cpp) | `implementation` `*1000` | Dec/31/2020 13:16 | 
+1069 | [A - Co-prime Array](https://codeforces.com/contest/660/problem/A) | [GNU C++11](./codeforces/660/A.cpp) | `greedy` `implementation` `math` `number theory` `*1200` | Dec/31/2020 13:10 | 
+1068 | [E - Cool Slogans](https://codeforces.com/contest/700/problem/E) | [GNU C++11](./codeforces/700/E.cpp) | `string suffix structures` `strings` `*3300` | Dec/31/2020 10:22 | 
+1067 | [F - Euclid's nightmare](https://codeforces.com/contest/1466/problem/F) | [GNU C++11](./codeforces/1466/F.cpp) | `dfs and similar` `dsu` `graphs` `math` | Dec/31/2020 00:07 | 
+1066 | [D - 13th Labour of Heracles](https://codeforces.com/contest/1466/problem/D) | [GNU C++11](./codeforces/1466/D.cpp) | `greedy` `trees` | Dec/30/2020 23:46 | 
+1065 | [E - Apollo versus Pan](https://codeforces.com/contest/1466/problem/E) | [GNU C++11](./codeforces/1466/E.cpp) | `bitmasks` `math` | Dec/30/2020 23:39 | 
+1064 | [C - Canine poetry](https://codeforces.com/contest/1466/problem/C) | [GNU C++11](./codeforces/1466/C.cpp) | `dp` `greedy` `strings` | Dec/30/2020 22:57 | 
+1063 | [B - Last minute enhancements](https://codeforces.com/contest/1466/problem/B) | [GNU C++11](./codeforces/1466/B.cpp) | `greedy` | Dec/30/2020 22:48 | 
+1062 | [A - Bovine Dilemma](https://codeforces.com/contest/1466/problem/A) | [GNU C++11](./codeforces/1466/A.cpp) | `brute force` `math` | Dec/30/2020 22:37 | 
 1061 | [F - The Number of Subpermutations](https://codeforces.com/contest/1175/problem/F) | [GNU C++11](./codeforces/1175/F.cpp) | `brute force` `data structures` `divide and conquer` `hashing` `math` `*2500` | Dec/29/2020 22:25 | 
 1060 | [D - Match & Catch](https://codeforces.com/contest/427/problem/D) | [GNU C++11](./codeforces/427/D.cpp) | `dp` `string suffix structures` `strings` `*2200` | Dec/29/2020 15:39 | 
 1059 | [D - String](https://codeforces.com/contest/123/problem/D) | [GNU C++11](./codeforces/123/D.cpp) | `string suffix structures` `*2300` | Dec/29/2020 14:41 | 
