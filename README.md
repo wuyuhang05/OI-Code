@@ -12,9 +12,10 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1064 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
-1063 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
-1062 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
+1065 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
+1064 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
+1063 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
+1062 | [C - Hard Process](https://codeforces.com/contest/660/problem/C) | [GNU C++11](./codeforces/660/C.cpp) | `binary search` `dp` `two pointers` `*1600` | Dec/31/2020 13:23 | 
 1061 | [F - The Number of Subpermutations](https://codeforces.com/contest/1175/problem/F) | [GNU C++11](./codeforces/1175/F.cpp) | `brute force` `data structures` `divide and conquer` `hashing` `math` `*2500` | Dec/29/2020 22:25 | 
 1060 | [D - Match & Catch](https://codeforces.com/contest/427/problem/D) | [GNU C++11](./codeforces/427/D.cpp) | `dp` `string suffix structures` `strings` `*2200` | Dec/29/2020 15:39 | 
 1059 | [D - String](https://codeforces.com/contest/123/problem/D) | [GNU C++11](./codeforces/123/D.cpp) | `string suffix structures` `*2300` | Dec/29/2020 14:41 | 
