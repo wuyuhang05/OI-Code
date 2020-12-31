@@ -38,14 +38,17 @@ inline int C(int n,int m){
 int main(){
     fac[0] = 1;FOR(i,1,MAXN-1) fac[i] = 1ll*fac[i-1]*i%ha;
     inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
-    int n,m;scanf("%d%d",&n,&m);int ans = qpow(m,n);
+    int n,m;scanf("%d%d",&n,&m);
+    int ans = qpow(m,n);
+    FOR(i,1,n) (ans += 1ll*qpow(m,n-i+1)*qpow(2*m-1,i-1)%ha) %= ha;
+    /*
     FOR(i,1,n){
-        int sm = 0;
-        //FOR(i,len,n) (sm += 1ll*C(i-1,len-1)*qpow(m-1,i-len)%ha*qpow(m,n-i)%ha) %= ha;
-        sm = 1ll*qpow(m,n-i+1)*qpow(2*m-1,i-1)%ha;
-        (ans += sm) %= ha;
-//        (ans += 1ll*qpow(m,len)*sm%ha) %= ha;
-    }
+        FOR(j,i,n){
+            int c = 1ll*C(j-1,i-1)%ha*qpow(m-1,j-i)%ha*qpow(m,n-j)%ha;
+            c = 1ll*c*qpow(m,i)%ha;
+            (ans += c) %= ha;
+        }
+    }*/
     printf("%d\n",ans);
     return 0;
 }
