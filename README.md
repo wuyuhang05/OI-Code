@@ -12,15 +12,16 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1086 | [D - Birthday](https://codeforces.com/contest/494/problem/D) | [GNU C++11](./codeforces/494/D.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2700` | Jan/05/2021 10:26 | 
-1085 | [E - Pastoral Oddities](https://codeforces.com/contest/603/problem/E) | [GNU C++11](./codeforces/603/E.cpp) | `data structures` `divide and conquer` `dsu` `math` `trees` `*3000` | Jan/04/2021 20:37 | 
-1084 | [D - Half-decay tree](https://codeforces.com/contest/68/problem/D) | [GNU C++11](./codeforces/68/D.cpp) | `data structures` `divide and conquer` `dp` `math` `probabilities` `*2500` | Jan/04/2021 11:50 | 
-1083 | [F - Four Divisors](https://codeforces.com/contest/665/problem/F) | [GNU C++11](./codeforces/665/F.cpp) | `data structures` `dp` `math` `number theory` `sortings` `two pointers` `*2400` | Jan/03/2021 16:31 | 
-1082 | [E - Beautiful Subarrays](https://codeforces.com/contest/665/problem/E) | [GNU C++11](./codeforces/665/E.cpp) | `data structures` `divide and conquer` `strings` `trees` `*2100` | Jan/01/2021 19:36 | 
-1081 | [D - Simple Subset](https://codeforces.com/contest/665/problem/D) | [GNU C++11](./codeforces/665/D.cpp) | `constructive algorithms` `greedy` `number theory` `*1800` | Jan/01/2021 19:31 | 
-1080 | [C - Simple Strings](https://codeforces.com/contest/665/problem/C) | [GNU C++11](./codeforces/665/C.cpp) | `dp` `greedy` `strings` `*1300` | Jan/01/2021 19:16 | 
-1079 | [B - Shopping](https://codeforces.com/contest/665/problem/B) | [GNU C++11](./codeforces/665/B.cpp) | `brute force` `*1400` | Jan/01/2021 19:13 | 
-1078 | [A - Buses Between Cities](https://codeforces.com/contest/665/problem/A) | [GNU C++11](./codeforces/665/A.cpp) | `implementation` `*1600` | Jan/01/2021 19:08 | 
+1087 | [D - Birthday](https://codeforces.com/contest/494/problem/D) | [GNU C++11](./codeforces/494/D.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2700` | Jan/05/2021 10:26 | 
+1086 | [E - Pastoral Oddities](https://codeforces.com/contest/603/problem/E) | [GNU C++11](./codeforces/603/E.cpp) | `data structures` `divide and conquer` `dsu` `math` `trees` `*3000` | Jan/04/2021 20:37 | 
+1085 | [D - Half-decay tree](https://codeforces.com/contest/68/problem/D) | [GNU C++11](./codeforces/68/D.cpp) | `data structures` `divide and conquer` `dp` `math` `probabilities` `*2500` | Jan/04/2021 11:50 | 
+1084 | [F - Four Divisors](https://codeforces.com/contest/665/problem/F) | [GNU C++11](./codeforces/665/F.cpp) | `data structures` `dp` `math` `number theory` `sortings` `two pointers` `*2400` | Jan/03/2021 16:31 | 
+1083 | [E - Beautiful Subarrays](https://codeforces.com/contest/665/problem/E) | [GNU C++11](./codeforces/665/E.cpp) | `data structures` `divide and conquer` `strings` `trees` `*2100` | Jan/01/2021 19:36 | 
+1082 | [D - Simple Subset](https://codeforces.com/contest/665/problem/D) | [GNU C++11](./codeforces/665/D.cpp) | `constructive algorithms` `greedy` `number theory` `*1800` | Jan/01/2021 19:31 | 
+1081 | [C - Simple Strings](https://codeforces.com/contest/665/problem/C) | [GNU C++11](./codeforces/665/C.cpp) | `dp` `greedy` `strings` `*1300` | Jan/01/2021 19:16 | 
+1080 | [B - Shopping](https://codeforces.com/contest/665/problem/B) | [GNU C++11](./codeforces/665/B.cpp) | `brute force` `*1400` | Jan/01/2021 19:13 | 
+1079 | [A - Buses Between Cities](https://codeforces.com/contest/665/problem/A) | [GNU C++11](./codeforces/665/A.cpp) | `implementation` `*1600` | Jan/01/2021 19:08 | 
+1078 | [G - Song of the Sirens](https://codeforces.com/contest/1466/problem/G) | [GNU C++11](./codeforces/1466/G.cpp) | `combinatorics` `divide and conquer` `hashing` `math` `string suffix structures` `strings` `*2600` | Dec/31/2020 16:24 | 
 1077 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
 1076 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
 1075 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
