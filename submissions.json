@@ -2644,6 +2644,21 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF102952310": {
+    "contest_id": 665,
+    "language": "GNU C++11",
+    "path": "codeforces/665/B.cpp",
+    "problem_index": "B",
+    "problem_name": "Shopping",
+    "problem_url": "https://codeforces.com/contest/665/problem/B",
+    "submission_id": "CF102952310",
+    "submission_url": "https://codeforces.com/contest/665/submission/102952310",
+    "tags": [
+      "brute force",
+      "*1400"
+    ],
+    "timestamp": "Jan/01/2021 19:13"
+  },
   "CF102952455": {
     "contest_id": 665,
     "language": "GNU C++11",
