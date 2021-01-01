@@ -2644,6 +2644,21 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF102952052": {
+    "contest_id": 665,
+    "language": "GNU C++11",
+    "path": "codeforces/665/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Buses Between Cities",
+    "problem_url": "https://codeforces.com/contest/665/problem/A",
+    "submission_id": "CF102952052",
+    "submission_url": "https://codeforces.com/contest/665/submission/102952052",
+    "tags": [
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Jan/01/2021 19:08"
+  },
   "CF102952310": {
     "contest_id": 665,
     "language": "GNU C++11",
