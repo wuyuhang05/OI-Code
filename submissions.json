@@ -2644,6 +2644,26 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF103080041": {
+    "contest_id": 665,
+    "language": "GNU C++11",
+    "path": "codeforces/665/F.cpp",
+    "problem_index": "F",
+    "problem_name": "Four Divisors",
+    "problem_url": "https://codeforces.com/contest/665/problem/F",
+    "submission_id": "CF103080041",
+    "submission_url": "https://codeforces.com/contest/665/submission/103080041",
+    "tags": [
+      "data structures",
+      "dp",
+      "math",
+      "number theory",
+      "sortings",
+      "two pointers",
+      "*2400"
+    ],
+    "timestamp": "Jan/03/2021 16:31"
+  },
   "CF103140639": {
     "contest_id": 68,
     "language": "GNU C++11",
