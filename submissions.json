@@ -2644,6 +2644,25 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF103171967": {
+    "contest_id": 603,
+    "language": "GNU C++11",
+    "path": "codeforces/603/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Pastoral Oddities",
+    "problem_url": "https://codeforces.com/contest/603/problem/E",
+    "submission_id": "CF103171967",
+    "submission_url": "https://codeforces.com/contest/603/submission/103171967",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "dsu",
+      "math",
+      "trees",
+      "*3000"
+    ],
+    "timestamp": "Jan/04/2021 20:37"
+  },
   "CF103336545": {
     "contest_id": 494,
     "language": "GNU C++11",
