@@ -2644,6 +2644,25 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF103140639": {
+    "contest_id": 68,
+    "language": "GNU C++11",
+    "path": "codeforces/68/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Half-decay tree",
+    "problem_url": "https://codeforces.com/contest/68/problem/D",
+    "submission_id": "CF103140639",
+    "submission_url": "https://codeforces.com/contest/68/submission/103140639",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "dp",
+      "math",
+      "probabilities",
+      "*2500"
+    ],
+    "timestamp": "Jan/04/2021 11:50"
+  },
   "CF103171967": {
     "contest_id": 603,
     "language": "GNU C++11",

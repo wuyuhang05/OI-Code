@@ -12,8 +12,9 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1079 | [D - Birthday](https://codeforces.com/contest/494/problem/D) | [GNU C++11](./codeforces/494/D.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2700` | Jan/05/2021 10:26 | 
-1078 | [E - Pastoral Oddities](https://codeforces.com/contest/603/problem/E) | [GNU C++11](./codeforces/603/E.cpp) | `data structures` `divide and conquer` `dsu` `math` `trees` `*3000` | Jan/04/2021 20:37 | 
+1080 | [D - Birthday](https://codeforces.com/contest/494/problem/D) | [GNU C++11](./codeforces/494/D.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2700` | Jan/05/2021 10:26 | 
+1079 | [E - Pastoral Oddities](https://codeforces.com/contest/603/problem/E) | [GNU C++11](./codeforces/603/E.cpp) | `data structures` `divide and conquer` `dsu` `math` `trees` `*3000` | Jan/04/2021 20:37 | 
+1078 | [D - Half-decay tree](https://codeforces.com/contest/68/problem/D) | [GNU C++11](./codeforces/68/D.cpp) | `data structures` `divide and conquer` `dp` `math` `probabilities` `*2500` | Jan/04/2021 11:50 | 
 1077 | [F - Bear and Bowling 4](https://codeforces.com/contest/660/problem/F) | [GNU C++11](./codeforces/660/F.cpp) | `binary search` `data structures` `geometry` `ternary search` `*2500` | Dec/31/2020 14:15 | 
 1076 | [E - Different Subsets For All Tuples](https://codeforces.com/contest/660/problem/E) | [GNU C++11](./codeforces/660/E.cpp) | `combinatorics` `*2300` | Dec/31/2020 13:56 | 
 1075 | [D - Number of Parallelograms](https://codeforces.com/contest/660/problem/D) | [GNU C++11](./codeforces/660/D.cpp) | `geometry` `*1900` | Dec/31/2020 13:31 | 
