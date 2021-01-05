@@ -2644,6 +2644,24 @@
     ],
     "timestamp": "Dec/31/2020 14:15"
   },
+  "CF103336545": {
+    "contest_id": 494,
+    "language": "GNU C++11",
+    "path": "codeforces/494/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Birthday",
+    "problem_url": "https://codeforces.com/contest/494/problem/D",
+    "submission_id": "CF103336545",
+    "submission_url": "https://codeforces.com/contest/494/submission/103336545",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "dp",
+      "trees",
+      "*2700"
+    ],
+    "timestamp": "Jan/05/2021 10:26"
+  },
   "CF34933448": {
     "contest_id": 1,
     "language": "GNU C++",
