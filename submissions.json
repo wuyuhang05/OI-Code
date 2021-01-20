@@ -2822,6 +2822,24 @@
     ],
     "timestamp": "Jan/05/2021 10:26"
   },
+  "CF104906596": {
+    "contest_id": 623,
+    "language": "GNU C++11",
+    "path": "codeforces/623/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Transforming Sequence",
+    "problem_url": "https://codeforces.com/contest/623/problem/E",
+    "submission_id": "CF104906596",
+    "submission_url": "https://codeforces.com/contest/623/submission/104906596",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "fft",
+      "math",
+      "*3300"
+    ],
+    "timestamp": "Jan/20/2021 21:12"
+  },
   "CF105031262": {
     "contest_id": 932,
     "language": "GNU C++11",

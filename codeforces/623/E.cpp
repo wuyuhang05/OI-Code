@@ -1,23 +1,26 @@
-#include <algorithm>
-#include <iostream>
-#include <cstdio>
-#include <queue>
-#include <cmath>
-#include <cstring>
+#include <bits/stdc++.h>
 
 #define fi first
 #define se second
+#define DB double
+#define U unsigned
+#define P std::pair
 #define LL long long
-#define P std::pair<int,int>
-#define CLR(a,b) memset(a,b,sizeof(a))
+#define LD long double
+#define pb push_back
+#define MP std::make_pair
+#define SZ(x) ((int)x.size())
+#define all(x) x.begin(),x.end()
+#define CLR(i,a) memset(i,a,sizeof(i))
 #define FOR(i,a,b) for(int i = a;i <= b;++i)
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
-#define int LL
-const int MAXN = (1<<17)+2;
-//const double PI = acos(-1.0);
-#define PI acos(-1)
-int ha,haha;
+
+const int MAXN = 3e5 + 5;
+const int MAXM = 16;
+const int ha = 1e9 + 7;
+const DB pi = acos(-1);
+LL n;int k;
 
 inline int qpow(int a,int n=ha-2){
 	int res = 1;
@@ -29,189 +32,147 @@ inline int qpow(int a,int n=ha-2){
 	return res;
 }
 
-struct cp{
-	double x,y;//x+iy
-	cp(){x=0,y=0;}
-	cp(long double x,long double y):x(x),y(y){}
-	cp operator + (const cp &t) const {
-		return cp(x+t.x,y+t.y);
-	}
-	cp operator - (const cp &t) const {
-		return cp(x-t.x,y-t.y);
-	}
-	cp operator * (const cp &t) const {
-		return cp(x*t.x-y*t.y,x*t.y+y*t.x);
-	}
+inline void add(int &x,int y){
+    x += y-ha;x += x>>31&ha;
+}
 
-	LL D(){
-		LL t = (x+0.499);
-        //LL t = std::ceil(x);
-		return t%ha;
-	}
-};
-int N,n,k;
-int r[MAXN];
+struct CP{
+    DB x,y;// x+iy
+    CP(DB x=0,DB y=0) : x(x),y(y) {}
 
-cp w[1<<17][100];
-void init(){
-    for(int i=2,j=0;j<17;j++,i<<=1){
-        for(int k=0;k<i;k++)
-            w[k][j] = cp(cos(2*PI*k/i),sin(2*PI*k/i));
+    inline CP operator + (const CP &t) const {
+        return CP(x+t.x,y+t.y);
+    }
+
+    inline CP operator - (const CP &t) const {
+        return CP(x-t.x,y-t.y);
+    }
+
+    inline CP operator * (const CP &t) const {
+        return CP(x*t.x-y*t.y,x*t.y+y*t.x);
+    }
+
+    inline CP operator / (const DB &t) const {
+        return CP(x/t,y/t);
+    }
+
+    inline CP conj(){return CP(x,-y);}
+}W[MAXM+1][MAXN];
+
+int r[MAXN],N;
+
+inline void init(int n){
+    int len = 0;N = 1;while(N <= n) N <<= 1,++len;
+    FOR(i,0,N-1) r[i] = (r[i>>1]>>1)|((i&1)<<(len-1));
+}
+
+inline CP Exp(double x){return CP(cos(x),sin(x));}
+
+inline void FFT(CP A[]){
+    FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
+    for(int mid = 1,cnt = 0;mid < N;mid <<= 1,++cnt){
+        CP *w = W[cnt];
+        for(int i = 0;i < N;i += (mid<<1)){
+            for(int j = 0;j < mid;++j){
+                CP x = A[i+j],y = w[j]*A[i+mid+j];
+                A[i+j] = x+y;A[i+mid+j] = x-y;
+            }
+        }
     }
 }
 
-inline void FFT(cp *A,int limit,int opt){
-	FOR(i,0,limit) if(i < r[i]) std::swap(A[i],A[r[i]]);
-	for(int mid = 1,i=0;mid < limit;mid<<=1,++i){
-		//cp W(cos(PI/mid),opt*sin(PI/mid));
-        cp W(cos(PI/mid),sin(PI/mid));
-		for(int j = 0;j < limit;j += (mid<<1)){
-			cp w(1,0);
-			for(int k = 0;k < mid;++k,w = w*W){
-                w = ::w[k][i]; if(opt==-1) w.y=-w.y;
-				cp x = A[j+k],y = w*A[j+mid+k];
-				A[j+k] = x+y;A[j+mid+k] = x-y;
-			}
-		}
-	}
-	if(opt == -1){
-		FOR(i,0,limit-1) A[i].x = A[i].x/limit;
-	}
+const int BASE = 1<<15;
+LL A[MAXN],B[MAXN],C[MAXN],D[MAXN];
+CP tmp[MAXN],a[MAXN],b[MAXN],c[MAXN],d[MAXN];
+CP ac[MAXN],ad[MAXN],bc[MAXN],bd[MAXN];
+
+inline void DFT(LL A[],LL B[],CP a[],CP b[]){
+    FOR(i,0,N-1) tmp[i] = CP(A[i],B[i]);
+    FFT(tmp);
+    FOR(i,0,N-1){
+        CP x = tmp[i],y = tmp[i?N-i:0].conj();
+        a[i] = (x+y)*CP(0.5,0);
+        b[i] = (x-y)*CP(0,-0.5);
+    }
 }
 
-// void FFT(cp a[],int n,int on){
-//     FOR(i,0,n-1) if(i < r[i]) std::swap(a[i],a[r[i]]);
-//     cp wn,u,t;
-//     for(int h=2,i=0;h<=n;h<<=1,i++){ // h = mid
-//         for(int j=0;j<n;j+=h){
-//             for(int k=j;k<j+(h>>1);k++){
-//                 wn=w[k-j][i]; if(on==-1) wn.y=-wn.y;
-//                 u=a[k]; t=a[k+(h>>1)]*wn;
-//                 a[k]=u+t; a[k+(h>>1)]=u-t;
-//             }
-//         }
-//     }
-//     if(on==-1)
-//         for(int i=0;i<n;i++) a[i].x=a[i].x/n;
-// }
-
-struct Poly{
-	LL a[MAXN];
-
-	Poly(){CLR(a,0);}
-    
-	friend Poly operator * (const Poly &a,const Poly &b){
-		Poly ans;
-		static cp A[MAXN],B[MAXN],C[MAXN],D[MAXN],E[MAXN],F[MAXN],G[MAXN];
-		CLR(A,0);CLR(B,0);CLR(C,0);CLR(D,0);
-		FOR(i,0,N-1){
-            A[i].x = a.a[i]%haha,B[i].x = a.a[i]/haha;
-            // if(a.a[i]<0) DEBUG(a.a[i]);
-            // if(b.a[i]<0) DEBUG(b.a[i]);
-            // if(n == 29999) if(A[i].x < 0) DEBUG(A[i].x);
-            // if(n == 29999) if(B[i].x < 0) DEBUG(B[i].x);
-        }
-		FOR(i,0,N-1){
-            C[i].x = b.a[i]%haha,D[i].x = b.a[i]/haha;
-            // if(n == 29999) if(C[i].x < 0) DEBUG(C[i].x);
-            // if(n == 29999) if(D[i].x < 0) DEBUG(D[i].x);
-        }
-		FFT(A,N,1);FFT(B,N,1);FFT(C,N,1);FFT(D,N,1);
-		FOR(i,0,N-1){
-			E[i] = A[i]*C[i];
-			F[i] = A[i]*D[i]+B[i]*C[i];
-			G[i] = B[i]*D[i];
-		}
-		FFT(E,N,-1);FFT(F,N,-1);FFT(G,N,-1);
-        FOR(i,0,N-1){
-            // if(n == 29999) if(E[i].D() < 0) DEBUG(E[i].D());
-            //if(n == 29999) if(B[i].D() < 0) DEBUG(B[i].D());
-            // if(n == 29999) if(F[i].D() < 0) DEBUG(F[i].D());
-            // if(n == 29999) if(G[i].D() < 0) DEBUG(G[i].D());
-        }
-		FOR(i,0,N-1){
-            ans.a[i] = (E[i].D()%ha+F[i].D()%ha*haha%ha+G[i].D()%ha*haha%ha*haha%ha)%ha;
-            if(ans.a[i]<0){
-                //DEBUG(E[i].D());DEBUG(F[i].D());DEBUG(G[i].D());
-                //DEBUG(ans.a[i]);
-            }
-        }
-		FOR(i,k+1,N-1) ans.a[i] = 0;
-		return ans;
-	}
-    // friend Poly operator * (const Poly &a,const Poly &b){
-    //     Poly c;
-    //     static cp A[MAXN],B[MAXN],C[MAXN],D[MAXN],E[MAXN],F[MAXN],G[MAXN];
-    //     memset(A,0,sizeof(A)); memset(B,0,sizeof(B)); 
-    //     memset(C,0,sizeof(C)); memset(D,0,sizeof(D));
-    //     for(int i=0;i<N;i++) A[i].x=a.a[i]%haha,B[i].x=a.a[i]/haha;
-    //     for(int i=0;i<N;i++) C[i].x=b.a[i]%haha,D[i].x=b.a[i]/haha;
-    //     FFT(A,N,1); FFT(B,N,1); FFT(C,N,1); FFT(D,N,1);
-    //     for(int i=0;i<N;i++){
-    //         E[i]=A[i]*C[i];
-    //         F[i]=A[i]*D[i]+B[i]*C[i];
-    //         G[i]=B[i]*D[i];
-    //     }
-    //     FFT(E,N,-1); FFT(F,N,-1); FFT(G,N,-1);
-    //     for(int i=0;i<N;i++)
-    //         c.a[i]=(E[i].D()+F[i].D()*haha%ha+G[i].D()*haha%ha*haha%ha)%ha;
-    //     for(int i=k+1;i<N;i++) c.a[i]=0;
-    //     return c;
-    // }
-};
-
-int inv[MAXN],fac[MAXN];
-
-inline void pre(){
-	fac[0] = 1;
-	FOR(i,1,k) fac[i] = 1ll*fac[i-1]*i%ha;
-	inv[k] = qpow(fac[k]);
-	ROF(i,k-1,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
+inline void IDFT(CP a[],CP b[],LL A[],LL B[]){
+    FOR(i,0,N-1) tmp[i] = a[i]+CP(0,1)*b[i];
+    FFT(tmp);std::reverse(tmp+1,tmp+N);
+    FOR(i,0,N-1) A[i] = (LL)(tmp[i].x/N+0.5),B[i] = (LL)(tmp[i].y/N+0.5);
 }
 
-Poly ans,f,f1,f2;
-
-inline int C(int up,int down){
-	return fac[up]*inv[down]%ha*inv[up-down]%ha;
+inline void mul(int F[],int G[],int R[]){// R = F*G
+    FOR(i,0,N-1){
+        A[i] = F[i]>>15;B[i] = F[i]&(BASE-1);
+        C[i] = G[i]>>15;D[i] = G[i]&(BASE-1);
+    }
+    DFT(A,B,a,b);DFT(C,D,c,d);
+    FOR(i,0,N-1){
+        ac[i] = a[i]*c[i];
+        ad[i] = a[i]*d[i];
+        bc[i] = b[i]*c[i];
+        bd[i] = b[i]*d[i];
+    }
+    IDFT(ac,ad,A,B);IDFT(bc,bd,C,D);
+    FOR(i,0,N-1){
+//        assert(std::min({A[i],B[i],C[i],D[i]}) >= 0);
+        R[i] = 0;
+        add(R[i],D[i]%ha);
+        add(R[i],B[i]%ha*BASE%ha);
+        add(R[i],C[i]%ha*BASE%ha);
+        add(R[i],A[i]%ha*BASE%ha*BASE%ha);
+    }
 }
 
-signed main(){
-    init();
-    ha = 1e9+7;haha = 32768;
-	scanf("%lld%lld",&n,&k);--n;
-    int len = 0;
-    N = 1;pre();
-    for(N=1;N<=(k*2);N<<=1,len++);
-    FOR(i,0,N) r[i] = (r[i>>1]>>1)|((i&1)<<(len-1));
-	FOR(i,1,k) f.a[i] = 1;
-    ans = f;
-	LL now = 1;
-	while(n){
-		if(n & 1){
-			f1 = ans;f2 = f;
-			FOR(i,1,k) f1.a[i] = f1.a[i]*inv[i]%ha*qpow(qpow(2,i),now)%ha;
-			FOR(i,1,k){
-                f2.a[i] = f2.a[i]*inv[i]%ha;
-            }
-			ans = f1*f2;
-            FOR(i,1,k) if(ans.a[i]<0 && n == 29999) DEBUG(ans.a[i]);
-			FOR(i,1,k) ans.a[i] = ans.a[i]*fac[i]%ha;
-		}
-		f1 = f2 = f;
-		FOR(i,1,k){
-            f1.a[i] = f1.a[i]*inv[i]%ha*qpow(qpow(2,i),now)%ha;
-        }
-		FOR(i,1,k){
-            f2.a[i] = f2.a[i]*inv[i]%ha;
-        }
-		f = f1*f2;
-		FOR(i,1,k){
-            f.a[i] = f.a[i]*fac[i]%ha;
-        }
-		n >>= 1;now <<= 1;
-	}
-	LL sum = 0;
-	FOR(i,1,k) sum = (sum + ans.a[i]%ha*C(k,i)%ha)%ha;
-	printf("%lld\n",sum);
-	return 0;
+int fac[MAXN],inv[MAXN];
+int pw[MAXN];
+int t1[MAXN],t2[MAXN];
+
+inline void mul(int x,int F[],int y,int G[],int &z,int R[]){// F=x G=y
+    int t = 1;
+    FOR(i,0,k){
+        t1[i] = 1ll*F[i]*t%ha*inv[i]%ha,t = 1ll*t*pw[y]%ha;
+        t2[i] = 1ll*G[i]*inv[i]%ha;
+    }
+    mul(t1,t2,R);
+    FOR(i,k+1,N-1) R[i] = 0;
+    FOR(i,0,k) R[i] = 1ll*R[i]*fac[i]%ha;
+    z = x+y;
+}
+
+int F[MAXN],G[MAXN];
+
+int ttt[MAXN];
+
+int main(){
+  //  freopen("a.in","r",stdin);
+    //freopen("a.out","w",stdout);
+/*    F[0] = 0;F[1] = 2;F[2] = 2;F[3] = 333333337;
+    G[0] = 0;G[1] = 1;G[2] = 500000004;G[3] = 166666668;
+    init(2*3);DEBUG(N);
+    mul(F,G,ttt);
+    FOR(i,0,2) DEBUG(ttt[i]);
+    exit(0);*/
+    fac[0] = 1;FOR(i,1,MAXN-1) fac[i] = 1ll*fac[i-1]*i%ha;
+    inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
+    pw[0] = 1;FOR(i,1,MAXN-1) pw[i] = 2ll*pw[i-1]%ha;
+    FOR(i,0,MAXM) FOR(j,0,(1<<(i+1))-1) W[i][j] = Exp(j*(2*pi)/(1<<(i+1)));
+    scanf("%lld%d",&n,&k);init(2*k);
+    if(n > k){
+        puts("0");
+        return 0;
+    }
+    // G = res
+    int lenG = 1,lenF = 1;
+    FOR(i,1,k) G[i] = F[i] = 1;--n;
+    while(n){
+        if(n&1) mul(lenF,F,lenG,G,lenG,G);
+        mul(lenF,F,lenF,F,lenF,F);
+        n >>= 1;
+    }
+    int ans = 0;
+    FOR(i,0,k) add(ans,1ll*G[i]*fac[k]%ha*inv[i]%ha*inv[k-i]%ha);
+    printf("%d\n",ans);
+    return 0;
 }
