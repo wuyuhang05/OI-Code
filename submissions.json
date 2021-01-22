@@ -2822,6 +2822,24 @@
     ],
     "timestamp": "Jan/05/2021 10:26"
   },
+  "CF105042642": {
+    "contest_id": 407,
+    "language": "GNU C++11",
+    "path": "codeforces/407/C.cpp",
+    "problem_index": "C",
+    "problem_name": "Curious Array",
+    "problem_url": "https://codeforces.com/contest/407/problem/C",
+    "submission_id": "CF105042642",
+    "submission_url": "https://codeforces.com/contest/407/submission/105042642",
+    "tags": [
+      "brute force",
+      "combinatorics",
+      "implementation",
+      "math",
+      "*2500"
+    ],
+    "timestamp": "Jan/22/2021 15:14"
+  },
   "CF105113109": {
     "contest_id": 1473,
     "language": "GNU C++11",
