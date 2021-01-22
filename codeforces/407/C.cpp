@@ -16,16 +16,11 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 1e5 + 5;
-const int MAXM = 100 + 5;
+const int MAXN = 3e5 + 5;
 const int ha = 1e9 + 7;
-int n,m,a[MAXN];
-int ans[MAXM][MAXN];
-int C[MAXM][MAXM],fac[MAXN],inv[MAXN];
 
-inline void add(int &x,int y){
-    x += y-ha;x += x>>31&ha;
-}
+int n,m,a[MAXN];
+int fac[MAXN],inv[MAXN];
 
 inline int qpow(int a,int n=ha-2){
 	int res = 1;
@@ -37,35 +32,39 @@ inline int qpow(int a,int n=ha-2){
 	return res;
 }
 
-int tmp[MAXN],res[MAXN];
+inline int C(int n,int m){
+    return n < 0 || m < 0 || n < m ? 0 : 1ll*fac[n]*inv[m]%ha*inv[n-m]%ha;
+}
+
+inline void add(int &x,int y){
+    x += y-ha;x += x>>31&ha;
+}
+
+std::vector<P<int,int> > G[101];
+int ans[MAXN],tag[MAXN];
 
 int main(){
-    C[0][0] = 1;
-    FOR(i,1,100){
-        C[i][0] = 1;
-        FOR(j,1,i){
-            C[i][j] = (C[i-1][j]+C[i-1][j-1])%ha;
-        }
-    }
     fac[0] = 1;FOR(i,1,MAXN-1) fac[i] = 1ll*fac[i-1]*i%ha;
     inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
     scanf("%d%d",&n,&m);
     FOR(i,1,n) scanf("%d",a+i);
     FOR(i,1,m){
         int l,r,k;scanf("%d%d%d",&l,&r,&k);
-        int t = 1;
-        FOR(i,0,k){
-            int coe = 1ll*t*inv[k]%ha*C[k][i]%ha;
-            add(ans[k-i][l],coe);add(ans[k-i][r+1],ha-coe);
-            t = 1ll*t*(k-l-i+ha)%ha;
+        G[k].pb(l,r);
+    }
+    ROF(k,100,0){
+        for(auto x:G[k]) add(ans[x.fi],1);
+        FOR(i,1,n) tag[i] = 0;
+        FOR(kk,k,100){
+            for(auto x:G[kk]){
+                add(tag[x.se+1],ha-C(x.se-x.fi+kk-k,kk-k));
+            }
         }
+        FOR(i,1,n) add(tag[i],tag[i-1]);
+        FOR(i,1,n) add(ans[i],ans[i-1]);
+        FOR(i,1,n) add(ans[i],tag[i]);
     }
-    FOR(i,0,100) FOR(j,1,n) add(ans[i][j],ans[i][j-1]);
-    FOR(i,1,n) tmp[i] = 1;
-    FOR(k,0,100){
-        FOR(i,1,n) add(res[i],1ll*tmp[i]*ans[k][i]%ha);
-        FOR(i,1,n) tmp[i] = 1ll*tmp[i]*(i-k)%ha;
-    }
-    FOR(i,1,n) add(res[i],a[i]),printf("%d%c",res[i]," \n"[i==n]);
+    FOR(i,1,n) add(ans[i],a[i]);
+    FOR(i,1,n) printf("%d%c",ans[i]," \n"[i==n]);
     return 0;
 }
