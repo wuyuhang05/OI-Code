@@ -2822,6 +2822,22 @@
     ],
     "timestamp": "Jan/05/2021 10:26"
   },
+  "CF105113834": {
+    "contest_id": 1473,
+    "language": "GNU C++11",
+    "path": "codeforces/1473/C.cpp",
+    "problem_index": "C",
+    "problem_name": "No More Inversions",
+    "problem_url": "https://codeforces.com/contest/1473/problem/C",
+    "submission_id": "CF105113834",
+    "submission_url": "https://codeforces.com/contest/1473/submission/105113834",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Jan/23/2021 11:12"
+  },
   "CF105114840": {
     "contest_id": 1473,
     "language": "GNU C++11",
