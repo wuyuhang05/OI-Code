@@ -50,7 +50,6 @@ struct Poly{
 };
 
 int r[MAXN<<2],N;
-int W[MAXN<<2];
 
 inline void init(int n){
     N = 1;int len = 0;while(N <= n) N <<= 1,++len;
@@ -59,15 +58,14 @@ inline void init(int n){
 
 inline void NTT(Poly &A){
     A.ext(N-1);FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
-    int *w = W;
     for(int mid = 1;mid < N;mid <<= 1){
+        int W = qpow(3,(ha-1)/(mid<<1));
         for(int i = 0;i < N;i += (mid<<1)){
-            for(int j = 0;j < mid;++j){
-                int x = A[i+j],y = 1ll*w[j]*A[i+mid+j]%ha;
+            for(int j = 0,w = 1;j < mid;++j,w = 1ll*w*W%ha){
+                int x = A[i+j],y = 1ll*w*A[i+mid+j]%ha;
                 A[i+j] = (x+y)%ha;A[i+mid+j] = (x+ha-y)%ha;
             }
         }
-        w += (mid<<1);
     }
 }
 
@@ -82,7 +80,6 @@ inline Poly operator * (Poly A,Poly B){
 int main(){
 //    freopen("A.in","r",stdin);
     fac[0] = 1;FOR(i,1,MAXN-1) fac[i] = 1ll*fac[i-1]*i%ha;
-    int *w = W;for(int n = 2,i = 0;i <= 16;++i,n <<= 1) FOR(j,0,n-1) *w = qpow(3,((ha-1)/n)*j),++w;
     inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
     scanf("%d",&n);
     FOR(i,1,n) scanf("%d%d",a+i,b+i);
