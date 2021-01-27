@@ -42,6 +42,13 @@ inline void add(int &x,int y){
     x += y-ha;x += x>>31&ha;
 }
 
+struct Poly{
+    std::vector<int> x;
+    inline int deg(){return SZ(x)-1;}
+    inline void ext(int n){x.resize(n+1);}
+    inline int& operator [] (const int &n){return x[n];}
+};
+
 int r[MAXN<<2],N;
 int W[MAXN<<2];
 
@@ -54,29 +61,27 @@ inline void mod(int &x){
     x += x>>31&ha;
 }
 
-inline void NTT(int A[]){
-    FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
+inline void NTT(Poly &A){
+    A.ext(N-1);FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
     int *w = W;
     for(int mid = 1;mid < N;mid <<= 1){
         for(int i = 0;i < N;i += (mid<<1)){
-            for(int j = 0,*x = A+i,*y = A+i+mid;j < mid;++j,++x,++y){
-                int t = 1ll*w[j]*(*y)%ha;
-                *y = *x-t;*x += t-ha;
-                mod(*x);mod(*y);
+            for(int j = 0;j < mid;++j){
+                int x = A[i+j],y = 1ll*w[j]*A[i+mid+j]%ha;
+                mod(A[i+j] = x+y-ha);mod(A[i+mid+j] = x-y);
             }
         }
         w += (mid<<1);
     }
 }
 
-inline void mul(int A[],int B[],int C[],int len){
-    init(len);
-    NTT(A);NTT(B);FOR(i,0,N-1) C[i] = 1ll*A[i]*B[i]%ha;
-    NTT(C);std::reverse(C+1,C+N);int inv = qpow(N);
-    FOR(i,0,len) C[i] = 1ll*C[i]*inv%ha;FOR(i,len+1,N-1) C[i] = 0;
+inline Poly operator * (Poly A,Poly B){
+    int len = A.deg()+B.deg();init(len);
+    NTT(A);NTT(B);FOR(i,0,N-1) A[i] = 1ll*A[i]*B[i]%ha;
+    NTT(A);std::reverse(A.x.begin()+1,A.x.end());int inv = qpow(N);
+    A.ext(len);FOR(i,0,A.deg()) A[i] = 1ll*A[i]*inv%ha;
+    return A;
 }
-
-int F[MAXN],G[MAXN],ans[MAXN];
 
 int main(){
 //    freopen("A.in","r",stdin);
@@ -85,18 +90,18 @@ int main(){
     inv[MAXN-1] = qpow(fac[MAXN-1]);ROF(i,MAXN-2,0) inv[i] = 1ll*inv[i+1]*(i+1)%ha;
     scanf("%d",&n);
     FOR(i,1,n) scanf("%d%d",a+i,b+i);
-    sz[0] = 1;ans[1] = 1;
+    sz[0] = 1;Poly ans;ans.ext(1);ans[1] = 1;
     FOR(i,1,n){
         sz[i] = sz[i-1]+a[i]-b[i];
         int l = std::max(-b[i],1-sz[i-1]),r = std::min(a[i],sz[i-1]+a[i]-b[i]-1);
+        Poly F,G;F.ext(sz[i-1]);G.ext(r-l);
         FOR(j,1,sz[i-1]) F[j] = ans[j];
         FOR(j,0,r-l) G[j] = 1ll*inv[b[i]+j+l]*inv[a[i]-j-l]%ha;
-        mul(F,G,F,sz[i-1]+r-l);
-        FOR(j,1,sz[i-1]) ans[j] = 0;
-        FOR(j,1,sz[i]) if(j-l >= 0) ans[j] = 1ll*F[j-l]*fac[a[i]+b[i]]%ha;
-        FOR(j,0,N) F[j] = G[j] = 0;
+        F = F*G;
+        ans.x.clear();ans.ext(sz[i]);
+        FOR(j,1,sz[i]) if(0 <= j-l && j-l <= F.deg()) ans[j] = 1ll*F[j-l]*fac[a[i]+b[i]]%ha;
     }
-    int res = 0;FOR(i,1,sz[n]) add(res,ans[i]);
+    int res = 0;FOR(i,1,ans.deg()) add(res,ans[i]);
     printf("%d\n",res);
     return 0;
 }
