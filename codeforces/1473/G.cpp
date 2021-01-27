@@ -57,10 +57,6 @@ inline void init(int n){
     FOR(i,0,N-1) r[i] = (r[i>>1]>>1)|((i&1)<<(len-1));
 }
 
-inline void mod(int &x){
-    x += x>>31&ha;
-}
-
 inline void NTT(Poly &A){
     A.ext(N-1);FOR(i,0,N-1) if(i < r[i]) std::swap(A[i],A[r[i]]);
     int *w = W;
@@ -68,7 +64,7 @@ inline void NTT(Poly &A){
         for(int i = 0;i < N;i += (mid<<1)){
             for(int j = 0;j < mid;++j){
                 int x = A[i+j],y = 1ll*w[j]*A[i+mid+j]%ha;
-                mod(A[i+j] = x+y-ha);mod(A[i+mid+j] = x-y);
+                A[i+j] = (x+y)%ha;A[i+mid+j] = (x+ha-y)%ha;
             }
         }
         w += (mid<<1);
