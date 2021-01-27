@@ -73,6 +73,11 @@ inline void NTT(int A[]){
 int tmp[MAXN];
 
 inline void mul(int A[],int B[],int C[],int n,int m){
+    if(1ll*n*m <= 4096){
+        N = n+m;
+        ROF(i,n,0) ROF(j,m,0) add(C[i+j],1ll*A[i]*B[j]%ha);
+        return;
+    }
     init(n+m);
     NTT(A);NTT(B);FOR(i,0,N-1) C[i] = 1ll*A[i]*B[i]%ha;
     NTT(C);std::reverse(C+1,C+N);int inv = qpow(N);
@@ -103,4 +108,3 @@ int main(){
     printf("%d\n",res);
     return 0;
 }
-
