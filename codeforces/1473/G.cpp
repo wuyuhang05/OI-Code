@@ -69,18 +69,11 @@ inline void NTT(int A[]){
     }
 }
 
-int tmp[MAXN];
-
-inline void mul(int A[],int B[],int C[],int n,int m){
-    if(1ll*n*m <= 4096){
-        N = n+m;
-        ROF(i,n,0) ROF(j,m,0) add(C[i+j],1ll*A[i]*B[j]%ha);
-        return;
-    }
-    init(n+m);
+inline void mul(int A[],int B[],int C[],int len){
+    init(len);
     NTT(A);NTT(B);FOR(i,0,N-1) C[i] = 1ll*A[i]*B[i]%ha;
     NTT(C);std::reverse(C+1,C+N);int inv = qpow(N);
-    FOR(i,0,n+m) C[i] = 1ll*C[i]*inv%ha;FOR(i,n+m+1,N-1) C[i] = 0;
+    FOR(i,0,len) C[i] = 1ll*C[i]*inv%ha;FOR(i,len+1,N-1) C[i] = 0;
 }
 
 int F[MAXN],G[MAXN],ans[MAXN];
@@ -98,10 +91,10 @@ int main(){
         int l = std::max(-b[i],1-sz[i-1]),r = std::min(a[i],sz[i-1]+a[i]-b[i]-1);
         FOR(j,1,sz[i-1]) F[j] = ans[j];
         FOR(j,0,r-l) G[j] = 1ll*inv[b[i]+j+l]*inv[a[i]-j-l]%ha;
-        mul(F,G,tmp,sz[i-1],r-l);
+        mul(F,G,F,sz[i-1]+r-l);
         FOR(j,1,sz[i-1]) ans[j] = 0;
-        FOR(j,1,sz[i]) if(j-l >= 0) ans[j] = 1ll*tmp[j-l]*fac[a[i]+b[i]]%ha;
-        FOR(j,0,N) F[j] = G[j] = tmp[j] = 0;
+        FOR(j,1,sz[i]) if(j-l >= 0) ans[j] = 1ll*F[j-l]*fac[a[i]+b[i]]%ha;
+        FOR(j,0,N) F[j] = G[j] = 0;
     }
     int res = 0;FOR(i,1,sz[n]) add(res,ans[i]);
     printf("%d\n",res);
