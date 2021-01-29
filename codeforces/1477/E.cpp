@@ -100,7 +100,7 @@ int main(){
             FOR(i,1,m) ans = std::max(ans,calc(b[i],1));*/
             
             int mx = std::max(*A.rbegin(),*B.rbegin());
-            LL ans = std::max({query(mn,0),query(mn,1),query(*B.rbegin()+k,0),query(*B.rbegin()+k,1)});
+            LL ans = std::max({query(mx,0),query(mx,1),query(mn,0),query(mn,1),query(*B.rbegin()+k,0)});
             
 //            ans = std::max(ans,calc(*A.begin(),0));
 //            ans = std::max(ans,calc(*A.rbegin(),0));

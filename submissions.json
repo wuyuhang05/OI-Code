@@ -2822,6 +2822,22 @@
     ],
     "timestamp": "Jan/05/2021 10:26"
   },
+  "CF105842566": {
+    "contest_id": 1477,
+    "language": "GNU C++11",
+    "path": "codeforces/1477/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Nezzar and Tournaments",
+    "problem_url": "https://codeforces.com/contest/1477/problem/E",
+    "submission_id": "CF105842566",
+    "submission_url": "https://codeforces.com/contest/1477/submission/105842566",
+    "tags": [
+      "data structures",
+      "greedy",
+      "*3300"
+    ],
+    "timestamp": "Jan/29/2021 21:08"
+  },
   "CF105851951": {
     "contest_id": 1476,
     "language": "GNU C++11",
