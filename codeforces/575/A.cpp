@@ -16,7 +16,7 @@
 #define ROF(i,a,b) for(int i = a;i >= b;--i)
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
-const int MAXN = 5e4 + 5;
+const int MAXN = 1e5 + 5;
 int ha;
 
 inline void add(int &x,int y){
