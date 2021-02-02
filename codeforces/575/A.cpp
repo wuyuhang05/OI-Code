@@ -33,10 +33,13 @@ struct Node{
 
     inline Node operator * (const Node &t) const {
         Node res;
-        res.a[0][0]=((LL)a[0][0]*t.a[0][0]+(LL)a[0][1]*t.a[1][0])%ha;
-		res.a[0][1]=((LL)a[0][0]*t.a[0][1]+(LL)a[0][1]*t.a[1][1])%ha;
-		res.a[1][0]=((LL)a[1][0]*t.a[0][0]+(LL)a[1][1]*t.a[1][0])%ha;
-		res.a[1][1]=((LL)a[1][0]*t.a[0][1]+(LL)a[1][1]*t.a[1][1])%ha;
+        FOR(i,0,1){
+            FOR(j,0,1){
+                LL x = 0;
+                FOR(k,0,1) x += 1ll*a[i][k]*t.a[k][j];
+                res.a[i][j] = x%ha;
+            }
+        }
         return res;
     }
 
@@ -155,5 +158,3 @@ int main(){
     printf("%d\n",res.a[0][0]);
     return 0;
 }
-
-
