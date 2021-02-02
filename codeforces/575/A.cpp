@@ -33,10 +33,10 @@ struct Node{
 
     inline Node operator * (const Node &t) const {
         Node res;
-        res.a[0][0]=(1ll*a[0][0]*t.a[0][0]+1ll*a[0][1]*t.a[1][0])%ha;
-		res.a[0][1]=(1ll*a[0][0]*t.a[0][1]+1ll*a[0][1]*t.a[1][1])%ha;
-		res.a[1][0]=(1ll*a[1][0]*t.a[0][0]+1ll*a[1][1]*t.a[1][0])%ha;
-		res.a[1][1]=(1ll*a[1][0]*t.a[0][1]+1ll*a[1][1]*t.a[1][1])%ha;
+        res.a[0][0]=((LL)a[0][0]*t.a[0][0]+(LL)a[0][1]*t.a[1][0])%ha;
+		res.a[0][1]=((LL)a[0][0]*t.a[0][1]+(LL)a[0][1]*t.a[1][1])%ha;
+		res.a[1][0]=((LL)a[1][0]*t.a[0][0]+(LL)a[1][1]*t.a[1][0])%ha;
+		res.a[1][1]=((LL)a[1][0]*t.a[0][1]+(LL)a[1][1]*t.a[1][1])%ha;
         return res;
     }
 
