@@ -23,23 +23,13 @@ inline void add(int &x,int y){
     x += y-ha;x += x>>31&ha;
 }
 
-inline int mod(int x){
-    x -= ha;x += x>>31&ha;return x;
-}
-
 struct Node{
     int a[2][2];
     Node(){CLR(a,0);}
 
     inline Node operator * (const Node &t) const {
         Node res;
-        FOR(i,0,1){
-            FOR(j,0,1){
-                LL x = 0;
-                FOR(k,0,1) x += 1ll*a[i][k]*t.a[k][j];
-                res.a[i][j] = x%ha;
-            }
-        }
+        FOR(i,0,1) FOR(j,0,1) FOR(k,0,1) add(res.a[i][j],1ll*a[i][k]*t.a[k][j]%ha);
         return res;
     }
 

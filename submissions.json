@@ -3395,6 +3395,23 @@
     ],
     "timestamp": "Jan/31/2021 10:46"
   },
+  "CF106263477": {
+    "contest_id": 575,
+    "language": "GNU C++11",
+    "path": "codeforces/575/A.cpp",
+    "problem_index": "A",
+    "problem_name": "Fibonotci",
+    "problem_url": "https://codeforces.com/contest/575/problem/A",
+    "submission_id": "CF106263477",
+    "submission_url": "https://codeforces.com/contest/575/submission/106263477",
+    "tags": [
+      "data structures",
+      "math",
+      "matrices",
+      "*2700"
+    ],
+    "timestamp": "Feb/02/2021 17:04"
+  },
   "CF106264711": {
     "contest_id": 575,
     "language": "GNU C++11",
