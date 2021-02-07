@@ -3511,6 +3511,26 @@
     ],
     "timestamp": "Feb/02/2021 17:25"
   },
+  "CF106832093": {
+    "contest_id": 1479,
+    "language": "GNU C++11",
+    "path": "codeforces/1479/D.cpp",
+    "problem_index": "D",
+    "problem_name": "Odd Mineral Resource",
+    "problem_url": "https://codeforces.com/contest/1479/problem/D",
+    "submission_id": "CF106832093",
+    "submission_url": "https://codeforces.com/contest/1479/submission/106832093",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "brute force",
+      "data structures",
+      "probabilities",
+      "trees",
+      "*2900"
+    ],
+    "timestamp": "Feb/08/2021 00:32"
+  },
   "CF106841447": {
     "contest_id": 1479,
     "language": "GNU C++11",
