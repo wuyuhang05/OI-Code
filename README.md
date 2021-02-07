@@ -12,15 +12,16 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1136 | [E - Move and Swap](https://codeforces.com/contest/1485/problem/E) | [GNU C++11](./codeforces/1485/E.cpp) | `dfs and similar` `dp` `greedy` `trees` `*2500` | Feb/13/2021 13:54 | 
-1135 | [F - Copy or Prefix Sum](https://codeforces.com/contest/1485/problem/F) | [GNU C++11](./codeforces/1485/F.cpp) | `combinatorics` `data structures` `dp` `sortings` `*2400` | Feb/13/2021 12:07 | 
-1134 | [D - Multiples and Power Differences](https://codeforces.com/contest/1485/problem/D) | [GNU C++11](./codeforces/1485/D.cpp) | `constructive algorithms` `math` `number theory` `*2200` | Feb/13/2021 11:36 | 
-1133 | [C - Floor and Mod](https://codeforces.com/contest/1485/problem/C) | [GNU C++11](./codeforces/1485/C.cpp) | `binary search` `brute force` `math` `number theory` `*1700` | Feb/13/2021 11:18 | 
-1132 | [B - Replace and Keep Sorted](https://codeforces.com/contest/1485/problem/B) | [GNU C++11](./codeforces/1485/B.cpp) | `dp` `implementation` `math` `*1200` | Feb/13/2021 10:56 | 
-1131 | [A - Add and Divide](https://codeforces.com/contest/1485/problem/A) | [GNU C++11](./codeforces/1485/A.cpp) | `brute force` `greedy` `math` `ternary search` `*1000` | Feb/13/2021 10:43 | 
-1130 | [A - Searching Local Minimum](https://codeforces.com/contest/1479/problem/A) | [GNU C++11](./codeforces/1479/A.cpp) | `binary search` `interactive` `ternary search` `*1700` | Feb/08/2021 00:48 | 
-1129 | [D - Odd Mineral Resource](https://codeforces.com/contest/1479/problem/D) | [GNU C++11](./codeforces/1479/D.cpp) | `binary search` `bitmasks` `brute force` `data structures` `probabilities` `trees` `*2900` | Feb/08/2021 00:32 | 
-1128 | [B2 - Painting the Array II](https://codeforces.com/contest/1479/problem/B2) | [GNU C++11](./codeforces/1479/B2.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `implementation` `*2100` | Feb/07/2021 23:58 | 
+1137 | [E - Move and Swap](https://codeforces.com/contest/1485/problem/E) | [GNU C++11](./codeforces/1485/E.cpp) | `dfs and similar` `dp` `greedy` `trees` `*2500` | Feb/13/2021 13:54 | 
+1136 | [F - Copy or Prefix Sum](https://codeforces.com/contest/1485/problem/F) | [GNU C++11](./codeforces/1485/F.cpp) | `combinatorics` `data structures` `dp` `sortings` `*2400` | Feb/13/2021 12:07 | 
+1135 | [D - Multiples and Power Differences](https://codeforces.com/contest/1485/problem/D) | [GNU C++11](./codeforces/1485/D.cpp) | `constructive algorithms` `math` `number theory` `*2200` | Feb/13/2021 11:36 | 
+1134 | [C - Floor and Mod](https://codeforces.com/contest/1485/problem/C) | [GNU C++11](./codeforces/1485/C.cpp) | `binary search` `brute force` `math` `number theory` `*1700` | Feb/13/2021 11:18 | 
+1133 | [B - Replace and Keep Sorted](https://codeforces.com/contest/1485/problem/B) | [GNU C++11](./codeforces/1485/B.cpp) | `dp` `implementation` `math` `*1200` | Feb/13/2021 10:56 | 
+1132 | [A - Add and Divide](https://codeforces.com/contest/1485/problem/A) | [GNU C++11](./codeforces/1485/A.cpp) | `brute force` `greedy` `math` `ternary search` `*1000` | Feb/13/2021 10:43 | 
+1131 | [A - Searching Local Minimum](https://codeforces.com/contest/1479/problem/A) | [GNU C++11](./codeforces/1479/A.cpp) | `binary search` `interactive` `ternary search` `*1700` | Feb/08/2021 00:48 | 
+1130 | [D - Odd Mineral Resource](https://codeforces.com/contest/1479/problem/D) | [GNU C++11](./codeforces/1479/D.cpp) | `binary search` `bitmasks` `brute force` `data structures` `probabilities` `trees` `*2900` | Feb/08/2021 00:32 | 
+1129 | [B2 - Painting the Array II](https://codeforces.com/contest/1479/problem/B2) | [GNU C++11](./codeforces/1479/B2.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `implementation` `*2100` | Feb/07/2021 23:58 | 
+1128 | [B1 - Painting the Array I](https://codeforces.com/contest/1479/problem/B1) | [GNU C++11](./codeforces/1479/B1.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `implementation` `*1900` | Feb/07/2021 23:49 | 
 1127 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++11](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:25 | 
 1126 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++11](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:24 | 
 1125 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++17 (64)](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:23 | 
