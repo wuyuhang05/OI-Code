@@ -12,8 +12,9 @@ A repository to keep track of problem solving practise, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1129 | [E - Move and Swap](https://codeforces.com/contest/1485/problem/E) | [GNU C++11](./codeforces/1485/E.cpp) | `dfs and similar` `dp` `greedy` `trees` `*2500` | Feb/13/2021 13:54 | 
-1128 | [F - Copy or Prefix Sum](https://codeforces.com/contest/1485/problem/F) | [GNU C++11](./codeforces/1485/F.cpp) | `combinatorics` `data structures` `dp` `sortings` `*2400` | Feb/13/2021 12:07 | 
+1130 | [E - Move and Swap](https://codeforces.com/contest/1485/problem/E) | [GNU C++11](./codeforces/1485/E.cpp) | `dfs and similar` `dp` `greedy` `trees` `*2500` | Feb/13/2021 13:54 | 
+1129 | [F - Copy or Prefix Sum](https://codeforces.com/contest/1485/problem/F) | [GNU C++11](./codeforces/1485/F.cpp) | `combinatorics` `data structures` `dp` `sortings` `*2400` | Feb/13/2021 12:07 | 
+1128 | [D - Multiples and Power Differences](https://codeforces.com/contest/1485/problem/D) | [GNU C++11](./codeforces/1485/D.cpp) | `constructive algorithms` `math` `number theory` `*2200` | Feb/13/2021 11:36 | 
 1127 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++11](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:25 | 
 1126 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++11](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:24 | 
 1125 | [A - Fibonotci](https://codeforces.com/contest/575/problem/A) | [GNU C++17 (64)](./codeforces/575/A.cpp) | `data structures` `math` `matrices` `*2700` | Feb/02/2021 17:23 | 
