@@ -3511,6 +3511,24 @@
     ],
     "timestamp": "Feb/02/2021 17:25"
   },
+  "CF107256816": {
+    "contest_id": 1485,
+    "language": "GNU C++11",
+    "path": "codeforces/1485/E.cpp",
+    "problem_index": "E",
+    "problem_name": "Move and Swap",
+    "problem_url": "https://codeforces.com/contest/1485/problem/E",
+    "submission_id": "CF107256816",
+    "submission_url": "https://codeforces.com/contest/1485/submission/107256816",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "greedy",
+      "trees",
+      "*2500"
+    ],
+    "timestamp": "Feb/13/2021 13:54"
+  },
   "CF34933448": {
     "contest_id": 1,
     "language": "GNU C++",
