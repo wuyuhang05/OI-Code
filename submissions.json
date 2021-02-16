@@ -3808,6 +3808,23 @@
     ],
     "timestamp": "Feb/13/2021 13:54"
   },
+  "CF107515403": {
+    "contest_id": 1487,
+    "language": "GNU C++11",
+    "path": "codeforces/1487/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Ones",
+    "problem_url": "https://codeforces.com/contest/1487/problem/F",
+    "submission_id": "CF107515403",
+    "submission_url": "https://codeforces.com/contest/1487/submission/107515403",
+    "tags": [
+      "dp",
+      "greedy",
+      "*2900"
+    ],
+    "timestamp": "Feb/16/2021 16:54"
+  },
   "CF107539591": {
     "contest_id": 1490,
     "language": "GNU C++11",
