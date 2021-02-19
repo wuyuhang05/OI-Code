@@ -1,26 +1,15 @@
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <cstdlib>
-#include <cstdio>
-#include <bitset>
-#include <vector>
-#include <cmath>
-#include <ctime>
-#include <queue>
-#include <stack>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
 
 #define fi first
 #define se second
-#define db double
+#define DB double
 #define U unsigned
-#define P std::pair<int,int>
+#define P std::pair
 #define LL long long
-#define pb push_back
+#define LD long double
+#define pb emplace_back
 #define MP std::make_pair
+#define SZ(x) ((int)x.size())
 #define all(x) x.begin(),x.end()
 #define CLR(i,a) memset(i,a,sizeof(i))
 #define FOR(i,a,b) for(int i = a;i <= b;++i)
@@ -28,30 +17,28 @@
 #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
 
 const int MAXN = 1000+5;
-int a[MAXN],n,id[MAXN],b[MAXN];
-std::vector<int> S;
-std::vector<P> ans;
-
-inline bool cmp(int x,int y){
-    if(a[x] != a[y]) return a[x] < a[y];
-    return x < y;
-}
+int p[MAXN],q[MAXN],n,a[MAXN];
 
 int main(){
     scanf("%d",&n);
-    FOR(i,1,n) scanf("%d",a+i),S.pb(a[i]),id[i] = i,b[i] = a[i];
-    std::sort(id+1,id+n+1,cmp);
+    std::vector<P<int,int> > S;
+    FOR(i,1,n) scanf("%d",a+i),S.pb(a[i],i);
+    std::sort(all(S));
+    FOR(i,1,n) q[i] = S[i-1].se,p[q[i]] = i;
+    std::vector<P<int,int> > res;
+    auto swap = [&](int x,int y){
+        std::swap(q[p[x]],q[p[y]]);
+        std::swap(p[x],p[y]);
+        if(a[x] < a[y]) std::swap(x,y);
+        res.pb(x,y);
+    };
     ROF(i,n,1){
-        int ps = i;
-        while(ps+1 <= n && id[ps] > id[ps+1]){
-            ans.pb(MP(id[ps],id[ps+1]));
-            std::swap(id[ps],id[ps+1]);
-            ps++;
+        int t = p[i];
+        FOR(j,t+1,i){
+            swap(i,q[j]);
         }
     }
-    printf("%d\n",(int)ans.size());
-    for(auto x:ans) printf("%d %d\n",std::min(x.fi,x.se),std::max(x.fi,x.se));
-    for(auto x:ans) std::swap(b[x.fi],b[x.se]);
-//    FOR(i,1,n) printf("%d ",b[i]);puts("");
+    printf("%d\n",SZ(res));
+    for(auto x:res) printf("%d %d\n",x.fi,x.se);
     return 0;
 }
