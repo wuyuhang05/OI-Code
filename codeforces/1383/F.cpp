@@ -102,7 +102,7 @@ int rr;
 
 inline int Dinic(bool flag=0){
     int res=0,flow;
-    while(bfs()) while((flow=dfs(S))) res += flow;
+    while(bfs()) while((flow=dfs(S,flag==0?1e9:25))) res += flow;
     return res;
 }
 

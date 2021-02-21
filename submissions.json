@@ -3896,6 +3896,23 @@
     ],
     "timestamp": "Feb/16/2021 23:25"
   },
+  "CF108067039": {
+    "contest_id": 1383,
+    "language": "GNU C++11",
+    "path": "codeforces/1383/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Special Edges",
+    "problem_url": "https://codeforces.com/contest/1383/problem/F",
+    "submission_id": "CF108067039",
+    "submission_url": "https://codeforces.com/contest/1383/submission/108067039",
+    "tags": [
+      "flows",
+      "graphs",
+      "*3200"
+    ],
+    "timestamp": "Feb/21/2021 10:39"
+  },
   "CF108236023": {
     "contest_id": 1307,
     "language": "GNU C++11",
