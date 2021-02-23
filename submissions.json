@@ -3896,6 +3896,24 @@
     ],
     "timestamp": "Feb/16/2021 23:25"
   },
+  "CF108236023": {
+    "contest_id": 1307,
+    "language": "GNU C++11",
+    "path": "codeforces/1307/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Cow and Exercise",
+    "problem_url": "https://codeforces.com/contest/1307/problem/G",
+    "submission_id": "CF108236023",
+    "submission_url": "https://codeforces.com/contest/1307/submission/108236023",
+    "tags": [
+      "flows",
+      "graphs",
+      "shortest paths",
+      "*3100"
+    ],
+    "timestamp": "Feb/23/2021 16:17"
+  },
   "CF108307411": {
     "contest_id": 1492,
     "language": "GNU C++11",
