@@ -68,7 +68,9 @@ inline bool work(int rt,int fa=0){
     int ps = -1;
     for(auto x:S) if(ff[x.se] == now-1 || ff[x.se] == now-2){
         isr[x.fi] = 1;
-        bool res = work(x.fi,::fa[x.fi])&&work(rt,fa);
+        bool res = work(x.fi,::fa[x.fi]);
+        if(!res){isr[x.fi] = 0;continue;}
+        res &= work(rt,fa);
         isr[x.fi] = 0;
         if(res) return 1;
     }
