@@ -3896,6 +3896,22 @@
     ],
     "timestamp": "Feb/16/2021 23:25"
   },
+  "CF109001107": {
+    "contest_id": 1290,
+    "language": "GNU C++17",
+    "path": "codeforces/1290/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Cartesian Tree ",
+    "problem_url": "https://codeforces.com/contest/1290/problem/E",
+    "submission_id": "CF109001107",
+    "submission_url": "https://codeforces.com/contest/1290/submission/109001107",
+    "tags": [
+      "data structures",
+      "*3300"
+    ],
+    "timestamp": "Mar/03/2021 19:31"
+  },
   "CF109002952": {
     "contest_id": 1290,
     "language": "GNU C++17",

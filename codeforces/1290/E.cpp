@@ -32,7 +32,7 @@ inline void pushup(int x){
     sz[x] = sz[lc]+sz[rc]+1;
     tsz[x] = tsz[lc]+tsz[rc]+vsz[x]+1;
     tans[x] = vans[x]+tans[lc]+tans[rc]+1ll*(sz[lc]+1)*(tsz[rc]+vsz[x]+1);
-//    tans[x] = vans[x]+tans[lc]+tans[rc]+tsz[x]-tsz[lc];
+//    tans[x] = vans[x]+tans[lc]+tans[rc]+tsz[rc]+vsz[x]+1;
 }
 
 inline void rotate(int x){
@@ -144,7 +144,6 @@ int main(){
             std::vector<int> vec;print(z,vec);
             for(auto x:vec) if(x != p) cut(x);
             std::reverse(all(vec));
-            // 必须要从小往大(从下往上)插入 否则插入的位置不在右链上
             int now = y;
             for(auto x:vec){
                 if(x == p) continue;
