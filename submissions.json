@@ -3896,6 +3896,22 @@
     ],
     "timestamp": "Feb/16/2021 23:25"
   },
+  "CF108968654": {
+    "contest_id": 1494,
+    "language": "GNU C++17",
+    "path": "codeforces/1494/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Delete The Edges",
+    "problem_url": "https://codeforces.com/contest/1494/problem/F",
+    "submission_id": "CF108968654",
+    "submission_url": "https://codeforces.com/contest/1494/submission/108968654",
+    "tags": [
+      "constructive algorithms",
+      "graphs"
+    ],
+    "timestamp": "Mar/03/2021 10:34"
+  },
   "CF108968663": {
     "contest_id": 1494,
     "language": "GNU C++17",
