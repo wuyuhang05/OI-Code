@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1083 | [C - How Many Squares?](https://codeforces.com/contest/11/problem/C) | [GNU C++17](./codeforces/11/C.cpp) | `implementation` `*2200` | Mar/04/2021 21:19 | 
 1082 | [G - Old Floppy Drive ](https://codeforces.com/contest/1490/problem/G) | [GNU C++11](./codeforces/1490/G.cpp) | `binary search` `data structures` `math` | Feb/16/2021 23:25 | 
 1081 | [F - Equalize the Array](https://codeforces.com/contest/1490/problem/F) | [GNU C++11](./codeforces/1490/F.cpp) | `binary search` `data structures` `greedy` `math` `sortings` | Feb/16/2021 22:40 | 
 1080 | [F - Ones](https://codeforces.com/contest/1487/problem/F) | [GNU C++11](./codeforces/1487/F.cpp) | `dp` `greedy` `*2900` | Feb/16/2021 16:54 | 
@@ -865,10 +866,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 232 | [B - Two-gram](https://codeforces.com/contest/1212/problem/B) | [Kotlin](./codeforces/1212/B.kt) | `*special problem` `implementation` `*900` | Sep/07/2019 11:57 | 
 231 | [A - Wrong Subtraction](https://codeforces.com/contest/1212/problem/A) | [Kotlin](./codeforces/1212/A.kt) | `*special problem` `implementation` `*800` | Sep/07/2019 08:27 | 
 230 | [E - Petya and Construction Set](https://codeforces.com/contest/1214/problem/E) | [GNU C++11](./codeforces/1214/E.cpp) | `constructive algorithms` `graphs` `math` `sortings` `trees` `*2000` | Sep/04/2019 21:33 | 
-229 | [D - Treasure Island](https://codeforces.com/contest/1214/problem/D) | [GNU C++11](./codeforces/1214/D.cpp) | `dfs and similar` `dp` `flows` `hashing` `*1900` | Sep/04/2019 20:27 | 
-228 | [B - Badges](https://codeforces.com/contest/1214/problem/B) | [GNU C++11](./codeforces/1214/B.cpp) | `brute force` `math` `*1100` | Sep/04/2019 20:27 | 
-227 | [C - Bad Sequence](https://codeforces.com/contest/1214/problem/C) | [GNU C++11](./codeforces/1214/C.cpp) | `data structures` `greedy` `*1200` | Sep/04/2019 20:26 | 
-226 | [A - Optimal Currency Exchange](https://codeforces.com/contest/1214/problem/A) | [GNU C++11](./codeforces/1214/A.cpp) | `brute force` `math` `*1400` | Sep/04/2019 20:26 | 
+229 | [B - Badges](https://codeforces.com/contest/1214/problem/B) | [GNU C++11](./codeforces/1214/B.cpp) | `brute force` `math` `*1100` | Sep/04/2019 20:27 | 
+228 | [D - Treasure Island](https://codeforces.com/contest/1214/problem/D) | [GNU C++11](./codeforces/1214/D.cpp) | `dfs and similar` `dp` `flows` `hashing` `*1900` | Sep/04/2019 20:27 | 
+227 | [A - Optimal Currency Exchange](https://codeforces.com/contest/1214/problem/A) | [GNU C++11](./codeforces/1214/A.cpp) | `brute force` `math` `*1400` | Sep/04/2019 20:26 | 
+226 | [C - Bad Sequence](https://codeforces.com/contest/1214/problem/C) | [GNU C++11](./codeforces/1214/C.cpp) | `data structures` `greedy` `*1200` | Sep/04/2019 20:26 | 
 225 | [F - Roads in the Kingdom](https://codeforces.com/contest/835/problem/F) | [GNU C++11](./codeforces/835/F.cpp) | `dfs and similar` `dp` `graphs` `trees` `*2500` | Aug/30/2019 21:07 | 
 224 | [C - Mutation](https://codeforces.com/contest/76/problem/C) | [GNU C++11](./codeforces/76/C.cpp) | `bitmasks` `dp` `math` `*2700` | Aug/28/2019 17:23 | 
 223 | [D - Jzzhu and Numbers](https://codeforces.com/contest/449/problem/D) | [GNU C++11](./codeforces/449/D.cpp) | `bitmasks` `combinatorics` `dp` `*2400` | Aug/28/2019 10:36 | 

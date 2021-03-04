@@ -3896,6 +3896,22 @@
     ],
     "timestamp": "Feb/16/2021 23:25"
   },
+  "CF109082095": {
+    "contest_id": 11,
+    "language": "GNU C++17",
+    "path": "codeforces/11/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "How Many Squares?",
+    "problem_url": "https://codeforces.com/contest/11/problem/C",
+    "submission_id": "CF109082095",
+    "submission_url": "https://codeforces.com/contest/11/submission/109082095",
+    "tags": [
+      "implementation",
+      "*2200"
+    ],
+    "timestamp": "Mar/04/2021 21:19"
+  },
   "CF34933448": {
     "contest_id": 1,
     "language": "GNU C++",
