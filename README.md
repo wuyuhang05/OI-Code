@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1086 | [C - How Many Squares?](https://codeforces.com/contest/11/problem/C) | [GNU C++17](./codeforces/11/C.cpp) | `implementation` `*2200` | Mar/04/2021 21:19 | 
-1085 | [E - Field of Wonders](https://codeforces.com/contest/883/problem/E) | [GNU C++17](./codeforces/883/E.cpp) | `implementation` `strings` `*1500` | Mar/04/2021 21:11 | 
-1084 | [C - Periodic integer number](https://codeforces.com/contest/1219/problem/C) | [GNU C++17](./codeforces/1219/C.cpp) | `implementation` `strings` `*1700` | Mar/04/2021 21:10 | 
-1083 | [C - Bulls and Cows](https://codeforces.com/contest/63/problem/C) | [GNU C++17](./codeforces/63/C.cpp) | `brute force` `implementation` `*1700` | Mar/04/2021 21:09 | 
+1087 | [C - How Many Squares?](https://codeforces.com/contest/11/problem/C) | [GNU C++17](./codeforces/11/C.cpp) | `implementation` `*2200` | Mar/04/2021 21:19 | 
+1086 | [E - Field of Wonders](https://codeforces.com/contest/883/problem/E) | [GNU C++17](./codeforces/883/E.cpp) | `implementation` `strings` `*1500` | Mar/04/2021 21:11 | 
+1085 | [C - Periodic integer number](https://codeforces.com/contest/1219/problem/C) | [GNU C++17](./codeforces/1219/C.cpp) | `implementation` `strings` `*1700` | Mar/04/2021 21:10 | 
+1084 | [C - Bulls and Cows](https://codeforces.com/contest/63/problem/C) | [GNU C++17](./codeforces/63/C.cpp) | `brute force` `implementation` `*1700` | Mar/04/2021 21:09 | 
+1083 | [C - Game](https://codeforces.com/contest/69/problem/C) | [GNU C++17](./codeforces/69/C.cpp) | `implementation` `*2000` | Mar/04/2021 21:09 | 
 1082 | [G - Old Floppy Drive ](https://codeforces.com/contest/1490/problem/G) | [GNU C++11](./codeforces/1490/G.cpp) | `binary search` `data structures` `math` | Feb/16/2021 23:25 | 
 1081 | [F - Equalize the Array](https://codeforces.com/contest/1490/problem/F) | [GNU C++11](./codeforces/1490/F.cpp) | `binary search` `data structures` `greedy` `math` `sortings` | Feb/16/2021 22:40 | 
 1080 | [F - Ones](https://codeforces.com/contest/1487/problem/F) | [GNU C++11](./codeforces/1487/F.cpp) | `dp` `greedy` `*2900` | Feb/16/2021 16:54 | 
